@@ -9,6 +9,9 @@ DeepSeek는 시나리오별 표현 풀을 만드는 사전 작업에만 사용�
 VoC 건별로 호출하지 않는다.
 전체 구조는
 [ARCHITECTURE.md](docs/ARCHITECTURE.md)에 정리돼 있다.
+코드를 처음 보는 사람을 위한 구어체 설명은
+[CODEBASE_STORY.md](docs/CODEBASE_STORY.md)에서 전체 생성 과정을 이야기처럼
+따라갈 수 있다.
 
 VoC 외 데이터 유형을 위한 공통 `dataset-factory`와 내부 개발 테스트 결과
 pilot도 제공한다. 확장 경계는
