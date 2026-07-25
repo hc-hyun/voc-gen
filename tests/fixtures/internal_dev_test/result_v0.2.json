@@ -1,0 +1,151 @@
+{
+  "test_result_id": "SYN-IDT-00000001",
+  "record_type": "INTERNAL_DEV_TEST_RESULT",
+  "report_text": "[문제점 증상]\n카메라를 실행한 뒤 동영상 모드로 전환하고 녹화를 누르면 미리보기 화면이 멈추며 녹화가 시작되지 않는다.\n[원인]\n동영상 인코더 초기화와 카메라 세션 전환이 동시에 실행되어 상태 경합이 발생한다.\n[대책]\n세션 전환 완료 후 인코더를 초기화하도록 순서를 변경하고 해당 유저케이스 회귀 테스트를 추가한다.",
+  "provenance_type": "SYNTHETIC_SCENARIO",
+  "synthetic_parent_case_ids": [
+    "IDT-0001"
+  ],
+  "language": "KO",
+  "dataset_split": "TRAIN",
+  "tested_at": "2026-07-25T10:30:00+09:00",
+  "product": {
+    "product_type": "MOBILE",
+    "product_family": "GALAXY_PHONE",
+    "model_name": "TEST_DEVICE_A",
+    "model_code": null,
+    "software_build": "DEV-2026.07.25.1"
+  },
+  "device_model_context": {
+    "model_family": "SM-S938",
+    "representative_model_name": "Galaxy S25 Ultra",
+    "representative_model_name_ko": "갤럭시 S25 울트라",
+    "project_code": "PA3",
+    "project_name": "Paradigm",
+    "project_evidence": "official_trace",
+    "context_role": "PRIMARY_DUT"
+  },
+  "test_execution": {
+    "validator_role": "MOBILE_QA",
+    "execution_mode": "MANUAL",
+    "environment": {
+      "os_version": "TEST_OS_1",
+      "app_version": "CAMERA_DEV_101",
+      "network": "WIFI",
+      "locale": "ko-KR",
+      "additional_attributes": {
+        "battery_level_band": "50-80"
+      }
+    },
+    "user_case": {
+      "user_case_id": "UC-CAMERA-VIDEO-001",
+      "title": "카메라 동영상 촬영 시작",
+      "actor": "동영상을 촬영하려는 사용자",
+      "goal": "카메라에서 동영상 녹화를 시작한다",
+      "trigger": "카메라 실행 후 동영상 모드 선택",
+      "success_outcome": "미리보기가 유지되고 녹화 시간이 증가한다",
+      "preconditions": [
+        "카메라 권한이 허용되어 있다",
+        "저장 공간이 충분하다"
+      ]
+    }
+  },
+  "findings": [
+    {
+      "finding_id": "F01",
+      "title": "동영상 모드 전환 직후 녹화 시작 실패",
+      "severity": "MAJOR",
+      "problem_symptom": {
+        "occurrence_description": "카메라 실행 후 동영상 모드로 전환하고 즉시 녹화를 누르면 문제가 발생한다.",
+        "occurrence_context": "기본 카메라 앱의 동영상 촬영 유저케이스",
+        "expected_behavior": "미리보기가 유지되고 동영상 녹화가 시작되어야 한다.",
+        "actual_behavior": "미리보기 화면이 멈추고 녹화가 시작되지 않는다.",
+        "reproduction_path": {
+          "preconditions": [
+            "카메라 권한 허용",
+            "저장 공간 확보"
+          ],
+          "steps": [
+            {
+              "step_no": 1,
+              "action": "카메라 앱을 실행한다.",
+              "expected_result": "사진 모드 미리보기가 표시된다.",
+              "actual_result": "사진 모드 미리보기가 표시된다."
+            },
+            {
+              "step_no": 2,
+              "action": "동영상 모드로 전환한다.",
+              "expected_result": "동영상 모드 미리보기가 표시된다.",
+              "actual_result": "동영상 모드 미리보기가 표시된다."
+            },
+            {
+              "step_no": 3,
+              "action": "전환 직후 녹화 버튼을 누른다.",
+              "expected_result": "녹화가 시작되고 시간이 증가한다.",
+              "actual_result": "미리보기가 멈추고 녹화가 시작되지 않는다."
+            }
+          ],
+          "observed_at_step": 3,
+          "reproducibility": "ALWAYS"
+        }
+      },
+      "cause_analysis": {
+        "status": "CONFIRMED",
+        "description": "동영상 인코더 초기화와 카메라 세션 전환이 동시에 실행되어 상태 경합이 발생한다.",
+        "suspected_component": "CAMERA_VIDEO_SESSION",
+        "evidence": [
+          "실패 시점 로그에서 세션 전환 완료 전에 인코더 초기화가 시작됨",
+          "초기화 순서를 직렬화한 시험 build에서 문제가 재현되지 않음"
+        ]
+      },
+      "countermeasures": [
+        {
+          "measure_id": "M01",
+          "measure_type": "CODE_FIX",
+          "status": "PLANNED",
+          "description": "세션 전환 완료 후 인코더를 초기화하도록 실행 순서를 변경한다.",
+          "target_release": "NEXT_DEV_BUILD",
+          "verification": {
+            "method": "동영상 모드 전환 직후 녹화 100회 반복",
+            "result": null
+          }
+        },
+        {
+          "measure_id": "M02",
+          "measure_type": "TEST_ADDITION",
+          "status": "PLANNED",
+          "description": "해당 유저케이스를 카메라 회귀 테스트에 추가한다.",
+          "target_release": null,
+          "verification": {
+            "method": "회귀 테스트 자동화 실행 결과 확인",
+            "result": null
+          }
+        }
+      ],
+      "resolution_status": "FIX_PLANNED",
+      "evidence_spans": [
+        {
+          "field": "PROBLEM_SYMPTOM",
+          "quote": "카메라를 실행한 뒤 동영상 모드로 전환하고 녹화를 누르면 미리보기 화면이 멈추며 녹화가 시작되지 않는다.",
+          "start": 9,
+          "end": 67,
+          "occurrence": 1
+        },
+        {
+          "field": "CAUSE_ANALYSIS",
+          "quote": "동영상 인코더 초기화와 카메라 세션 전환이 동시에 실행되어 상태 경합이 발생한다.",
+          "start": 73,
+          "end": 118,
+          "occurrence": 1
+        },
+        {
+          "field": "COUNTERMEASURE",
+          "quote": "세션 전환 완료 후 인코더를 초기화하도록 순서를 변경하고 해당 유저케이스 회귀 테스트를 추가한다.",
+          "start": 124,
+          "end": 178,
+          "occurrence": 1
+        }
+      ]
+    }
+  ]
+}

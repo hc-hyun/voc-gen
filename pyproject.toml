@@ -1,0 +1,25 @@
+[project]
+name = "voc-normalization"
+version = "0.1.0"
+description = "검수 승인 후 PostgreSQL에 적재하는 대용량 합성 VoC 생성기"
+requires-python = ">=3.11"
+dependencies = [
+    "jsonschema>=4.25,<5",
+    "openpyxl>=3.1,<4",
+    "psycopg[binary]>=3.2,<4",
+    "python-dotenv>=1.1,<2",
+]
+
+[project.scripts]
+voc-factory = "voc_factory.cli:main"
+dataset-factory = "dataset_factory.cli:main"
+
+[tool.uv]
+package = true
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/voc_factory", "src/dataset_factory"]

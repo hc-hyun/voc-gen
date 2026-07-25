@@ -1,0 +1,213 @@
+dimension,code,parent_code,description_ko,allowed_for,notes
+PROVENANCE_TYPE,REAL_PUBLIC,,실제 공개 VoC,ALL,
+PROVENANCE_TYPE,REAL_INTERNAL,,실제 내부 VoC,ALL,
+PROVENANCE_TYPE,SYNTHETIC_SCENARIO,,합성용 정규화 시나리오,ALL,
+PROVENANCE_TYPE,SYNTHETIC_RAW,,합성 Raw VoC,ALL,
+PROVENANCE_TYPE,HUMAN_AUTHORED_TEST,,사람이 작성한 평가 데이터,ALL,
+INTENT_TYPE,DEFECT_REPORT,,불량·오동작 신고,ALL,
+INTENT_TYPE,PERFORMANCE_COMPLAINT,,성능 저하 불만,ALL,
+INTENT_TYPE,USABILITY_COMPLAINT,,사용성 불만,ALL,
+INTENT_TYPE,SERVICE_COMPLAINT,,수리·상담 경험 불만,ALL,
+INTENT_TYPE,WARRANTY_DISPUTE,,보증 판정 이의,ALL,
+INTENT_TYPE,PURCHASE_COMPLAINT,,구매·배송·프로모션 불만,ALL,
+INTENT_TYPE,FEATURE_REQUEST,,기능 개선·추가 요청,ALL,
+INTENT_TYPE,HOW_TO,,사용법 문의,ALL,
+INTENT_TYPE,COMPARISON,,타 제품·전작 비교,ALL,
+INTENT_TYPE,PRAISE,,긍정 평가,ALL,
+INTENT_TYPE,SAFETY_REPORT,,안전 관련 신고,ALL,
+OBSERVED_SYMPTOM,NO_FUNCTION,,완전 동작 불가,ALL,
+OBSERVED_SYMPTOM,INTERMITTENT,,간헐 동작,ALL,
+OBSERVED_SYMPTOM,DISCONNECT,,연결 해제,ALL,
+OBSERVED_SYMPTOM,DEGRADED,,성능·품질 저하,ALL,
+OBSERVED_SYMPTOM,SLOW,,처리 속도 저하,ALL,
+OBSERVED_SYMPTOM,DELAY,,반응 지연,ALL,
+OBSERVED_SYMPTOM,EXCESS_CONSUMPTION,,배터리·데이터 과소모,ALL,
+OBSERVED_SYMPTOM,OVERHEAT,,과도한 발열,ALL,
+OBSERVED_SYMPTOM,CRASH,,앱 종료,ALL,
+OBSERVED_SYMPTOM,FREEZE,,멈춤,ALL,
+OBSERVED_SYMPTOM,RESTART,,재부팅,ALL,
+OBSERVED_SYMPTOM,SHUTDOWN,,전원 꺼짐,ALL,
+OBSERVED_SYMPTOM,FALSE_DETECTION,,오감지,ALL,
+OBSERVED_SYMPTOM,INACCURATE,,측정·번역·위치 부정확,ALL,
+OBSERVED_SYMPTOM,VISUAL_ARTIFACT,,화면 이상,ALL,
+OBSERVED_SYMPTOM,AUDIO_ARTIFACT,,잡음·왜곡,ALL,
+OBSERVED_SYMPTOM,PHYSICAL_DAMAGE,,물리 손상,ALL,
+OBSERVED_SYMPTOM,MISSING_DATA,,데이터 누락,ALL,
+OBSERVED_SYMPTOM,INCOMPATIBLE,,비호환,ALL,
+OBSERVED_SYMPTOM,DIFFICULT_TO_USE,,사용 어려움,ALL,
+OBSERVED_SYMPTOM,FEATURE_MISSING,,기능 미지원·삭제,ALL,
+OBSERVED_SYMPTOM,VALUE_DISSATISFACTION,,가격 대비 불만,ALL,
+OBSERVED_SYMPTOM,LOW_VOLUME,,음량 저하,ALL,
+OBSERVED_SYMPTOM,NOT_CHARGING,,충전 불가,ALL,
+OBSERVED_SYMPTOM,SLOW_CHARGING,,충전 지연,ALL,
+OBSERVED_SYMPTOM,SIGNAL_WEAK,,신호 약함,ALL,
+OBSERVED_SYMPTOM,NOTIFICATION_MISSING,,알림 누락,ALL,
+OBSERVED_SYMPTOM,FALSE_POSITIVE,,정상이나 불량으로 인식,ALL,
+OBSERVED_SYMPTOM,POSITIVE_EXPERIENCE,,긍정 경험,ALL,
+OBSERVED_SYMPTOM,INFORMATION_REQUEST,,정보 요청,ALL,
+OBSERVED_SYMPTOM,SAFETY_HAZARD,,안전 위험,ALL,
+TRIGGER_EVENT,OS_UPDATE,,OS/One UI 업데이트,ALL,
+TRIGGER_EVENT,APP_UPDATE,,앱 업데이트,ALL,
+TRIGGER_EVENT,SETTINGS_CHANGE,,설정 변경,ALL,
+TRIGGER_EVENT,DEVICE_MIGRATION,,기기 이전,ALL,
+TRIGGER_EVENT,INITIAL_SETUP,,초기 설정,ALL,
+TRIGGER_EVENT,IDLE,,대기,ALL,
+TRIGGER_EVENT,GAMING,,게임,ALL,
+TRIGGER_EVENT,CAMERA_USE,,카메라,ALL,
+TRIGGER_EVENT,VIDEO_CALL,,영상통화,ALL,
+TRIGGER_EVENT,NAVIGATION,,내비게이션,ALL,
+TRIGGER_EVENT,HOTSPOT,,핫스팟,ALL,
+TRIGGER_EVENT,CHARGING,,충전,ALL,
+TRIGGER_EVENT,PLUG_IN,,케이블 연결,ALL,
+TRIGGER_EVENT,FOLD,,접기,ALL,
+TRIGGER_EVENT,UNFOLD,,펼치기,ALL,
+TRIGGER_EVENT,TAKE_PHOTO,,사진 촬영,ALL,
+TRIGGER_EVENT,RECORD_VIDEO,,동영상 촬영,ALL,
+TRIGGER_EVENT,RECEIVE_CALL,,전화 수신,ALL,
+TRIGGER_EVENT,WEAK_SIGNAL,,약전계,ALL,
+TRIGGER_EVENT,FIVE_G,,5G,ALL,
+TRIGGER_EVENT,ROAMING,,로밍,ALL,
+TRIGGER_EVENT,DUAL_SIM,,듀얼 SIM,ALL,
+TRIGGER_EVENT,WIFI_CALLING,,Wi-Fi Calling,ALL,
+TRIGGER_EVENT,HIGH_TEMP,,고온,ALL,
+TRIGGER_EVENT,LOW_TEMP,,저온,ALL,
+TRIGGER_EVENT,HUMIDITY,,고습도,ALL,
+TRIGGER_EVENT,WATER,,물 노출,ALL,
+TRIGGER_EVENT,DUST,,먼지·이물,ALL,
+TRIGGER_EVENT,LOW_LIGHT,,저조도,ALL,
+TRIGGER_EVENT,SCREEN_PROTECTOR,,보호필름,ALL,
+TRIGGER_EVENT,CASE,,케이스,ALL,
+TRIGGER_EVENT,CHARGER,,충전기,ALL,
+TRIGGER_EVENT,CABLE,,케이블,ALL,
+TRIGGER_EVENT,USB_HUB,,USB 허브,ALL,
+TRIGGER_EVENT,CAR_HEAD_UNIT,,차량 헤드유닛,ALL,
+TRIGGER_EVENT,FOLD_CYCLES,,누적 개폐,ALL,
+TRIGGER_EVENT,BATTERY_CYCLES,,배터리 사이클,ALL,
+TRIGGER_EVENT,DROP,,낙하,ALL,
+TRIGGER_EVENT,IMPACT,,충격,ALL,
+TRIGGER_EVENT,UNKNOWN,,알 수 없음,ALL,
+SEVERITY,S0,,정보성·정상 가능,ALL,
+SEVERITY,S1,,경미한 불편,ALL,
+SEVERITY,S2,,기능 저하,ALL,
+SEVERITY,S3,,주요 기능 사용 불가,ALL,
+SEVERITY,S4,,안전·부상·화재·데이터 영구손실,ALL,
+DIAGNOSTIC_CLASS,PRODUCT_DEFECT_POSSIBLE,,제품 결함 가능,ALL,
+DIAGNOSTIC_CLASS,SOFTWARE_POSSIBLE,,OS·앱·펌웨어 가능,ALL,
+DIAGNOSTIC_CLASS,SETTINGS_RELATED,,설정 관련,ALL,
+DIAGNOSTIC_CLASS,ACCESSORY_RELATED,,액세서리 관련,ALL,
+DIAGNOSTIC_CLASS,NETWORK_PROVIDER_RELATED,,통신망·외부 서비스 관련,ALL,
+DIAGNOSTIC_CLASS,ENVIRONMENT_RELATED,,환경 조건 관련,ALL,
+DIAGNOSTIC_CLASS,EXPECTED_BEHAVIOR,,정상 설계 동작 가능,ALL,
+DIAGNOSTIC_CLASS,UNSUPPORTED_FEATURE,,미지원 기능 오인,ALL,
+DIAGNOSTIC_CLASS,SERVICE_PROCESS,,서비스 프로세스,ALL,
+DIAGNOSTIC_CLASS,COMMERCIAL_PROCESS,,구매·보상 프로세스,ALL,
+DIAGNOSTIC_CLASS,USER_CAUSE_POSSIBLE,,사용 중 손상 가능,ALL,
+DIAGNOSTIC_CLASS,UNKNOWN,,원인 불명,ALL,
+CAUSE_EVIDENCE_LEVEL,NONE,,원인 언급 없음,ALL,
+CAUSE_EVIDENCE_LEVEL,USER_GUESS,,사용자 추정,ALL,
+CAUSE_EVIDENCE_LEVEL,COMMUNITY_ADVICE,,커뮤니티 조언,ALL,
+CAUSE_EVIDENCE_LEVEL,SUPPORT_GUIDANCE,,공식 지원 안내,ALL,
+CAUSE_EVIDENCE_LEVEL,SERVICE_DIAGNOSED,,서비스 진단,ALL,
+CAUSE_EVIDENCE_LEVEL,ENGINEERING_CONFIRMED,,엔지니어링 확인,ALL,
+FREQUENCY,ONCE,,1회,ALL,
+FREQUENCY,RARE,,드묾,ALL,
+FREQUENCY,INTERMITTENT,,간헐,ALL,
+FREQUENCY,DAILY,,매일,ALL,
+FREQUENCY,FREQUENT,,자주,ALL,
+FREQUENCY,ALWAYS,,항상,ALL,
+FREQUENCY,PROGRESSIVE,,점차 악화,ALL,
+FREQUENCY,UNKNOWN,,불명,ALL,
+REPRODUCIBILITY,NOT_TESTED,,미검증,ALL,
+REPRODUCIBILITY,NOT_REPRODUCIBLE,,재현 안 됨,ALL,
+REPRODUCIBILITY,CONDITIONAL,,특정 조건에서 재현,ALL,
+REPRODUCIBILITY,REPRODUCIBLE,,재현 가능,ALL,
+REPRODUCIBILITY,ALWAYS,,항상 재현,ALL,
+REPRODUCIBILITY,UNKNOWN,,불명,ALL,
+AMBIGUITY_LEVEL,LOW,,핵심 조건 명확,ALL,
+AMBIGUITY_LEVEL,MEDIUM,,일부 정보 누락,ALL,
+AMBIGUITY_LEVEL,HIGH,,제품·조건·빈도 다수 누락,ALL,
+SAFETY_FLAG,NONE,,안전 플래그 없음,ALL,
+SAFETY_FLAG,BATTERY_SWELL,,배터리 팽창,ALL,
+SAFETY_FLAG,SMOKE_FIRE,,연기·화재,ALL,
+SAFETY_FLAG,BURN_INJURY,,화상·부상,ALL,
+SAFETY_FLAG,ELECTRIC_SHOCK,,감전 우려,ALL,
+SAFETY_FLAG,DATA_IRREVERSIBLE,,복구 불가 데이터 손실,ALL,
+SAFETY_FLAG,DAMAGE_PROGRESSION,,진행성 파손,ALL,
+SAFETY_FLAG,DRIVING_DISTRACTION,,운전 중 위험,ALL,
+AFFECTED_FUNCTION,POWER.BATTERY.ENDURANCE,POWER,배터리 지속시간,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,POWER.BATTERY.LEVEL,POWER,잔량 표시·급변,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,POWER.SHUTDOWN,POWER,갑작스러운 전원 종료,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,CHARGING.WIRED,CHARGING,유선 충전,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,CHARGING.WIRELESS,CHARGING,무선 충전,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,CHARGING.POWERSHARE,CHARGING,무선 배터리 공유,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,THERMAL.DEVICE,THERMAL,기기 발열,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,PERFORMANCE.UI,PERFORMANCE,UI 성능,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,PERFORMANCE.APP,PERFORMANCE,앱 성능,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,STABILITY.OS,STABILITY,OS 안정성,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,DISPLAY.MAIN,DISPLAY,일반 메인 화면,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,DISPLAY.INNER,DISPLAY,폴더블 내부 화면,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,DISPLAY.COVER,DISPLAY,커버 화면,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,DISPLAY.PROTECTOR,DISPLAY,폴더블 보호필름,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,MECHANICAL.HINGE,MECHANICAL,힌지·개폐,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,MECHANICAL.FRAME,MECHANICAL,프레임·외관,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,TOUCH.INPUT,TOUCH,터치 입력,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,BIOMETRIC.FINGERPRINT,BIOMETRIC,지문 인식,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,BIOMETRIC.FACE,BIOMETRIC,얼굴 인식,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,SPEN.INPUT,SPEN,S펜 필기,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,SPEN.BLE,SPEN,S펜 BLE·Air Actions,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,CAMERA.CAPTURE,CAMERA,카메라 촬영,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,CAMERA.FOCUS,CAMERA,카메라 초점,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,CAMERA.IMAGE_QUALITY,CAMERA,사진 품질,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,CAMERA.VIDEO,CAMERA,동영상,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,CAMERA.OIS,CAMERA,광학식 손떨림 보정,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,AUDIO.SPEAKER,AUDIO,스피커,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,AUDIO.EARPIECE,AUDIO,수화부,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,AUDIO.MIC,AUDIO,마이크,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,CALL.VOICE,CALL,음성 통화,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,NETWORK.MOBILE,NETWORK,모바일 네트워크,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,NETWORK.WIFI,NETWORK,Wi-Fi,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,NETWORK.BLUETOOTH,NETWORK,Bluetooth,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,LOCATION.GPS,LOCATION,위치·GPS,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,MESSAGING.SMS_RCS,MESSAGING,SMS·MMS·RCS,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,NOTIFICATION.DELIVERY,NOTIFICATION,알림 전달,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,CONNECTIVITY.ANDROID_AUTO,CONNECTIVITY,Android Auto,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,CONNECTIVITY.USB,CONNECTIVITY,USB 연결,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,CONNECTIVITY.NFC,CONNECTIVITY,NFC,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,WALLET.PAYMENT,WALLET,Samsung Wallet 결제,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,ONEUI.UPDATE,ONEUI,One UI 업데이트,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,APP.COMPATIBILITY,APP,앱 호환성,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,DATA.BACKUP_MIGRATION,DATA,백업·기기 이전,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,DEX.WIRED,DEX,유선 DeX,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,DEX.WIRELESS,DEX,무선 DeX,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,DEX.PC,DEX,PC용 DeX,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,MULTITASKING.WINDOW,MULTITASKING,멀티윈도우,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,AI.TRANSLATE,AI,AI 번역,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,AI.SUMMARIZE,AI,AI 요약·전사,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,AI.GENERATIVE_EDIT,AI,AI 생성 편집,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,SECURITY.PRIVACY,SECURITY,보안·개인정보,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,ACCOUNT.LOGIN,ACCOUNT,계정 로그인,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,WATCH.BATTERY,WATCH,Watch 배터리,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,WATCH.GPS,WATCH,Watch GPS,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,WATCH.HEART_RATE,WATCH,Watch 심박,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,WATCH.SLEEP,WATCH,Watch 수면,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,WATCH.NOTIFICATION,WATCH,Watch 알림,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,WATCH.LTE,WATCH,Watch LTE,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,BUDS.AUDIO,BUDS,Buds 음질·음량,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,BUDS.ANC,BUDS,Buds ANC·주변음,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,BUDS.CHARGING,BUDS,Buds 충전,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,BUDS.CONNECTION,BUDS,Buds 연결,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,BUDS.MIC,BUDS,Buds 마이크,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,BUDS.FIT,BUDS,Buds 착용,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,TAB.APP_LAYOUT,TAB,Tab 앱 화면비·회전,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,TAB.KEYBOARD,TAB,Tab 키보드·트랙패드,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,TAB.SPEN,TAB,Tab S펜,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,DESIGN.SIZE_WEIGHT,DESIGN,크기·무게·그립,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,PRODUCT.FEATURE_SET,PRODUCT,기능·구성품,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,PRODUCT.VALUE,PRODUCT,가격·가치,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,COMMERCE.ORDER_PROMO,COMMERCE,주문·프로모션,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,COMMERCE.DELIVERY,COMMERCE,배송,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,SERVICE.WARRANTY,SERVICE,보증 판정,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,SERVICE.REPAIR,SERVICE,수리,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,SERVICE.DATA_HANDLING,SERVICE,수리 중 데이터,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,TRADE_IN.VALUATION,TRADE_IN,보상판매 판정,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음
+AFFECTED_FUNCTION,TRADE_IN.LOGISTICS,TRADE_IN,보상판매 물류,조건부: compatibility_rules.csv 참조,관찰된 영향 기능이며 실제 고장 부품과 동일하지 않을 수 있음

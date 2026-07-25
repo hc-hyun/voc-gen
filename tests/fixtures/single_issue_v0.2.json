@@ -1,0 +1,32 @@
+{
+  "voc_id": "FIX-SINGLE-001",
+  "raw_text": "밤새 사용하지 않았는데 배터리 잔량이 크게 줄었습니다.",
+  "provenance_type": "SYNTHETIC_RAW",
+  "synthetic_parent_scenario_id": "GVS-0001",
+  "synthetic_parent_scenario_ids": ["GVS-0001"],
+  "source_channel": "SAMSUNG_MEMBERS",
+  "language": "KO",
+  "region": "UNSPECIFIED",
+  "pii_redacted": true,
+  "dataset_split": "TRAIN",
+  "issues": [
+    {
+      "issue_id": "I01",
+      "parent_scenario_id": "GVS-0001",
+      "intent_type": "DEFECT_REPORT",
+      "affected_function": "POWER.BATTERY.ENDURANCE",
+      "observed_symptom": "EXCESS_CONSUMPTION",
+      "severity": "S1",
+      "cause_evidence_level": "USER_GUESS",
+      "evidence_spans": [
+        {
+          "field": "observed_symptom",
+          "quote": "배터리 잔량이 크게 줄었습니다",
+          "start": 13,
+          "end": 29,
+          "occurrence": 1
+        }
+      ]
+    }
+  ]
+}

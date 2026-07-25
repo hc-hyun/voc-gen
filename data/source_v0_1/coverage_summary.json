@@ -1,0 +1,80 @@
+{
+  "total_scenarios": 500,
+  "total_themes": 50,
+  "by_domain": {
+    "HARD_NEGATIVE": 70,
+    "CAMERA": 30,
+    "NETWORK": 30,
+    "WATCH": 30,
+    "BUDS": 30,
+    "POWER": 20,
+    "CHARGING": 20,
+    "TABLET": 20,
+    "THERMAL": 10,
+    "PERFORMANCE": 10,
+    "DISPLAY": 10,
+    "FOLDABLE_DISPLAY": 10,
+    "MECHANICAL": 10,
+    "INPUT": 10,
+    "BIOMETRIC": 10,
+    "SPEN": 10,
+    "AUDIO": 10,
+    "LOCATION": 10,
+    "MESSAGING": 10,
+    "CONNECTIVITY": 10,
+    "PAYMENT": 10,
+    "SOFTWARE": 10,
+    "DATA_APP": 10,
+    "DEX_MULTITASK": 10,
+    "AI": 10,
+    "SECURITY": 10,
+    "PRODUCT": 10,
+    "COMMERCE": 10,
+    "SERVICE": 10,
+    "TRADE_IN": 10,
+    "POSITIVE_NEUTRAL": 10,
+    "NON_DEFECT": 10,
+    "SAFETY": 10
+  },
+  "by_product_type": {
+    "PHONE": 346,
+    "TABLET": 56,
+    "WATCH": 36,
+    "EARBUD": 31,
+    "COMMERCE": 20,
+    "SERVICE": 11
+  },
+  "by_intent": {
+    "DEFECT_REPORT": 336,
+    "HOW_TO": 76,
+    "PURCHASE_COMPLAINT": 20,
+    "USABILITY_COMPLAINT": 13,
+    "FEATURE_REQUEST": 12,
+    "PERFORMANCE_COMPLAINT": 10,
+    "SAFETY_REPORT": 10,
+    "COMPARISON": 9,
+    "SERVICE_COMPLAINT": 5,
+    "WARRANTY_DISPUTE": 5,
+    "PRAISE": 4
+  },
+  "by_severity": {
+    "S1": 156,
+    "S2": 148,
+    "S0": 114,
+    "S3": 68,
+    "S4": 14
+  },
+  "by_hard_negative": {
+    "FALSE": 422,
+    "TRUE": 78
+  },
+  "by_split": {
+    "TRAIN": 408,
+    "VALID": 50,
+    "TEST": 42
+  },
+  "sources": 28,
+  "ontology_codes": 212,
+  "compatibility_rules": 94,
+  "validation_rules": 25
+}

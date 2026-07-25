@@ -1,0 +1,29 @@
+source_id,source_type,title,url,usage,retrieved_at
+SRC001,OFFICIAL_SUPPORT,Samsung Members Diagnostics,https://www.samsung.com/uk/support/mobile-devices/how-to-use-samsung-members-diagnostics/,기능 분류 및 진단 가능 항목의 기준,2026-07-24
+SRC002,OFFICIAL_SUPPORT,Phone not charging,https://www.samsung.com/uk/support/mobile-devices/what-to-do-if-your-phone-is-not-charging/,배터리·케이블·무선충전 진단 분리,2026-07-24
+SRC003,OFFICIAL_SUPPORT,Samsung DeX compatibility,https://www.samsung.com/us/support/answer/ANS10001955/,DeX 유선·무선·PC 및 모델/버전 제약,2026-07-24
+SRC004,OFFICIAL_SUPPORT,Wireless charging and PowerShare,https://www.samsung.com/us/support/answer/ANS10002057/,무선충전·PowerShare 호환성,2026-07-24
+SRC005,OFFICIAL_SUPPORT,Samsung S Pen types and compatibility,https://www.samsung.com/us/support/answer/ANS10003226/,필기·BLE·Air Actions·충전 기능 분리,2026-07-24
+SRC006,OFFICIAL_SUPPORT,Care for Samsung foldable phone,https://www.samsung.com/us/support/answer/ANS10001589/,폴더블 화면·힌지·이물·방수 조건,2026-07-24
+SRC007,OFFICIAL_SUPPORT,Z series screen protector service,https://www.samsung.com/us/support/answer/ANS10003686/,폴더블 내장 보호필름 사례,2026-07-24
+SRC008,OFFICIAL_SUPPORT,Galaxy eSIM compatibility,https://www.samsung.com/sg/support/mobile-devices/galaxy-esim-and-supported-network-carriers/,지역·통신사·기종 조건,2026-07-24
+SRC009,OFFICIAL_SUPPORT,Normal OIS rattling sound,https://www.samsung.com/ae/support/mobile-devices/do-you-hear-a-small-noise-from-inside-of-the-device-when-shaking-your-galaxy-phone/,정상 동작 Hard negative,2026-07-24
+SRC010,OFFICIAL_SUPPORT,New phone battery drain and adaptive battery,https://www.samsung.com/uk/support/mobile-devices/what-to-do-if-the-battery-of-my-new-phone-seems-to-be-draining-faster/,초기 학습·백그라운드 앱·절전 조건,2026-07-24
+SRC011,OFFICIAL_SUPPORT,Moisture detected and charging blocked,https://www.samsung.com/uk/support/mobile-devices/my-device-displays-a-water-drop-icon-and-will-not-charge/,수분 감지 안전 동작·고습도·USB 캐시,2026-07-24
+SRC012,OFFICIAL_SUPPORT,Fingerprint recognition conditions,https://www.samsung.com/ca/support/mobile-devices/get-started-with-the-fingerprint-sensor-on-your-samsung-galaxy/,손 상태·필름·온도 조건,2026-07-24
+SRC013,OFFICIAL_SUPPORT,Galaxy speaker and sound troubleshooting,https://www.samsung.com/uk/support/mobile-devices/troubleshooting-speaker-and-sound-issues-on-a-samsung-galaxy-device/,설정·외부기기·수분·막힘 조건,2026-07-24
+SRC014,PUBLIC_COMMUNITY,Wi-Fi and Bluetooth unavailable after One UI update,https://r1.community.samsung.com/t5/%EA%B0%A4%EB%9F%AD%EC%8B%9C-z/one-ui-6-1-1-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8-%ED%9B%84-%EC%99%80%EC%9D%B4%ED%8C%8C%EC%9D%B4-%EB%B8%94%EB%A3%A8%ED%88%AC%EC%8A%A4-%EB%A8%B9%ED%86%B5/td-p/30894485,업데이트 후 복합 연결 문제 표현,2026-07-24
+SRC015,PUBLIC_COMMUNITY,Camera lag and heat complaint,https://r1.community.samsung.com/t5/%EA%B0%A4%EB%9F%AD%EC%8B%9C-s/s22-%EC%B9%B4%EB%A9%94%EB%9D%BC-%EB%9E%99-%ED%95%B4%EA%B2%B0%ED%95%A0-%EB%B0%A9%EB%B2%95-%EC%A0%95%EB%A7%90-%EC%95%84%EC%98%88-%EC%97%86%EB%82%98%EC%9A%94/td-p/18362356,발열 연계 카메라 프리뷰·셔터 지연,2026-07-24
+SRC016,PUBLIC_COMMUNITY,Foldable screen protector lifting,https://r1.community.samsung.com/t5/%EA%B0%A4%EB%9F%AD%EC%8B%9C-z/%EC%95%A1%EC%A0%95%ED%95%84%EB%A6%84-%EB%93%A4%EB%9C%B8-%EB%AC%B8%EC%A0%9C%EC%99%80-%EB%AC%B4%ED%95%9C-%EC%9C%A0%EC%83%81%EA%B5%90%EC%B2%B4-%EB%AC%B8%EC%A0%9C/td-p/18398153,필름 들뜸·교체 경험,2026-07-24
+SRC017,PUBLIC_COMMUNITY,Black spot in Fold inner screen crease,https://www.reddit.com/r/GalaxyFold/comments/xnqll0/small_black_spot_in_the_crease_of_the_inner_screen/,접힘부 검은 점·진행성 손상 표현,2026-07-24
+SRC018,MARKET_REVIEW,Galaxy S22 Ultra customer reviews,https://www.bestbuy.com/site/reviews/samsung-galaxy-s22-ultra-256gb-unlocked-phantom-white/6494437,"긍정·부정 혼합, 배터리·카메라·발열·크기",2026-07-24
+SRC019,PUBLIC_COMMUNITY,Galaxy Watch issue topics,https://us.community.samsung.com/t5/Galaxy-Watch/bd-p/get-help-wearables-galaxy-watch,배터리·심박·GPS·수면·알림 사례군,2026-07-24
+SRC020,OFFICIAL_SUPPORT,One Galaxy Bud is quiet or silent,https://www.samsung.com/levant/support/mobile-devices/what-to-do-when-sound-is-not-heard-from-one-side-of-your-samsung-galaxy-buds-series/,착용·이물·밸런스·연결 조건,2026-07-24
+SRC021,OFFICIAL_SUPPORT,Galaxy Buds microphone troubleshooting,https://www.samsung.com/levant/support/mobile-devices/what-to-do-when-the-galaxy-buds-microphone-is-not-working/,마이크·재시작·초기화 사례,2026-07-24
+SRC022,GOVERNMENT_DATA_MODEL,CFPB complaint database fields,https://cfpb.github.io/api/ccdb/fields.html,원문·제품·이슈·대응·PII 분리 설계,2026-07-24
+SRC023,QUALITY_METHOD,ASQ FMEA overview,https://asq.org/quality-resources/fmea,failure mode·effect·cause 분리,2026-07-24
+SRC024,GOVERNMENT_GUIDANCE,NIST synthetic content provenance,https://www.nist.gov/publications/reducing-risks-posed-synthetic-content-overview-technical-approaches-digital-content,합성 데이터 provenance·labeling,2026-07-24
+SRC025,OFFICIAL_SUPPORT,Galaxy software update guidance,https://www.samsung.com/uk/support/mobile-devices/how-do-i-check-for-operating-system-updates-on-my-samsung-galaxy-device/,기종·지역·통신사별 업데이트 차이,2026-07-24
+SRC026,MARKET_REVIEW,Galaxy Tab S9 customer reviews,https://www.bestbuy.com/site/reviews/samsung-galaxy-tab-s9-11-128gb-wi-fi-with-s-pen-graphite/11981710,태블릿 카메라·휴대성·내구성 혼합 평가,2026-07-24
+SRC027,OFFICIAL_SUPPORT,Galaxy AI features and on-device control,https://www.samsung.com/us/support/answer/ANS10000753/,AI 기능 가용성·클라우드 처리 설정,2026-07-24
+SRC028,OFFICIAL_SUPPORT,Galaxy AI on-device vs cloud,https://www.samsung.com/ae/support/mobile-devices/how-to-distinguish-between-on-device-functions-and-cloud-based-functions-among-new-ai-features/,네트워크 의존·개인정보·기능 차이,2026-07-24

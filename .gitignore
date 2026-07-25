@@ -1,0 +1,51 @@
+# Local secrets
+.env
+.env.*
+!.env.example
+
+# Python environments and caches
+.venv/
+.venv-windows/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Build and packaging outputs
+build/
+dist/
+*.egg-info/
+
+# Generated datasets and model caches
+/data/generated/
+/data/local_llm/
+/data/review/
+
+# Generated review runs
+# Keep reviews/TECHNICAL_VALIDATION.md, but exclude every run directory.
+/reviews/*/
+
+# Runtime state and logs
+/runs/
+*.log
+*.tmp
+*.sqlite3-wal
+*.sqlite3-shm
+
+# Optional exports and final delivery artifacts
+/artifacts/
+/exports/
+/output/
+/outputs/
+/samples/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~

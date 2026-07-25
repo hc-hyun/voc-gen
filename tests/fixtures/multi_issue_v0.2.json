@@ -1,0 +1,50 @@
+{
+  "voc_id": "FIX-MULTI-001",
+  "raw_text": "배터리가 빨리 닳고 충전 중에는 기기가 뜨거워집니다.",
+  "provenance_type": "SYNTHETIC_RAW",
+  "synthetic_parent_scenario_id": null,
+  "synthetic_parent_scenario_ids": ["GVS-0001", "GVS-0041"],
+  "source_channel": "COMMUNITY_POST",
+  "language": "KO",
+  "region": "UNSPECIFIED",
+  "pii_redacted": true,
+  "dataset_split": "TRAIN",
+  "issues": [
+    {
+      "issue_id": "I01",
+      "parent_scenario_id": "GVS-0001",
+      "intent_type": "DEFECT_REPORT",
+      "affected_function": "POWER.BATTERY.ENDURANCE",
+      "observed_symptom": "EXCESS_CONSUMPTION",
+      "severity": "S1",
+      "cause_evidence_level": "USER_GUESS",
+      "evidence_spans": [
+        {
+          "field": "observed_symptom",
+          "quote": "배터리가 빨리 닳고",
+          "start": 0,
+          "end": 10,
+          "occurrence": 1
+        }
+      ]
+    },
+    {
+      "issue_id": "I02",
+      "parent_scenario_id": "GVS-0041",
+      "intent_type": "DEFECT_REPORT",
+      "affected_function": "THERMAL.DEVICE",
+      "observed_symptom": "OVERHEAT",
+      "severity": "S2",
+      "cause_evidence_level": "USER_GUESS",
+      "evidence_spans": [
+        {
+          "field": "observed_symptom",
+          "quote": "충전 중에는 기기가 뜨거워집니다",
+          "start": 11,
+          "end": 28,
+          "occurrence": 1
+        }
+      ]
+    }
+  ]
+}

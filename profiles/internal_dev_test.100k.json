@@ -1,0 +1,32 @@
+{
+  "profile_version": "1",
+  "dataset_type": "internal_dev_test",
+  "profile_name": "internal_dev_test_100k_models_v02",
+  "target_count": 100000,
+  "seed": 2026072510,
+  "date_start": "2026-01-01T00:00:00+09:00",
+  "date_end": "2026-06-30T23:59:59+09:00",
+  "source_file": "data/internal_dev_test/case_bank.v0.1.jsonl",
+  "schema_file": "schemas/internal_dev_test_result.schema.v0.2.json",
+  "include_splits": [
+    "TRAIN",
+    "VALID",
+    "TEST"
+  ],
+  "generation": {
+    "surface_profile_weights": {
+      "FORMAL_REPORT": 1,
+      "CONCISE_REPORT": 1,
+      "ENGINEERING_NOTE": 1
+    },
+    "local_llm": {
+      "mode": "off"
+    },
+    "model_catalog_file": "data/reference/galaxy_smartphone_models_2024h2_2026.csv"
+  },
+  "dataset_options": {
+    "allow_multiple_findings": true,
+    "unresolved_cause_rate": 0.17,
+    "scenario_limit": null
+  }
+}

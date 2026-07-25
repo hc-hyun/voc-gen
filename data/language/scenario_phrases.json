@@ -1,0 +1,7012 @@
+{
+  "version": "2026-07-25.1",
+  "provider": "DeepSeek",
+  "model": "deepseek-v4-flash",
+  "generated_at": "2026-07-25T04:22:27+00:00",
+  "source_file": "scenario_bank_500.csv",
+  "source_sha256": "59f7975a34622902ef0de45b8434576fa14130d3d78d759b842415a66b156c99",
+  "api_request_count": 26,
+  "runtime_api_calls": 0,
+  "phrases": {
+    "GVS-0001": {
+      "formal": [
+        "밤새 전혀 사용하지 않았는데 배터리 잔량이 크게 감소했습니다.",
+        "아무것도 하지 않고 두었는데도 배터리가 많이 소모되었습니다."
+      ],
+      "casual": [
+        "밤새 안 켰는데 배터리가 확 줄었어요.",
+        "그냥 놔뒀는데 배터리가 많이 닳았네요."
+      ],
+      "short": [
+        "밤새 사용 안 했는데 배터리 급감.",
+        "대기 중 배터리 소모 심함."
+      ]
+    },
+    "GVS-0002": {
+      "formal": [
+        "최근 업데이트 이후 화면 켜짐 시간이 현저히 줄었습니다.",
+        "업데이트를 하고 나니 배터리 지속 시간이 짧아졌습니다."
+      ],
+      "casual": [
+        "업데이트하고 나서 화면 켜지는 시간이 짧아졌어요.",
+        "업데이트 후 배터리 빨리 닳아요."
+      ],
+      "short": [
+        "업데이트 후 화면 켜짐 시간 감소.",
+        "업데이트 뒤 배터리 지속 시간 짧아짐."
+      ]
+    },
+    "GVS-0003": {
+      "formal": [
+        "5G 신호가 약한 곳에서 배터리가 매우 빠르게 소모됩니다.",
+        "5G 약전계 지역에서 배터리 소모 속도가 비정상적으로 빠릅니다."
+      ],
+      "casual": [
+        "5G가 약한 곳에서는 배터리가 엄청 빨리 닳아요.",
+        "5G 신호 약한 데서 배터리가 확 줄어요."
+      ],
+      "short": [
+        "5G 약전계에서 배터리 급속 소모.",
+        "5G 약한 곳에서 배터리 빨리 닳음."
+      ]
+    },
+    "GVS-0004": {
+      "formal": [
+        "내비게이션을 사용하면서 충전 중인데도 배터리 잔량이 계속 줄어듭니다.",
+        "내비게이션 앱을 켜고 충전기를 연결했는데도 배터리가 감소합니다."
+      ],
+      "casual": [
+        "내비 쓰면서 충전해도 배터리가 줄어요.",
+        "충전하면서 내비게이션 켜도 배터리가 닳네요."
+      ],
+      "short": [
+        "내비 중 충전해도 배터리 감소.",
+        "내비 사용 시 충전 중에도 배터리 줄어듦."
+      ]
+    },
+    "GVS-0005": {
+      "formal": [
+        "카메라를 몇 분만 사용해도 배터리 잔량이 급격히 떨어집니다.",
+        "카메라 앱을 열자마자 배터리 잔량이 급감합니다."
+      ],
+      "casual": [
+        "카메라 몇 분 켰더니 배터리가 확 줄었어요.",
+        "카메라만 켜면 배터리가 순식간에 닳아요."
+      ],
+      "short": [
+        "카메라 사용 시 배터리 급감.",
+        "카메라 몇 분에 배터리 대량 소모."
+      ]
+    },
+    "GVS-0006": {
+      "formal": [
+        "듀얼 SIM을 사용할 때 대기 중 배터리 소모가 늘어납니다.",
+        "SIM 카드를 두 개 꽂으면 배터리가 더 빨리 닳습니다."
+      ],
+      "casual": [
+        "유심 두 개 쓰니까 배터리가 더 빨리 줄어요.",
+        "듀얼 SIM 사용 시 대기 배터리 소모가 심해요."
+      ],
+      "short": [
+        "듀얼 SIM 대기 소모 증가.",
+        "SIM 두 개 사용 시 배터리 소모 큼."
+      ]
+    },
+    "GVS-0007": {
+      "formal": [
+        "핫스팟을 종료한 후에도 배터리 소모가 계속됩니다.",
+        "모바일 핫스팟을 껐는데도 배터리가 비정상적으로 소모됩니다."
+      ],
+      "casual": [
+        "핫스팟 껐는데도 배터리가 계속 닳아요.",
+        "핫스팟 종료 후에도 배터리 소모가 멈추지 않아요."
+      ],
+      "short": [
+        "핫스팟 종료 후에도 배터리 소모 지속.",
+        "핫스팟 꺼도 배터리 소모 계속됨."
+      ]
+    },
+    "GVS-0008": {
+      "formal": [
+        "After I finish gaming, my phone continues to heat up and drain battery.",
+        "The battery keeps dropping and the device stays warm even after closing games."
+      ],
+      "casual": [
+        "My phone stays hot and the battery keeps draining even after I stop playing games.",
+        "Even when I quit the game, the phone still feels warm and battery goes down fast."
+      ],
+      "short": [
+        "Phone still hot and battery draining after gaming.",
+        "Heat and battery drain persist after ending game."
+      ]
+    },
+    "GVS-0009": {
+      "formal": [
+        "On the first day after setting up my new device, the battery life was very short.",
+        "My new phone's battery didn't last long on the initial setup day."
+      ],
+      "casual": [
+        "My new phone's battery ran out really fast on the first day of setup.",
+        "The battery was terrible on day one after setting up my new device."
+      ],
+      "short": [
+        "New phone battery short on first setup day.",
+        "Battery drained quickly on initial setup day."
+      ]
+    },
+    "GVS-0010": {
+      "formal": [
+        "특정 앱 업데이트 이후 배터리 백그라운드 소모가 증가했습니다.",
+        "백그라운드에서 배터리가 더 빨리 소모되는 현상이 있습니다."
+      ],
+      "casual": [
+        "특정 앱 업데이트하고 나서 배터리가 백그라운드에서 더 많이 닳아요.",
+        "백그라운드 소모가 늘어난 것 같아요."
+      ],
+      "short": [
+        "업데이트 후 백그라운드 배터리 소모 증가.",
+        "배터리 백그라운드 소모가 더 많아짐."
+      ]
+    },
+    "GVS-0011": {
+      "formal": [
+        "배터리가 20% 남았다가 갑자기 1%로 표시됩니다.",
+        "잔량이 20%에서 순간적으로 1%로 떨어졌습니다."
+      ],
+      "casual": [
+        "20%였는데 갑자기 1%가 됐어요.",
+        "배터리 20%에서 바로 1%로 뚝 떨어지네요."
+      ],
+      "short": [
+        "20%에서 갑자기 1% 표시.",
+        "배터리 잔량 급락 20%→1%."
+      ]
+    },
+    "GVS-0012": {
+      "formal": [
+        "카메라를 켜면 배터리 잔량과 관계없이 전원이 꺼집니다.",
+        "카메라 기능을 실행하면 남은 배터리양에 상관없이 기기가 종료됩니다."
+      ],
+      "casual": [
+        "카메라 켜면 배터리 상관없이 꺼져요.",
+        "카메라만 열면 전원이 나가요."
+      ],
+      "short": [
+        "카메라 켜면 배터리 무관 종료.",
+        "카메라 사용 시 전원 꺼짐."
+      ]
+    },
+    "GVS-0013": {
+      "formal": [
+        "게임을 하는 도중 갑자기 전원이 꺼지고 재부팅됩니다.",
+        "게임 중에 기기가 꺼졌다가 자동으로 다시 켜집니다."
+      ],
+      "casual": [
+        "게임하다가 갑자기 꺼지고 재부팅돼요.",
+        "게임 중 전원 꺼짐과 재부팅 현상이 있어요."
+      ],
+      "short": [
+        "게임 중 전원 꺼짐 및 재부팅.",
+        "게임 도중 꺼졌다 켜짐."
+      ]
+    },
+    "GVS-0014": {
+      "formal": [
+        "충전기를 연결하는 순간 배터리 잔량 표시가 크게 변합니다.",
+        "충전 케이블을 꽂자마자 배터리 잔량이 갑자기 바뀝니다."
+      ],
+      "casual": [
+        "충전기 꽂으면 배터리 잔량이 확 바뀌어요.",
+        "충전 꽂는 순간 배터리 표시가 이상해져요."
+      ],
+      "short": [
+        "충전기 연결 시 잔량 표시 급변.",
+        "충전 꽂으면 배터리 % 급변."
+      ]
+    },
+    "GVS-0015": {
+      "formal": [
+        "오래 사용한 후 배터리가 40% 정도 남았을 때 반복적으로 전원이 꺼집니다.",
+        "배터리 잔량 40% 부근에서 기기가 여러 번 꺼졌다 켜집니다."
+      ],
+      "casual": [
+        "오래 쓰고 나면 40%쯤에서 계속 꺼져요.",
+        "배터리 40% 근처에서 전원이 자꾸 나가요."
+      ],
+      "short": [
+        "40% 부근 반복 종료.",
+        "배터리 40%에서 전원 꺼짐 반복."
+      ]
+    },
+    "GVS-0016": {
+      "formal": [
+        "밤사이 기기가 꺼져서 설정한 알람이 울리지 않았습니다.",
+        "밤에 전원이 꺼져 있어 아침 알람이 작동하지 않았습니다."
+      ],
+      "casual": [
+        "밤사이 폰이 꺼져서 알람이 안 울렸어요.",
+        "자고 일어나니 폰이 꺼져 있었어요."
+      ],
+      "short": [
+        "밤사이 전원 꺼짐으로 알람 미작동.",
+        "밤에 꺼져서 알람 안 울림."
+      ]
+    },
+    "GVS-0017": {
+      "formal": [
+        "전화 수신이 오는 순간 기기가 재부팅됩니다.",
+        "전화를 받으려고 할 때 갑자기 재부팅이 발생합니다."
+      ],
+      "casual": [
+        "전화 오자마자 폰이 재부팅돼요.",
+        "전화 받을 때 갑자기 재부팅되네요."
+      ],
+      "short": [
+        "전화 수신 시 재부팅.",
+        "전화 오면 재부팅됨."
+      ]
+    },
+    "GVS-0018": {
+      "formal": [
+        "When I'm outside on a hot day, the battery percentage drops rapidly.",
+        "The battery level plunges suddenly when using the phone outdoors in hot weather."
+      ],
+      "casual": [
+        "My battery percentage just plummets when I'm outside in the heat.",
+        "When it's hot out, my phone battery drops like crazy outdoors."
+      ],
+      "short": [
+        "Battery drops fast outside in hot weather.",
+        "Battery level plummets when hot outdoors."
+      ]
+    },
+    "GVS-0019": {
+      "formal": [
+        "My phone shuts down randomly without any specific pattern.",
+        "The device powers off arbitrarily with no obvious trigger."
+      ],
+      "casual": [
+        "My phone just turns off by itself for no apparent reason.",
+        "It keeps shutting down randomly with no clear pattern."
+      ],
+      "short": [
+        "Phone randomly powers off.",
+        "Random shutdowns with no pattern."
+      ]
+    },
+    "GVS-0020": {
+      "formal": [
+        "업데이트 이후 배터리 잔량 그래프가 계단식으로 표시됩니다.",
+        "배터리 잔량 표시가 부정확하며 그래프가 계단처럼 보입니다."
+      ],
+      "casual": [
+        "업데이트하고 나니 배터리 잔량 그래프가 계단처럼 나와요.",
+        "배터리 잔량이 부정확하게 표시돼요."
+      ],
+      "short": [
+        "배터리 잔량 그래프가 계단식으로 변함.",
+        "잔량 표시가 부정확함."
+      ]
+    },
+    "GVS-0021": {
+      "formal": [
+        "케이블을 연결해도 충전이 전혀 되지 않습니다.",
+        "충전기를 꽂았는데 아무 반응이 없습니다."
+      ],
+      "casual": [
+        "케이블 꽂아도 충전이 안 돼요.",
+        "충전기를 연결해도 폰이 반응이 없네요."
+      ],
+      "short": [
+        "케이블 연결해도 충전 안 됨.",
+        "충전기 꽂아도 반응 없음."
+      ]
+    },
+    "GVS-0022": {
+      "formal": [
+        "충전 케이블을 특정 각도로 꽂아야만 충전이 되고, 조금만 움직여도 충전이 끊깁니다.",
+        "케이블 방향에 따라 충전이 되다 말다 합니다."
+      ],
+      "casual": [
+        "케이블 각도에 따라 충전이 끊겨요.",
+        "충전선 위치 따라 충전이 됐다 안 됐다 해요."
+      ],
+      "short": [
+        "케이블 각도 따라 충전 끊김.",
+        "충전선 방향에 따라 충전 불안정."
+      ]
+    },
+    "GVS-0023": {
+      "formal": [
+        "초고속 충전 표시가 잠시 나타났다가 일반 충전으로 변경됩니다.",
+        "급속 충전 아이콘이 떴다가 사라집니다."
+      ],
+      "casual": [
+        "초고속 충전이라고 떴다가 일반 충전으로 바뀌어요.",
+        "급속 충전 표시가 나왔다가 없어져요."
+      ],
+      "short": [
+        "초고속 충전 표시 후 일반 충전으로 전환.",
+        "급속 충전 떴다가 일반으로 변경."
+      ]
+    },
+    "GVS-0024": {
+      "formal": [
+        "물에 젖은 적이 없는데도 충전 포트 수분 경고가 뜨면서 충전이 차단됩니다.",
+        "습기 감지 경고가 표시되어 충전이 불가능합니다."
+      ],
+      "casual": [
+        "물 안 닿았는데 수분 경고 떠서 충전 안 돼요.",
+        "충전 포트에 물기 없는데 수분 감지 경고가 떠요."
+      ],
+      "short": [
+        "수분 없는데 수분 경고로 충전 차단.",
+        "젖지 않았는데 수분 감지 경고."
+      ]
+    },
+    "GVS-0025": {
+      "formal": [
+        "충전 포트의 먼지를 제거하면 잠시 충전이 됩니다.",
+        "포트를 청소하면 일시적으로 충전이 가능합니다."
+      ],
+      "casual": [
+        "충전 포트 먼지 빼면 잠깐 충전돼요.",
+        "포트 청소하면 충전이 잠시 되네요."
+      ],
+      "short": [
+        "포트 먼지 제거 시 일시 충전 가능.",
+        "포트 청소하면 잠깐 충전됨."
+      ]
+    },
+    "GVS-0026": {
+      "formal": [
+        "충전 중에 휴대폰을 사용하면 배터리 잔량이 거의 증가하지 않습니다.",
+        "충전하면서 기기를 사용할 때 배터리가 거의 올라가지 않습니다."
+      ],
+      "casual": [
+        "충전하면서 쓰면 배터리가 안 차요.",
+        "폰 쓰면서 충전해도 배터리 거의 안 늘어요."
+      ],
+      "short": [
+        "충전 중 사용 시 배터리 거의 증가 안 됨.",
+        "충전하며 쓰면 배터리 충전 느림."
+      ]
+    },
+    "GVS-0027": {
+      "formal": [
+        "업데이트 이후에 특정 충전기만 인식되지 않아요.",
+        "일부 충전기에서만 충전이 안 되는 현상이 있습니다."
+      ],
+      "casual": [
+        "업데이트하고 나니까 어떤 충전기는 안 인식하네요.",
+        "특정 충전기만 안 되는 것 같아요."
+      ],
+      "short": [
+        "특정 충전기만 인식 안 됨.",
+        "업데이트 후 일부 충전기 미인식."
+      ]
+    },
+    "GVS-0028": {
+      "formal": [
+        "After dropping my tablet, the USB connection and charging have become unstable.",
+        "The USB port and charging are both unreliable since the device was dropped."
+      ],
+      "casual": [
+        "Ever since I dropped my tablet, USB and charging have been flaky.",
+        "After a drop, my tablet won't charge reliably and USB keeps disconnecting."
+      ],
+      "short": [
+        "USB and charging unstable after drop.",
+        "Unreliable USB and charging post-drop."
+      ]
+    },
+    "GVS-0029": {
+      "formal": [
+        "Regular charging works, but fast charging does not work at all.",
+        "The device charges normally but fails to support fast charging."
+      ],
+      "casual": [
+        "My phone charges with a regular charger but won't fast charge.",
+        "I can charge it normally, but fast charging just doesn't work."
+      ],
+      "short": [
+        "Regular charging works; fast charging doesn't.",
+        "No fast charging, only standard charging."
+      ]
+    },
+    "GVS-0030": {
+      "formal": [
+        "기기가 뜨거울 때 유선 충전 속도가 크게 제한됩니다.",
+        "발열 상태에서 충전 속도가 현저히 느려집니다."
+      ],
+      "casual": [
+        "폰이 뜨거우면 충전 속도가 확 느려져요.",
+        "충전 중 발열 시 속도 제한이 심해요."
+      ],
+      "short": [
+        "발열 시 유선 충전 속도 제한.",
+        "뜨거울 때 충전 느림."
+      ]
+    },
+    "GVS-0031": {
+      "formal": [
+        "케이스를 씌우면 무선 충전이 시작되지 않습니다.",
+        "케이스 착용 시 무선 충전이 동작하지 않아요."
+      ],
+      "casual": [
+        "케이스 끼우니까 무선 충전이 안 돼요.",
+        "케이스 씌우면 충전이 시작이 안 되네요."
+      ],
+      "short": [
+        "케이스 착용 시 무선 충전 안 됨.",
+        "케이스 때문에 충전 시작 안 됨."
+      ]
+    },
+    "GVS-0032": {
+      "formal": [
+        "충전 패드 위치를 조금만 벗어나도 충전이 반복적으로 중단됩니다.",
+        "무선 충전 중 패드 위치에 따라 자주 중단돼요."
+      ],
+      "casual": [
+        "패드 위치 조금만 틀어져도 충전이 계속 끊겨요.",
+        "충전 패드 위치에 민감해서 자꾸 멈춰요."
+      ],
+      "short": [
+        "위치 벗어나면 충전 반복 중단.",
+        "패드 위치에 따라 충전 끊김."
+      ]
+    },
+    "GVS-0033": {
+      "formal": [
+        "차량 무선 충전 중 기기에 과열 경고가 발생합니다.",
+        "차량용 무선 충전기에서 과열 경고가 뜨네요."
+      ],
+      "casual": [
+        "차에서 무선 충전할 때 뜨겁다고 경고 떠요.",
+        "차량 충전 중 과열 알림이 나와요."
+      ],
+      "short": [
+        "차량 무선 충전 중 과열 경고.",
+        "차량 충전 시 과열 발생."
+      ]
+    },
+    "GVS-0034": {
+      "formal": [
+        "밤새 무선 충전기에 올려뒀는데 충전이 거의 되지 않았습니다.",
+        "밤새 충전했는데 배터리가 거의 안 늘었어요."
+      ],
+      "casual": [
+        "밤새 올려놨는데 충전이 거의 안 됐어요.",
+        "충전기 위에 두고 잤는데 배터리가 많이 안 찼네요."
+      ],
+      "short": [
+        "밤새 충전했으나 거의 충전 안 됨.",
+        "밤새 올려둬도 충전량 거의 없음."
+      ]
+    },
+    "GVS-0035": {
+      "formal": [
+        "워치에 배터리 공유(파워셰어) 기능이 시작되지 않습니다.",
+        "갤럭시 워치로 무선 배터리 공유가 안 돼요."
+      ],
+      "casual": [
+        "워치에 배터리 나눠주기가 안 돼요.",
+        "파워셰어로 워치 충전이 시작이 안 되네요."
+      ],
+      "short": [
+        "워치 배터리 공유 시작 안 됨.",
+        "파워셰어 워치 미작동."
+      ]
+    },
+    "GVS-0036": {
+      "formal": [
+        "자석 링 액세서리를 부착한 후 무선 충전이 불안정합니다.",
+        "자석 링을 달고 나니 무선 충전이 잘 안 돼요."
+      ],
+      "casual": [
+        "자석 링 끼우니까 충전이 불안정해졌어요.",
+        "링 액세서리 때문에 충전이 불규칙해요."
+      ],
+      "short": [
+        "자석 링 부착 후 충전 불안정.",
+        "링 액세서리 사용 시 충전 불안."
+      ]
+    },
+    "GVS-0037": {
+      "formal": [
+        "타사 Qi 충전 패드에서만 충전 속도가 현저히 느립니다.",
+        "삼성 아닌 Qi 패드에서는 충전이 너무 느려요."
+      ],
+      "casual": [
+        "다른 회사 Qi 패드에서 충전 속도가 엄청 느려요.",
+        "타사 충전기만 쓰면 충전이 굼떠요."
+      ],
+      "short": [
+        "타사 Qi 패드 충전 속도 느림.",
+        "비삼성 충전기에서 충전 느림."
+      ]
+    },
+    "GVS-0038": {
+      "formal": [
+        "Wireless PowerShare automatically stops when my phone's battery level is low.",
+        "Battery sharing turns off by itself if the phone's remaining charge is low."
+      ],
+      "casual": [
+        "PowerShare keeps shutting off when my battery gets low.",
+        "When my phone battery is low, it stops sharing power with other devices."
+      ],
+      "short": [
+        "PowerShare stops when battery low.",
+        "Battery sharing auto-stops at low charge."
+      ]
+    },
+    "GVS-0039": {
+      "formal": [
+        "Wireless charging causes significant overheating when the screen is on and in use.",
+        "If I use the phone while wirelessly charging with the screen on, it gets very hot."
+      ],
+      "casual": [
+        "My phone gets really hot when I use it on the wireless charger with the screen on.",
+        "Wireless charging makes the phone overheat if I keep the screen on and use it."
+      ],
+      "short": [
+        "Phone overheats during wireless charging with screen on.",
+        "Wireless charging + screen use causes heat."
+      ]
+    },
+    "GVS-0040": {
+      "formal": [
+        "Galaxy A 시리즈에서 무선 충전 메뉴를 찾을 수 없습니다.",
+        "무선 충전 설정 항목이 기기에 없습니다."
+      ],
+      "casual": [
+        "A 시리즈에서 무선 충전 메뉴가 안 보여요.",
+        "무선 충전 기능을 설정에서 못 찾겠어요."
+      ],
+      "short": [
+        "무선 충전 메뉴 없음.",
+        "A 시리즈에 무선 충전 설정 없음."
+      ]
+    },
+    "GVS-0041": {
+      "formal": [
+        "기기 간 데이터 이전 중에 손에 들기 어려울 정도로 뜨거워집니다.",
+        "데이터 옮기는 중에 폰이 너무 뜨거워요."
+      ],
+      "casual": [
+        "데이터 옮길 때 폰이 엄청 뜨거워져서 잡기 힘들어요.",
+        "스마트 스위치 할 때 손 데일 뻔했어요."
+      ],
+      "short": [
+        "데이터 이전 중 과열로 손에 힘듦.",
+        "기기 이전 시 극심한 발열."
+      ]
+    },
+    "GVS-0042": {
+      "formal": [
+        "5G 신호가 약한 곳에서 기기 상단이 지속적으로 뜨거워집니다.",
+        "5G 약전계에서 상단 부분이 계속 뜨거워요."
+      ],
+      "casual": [
+        "5G 잘 안 터지는 곳에서는 위쪽이 계속 뜨거워요.",
+        "5G 약한 지역에서 상단 발열이 심해요."
+      ],
+      "short": [
+        "5G 약전계에서 상단 지속 발열.",
+        "5G 약한 곳에서 상단 발열."
+      ]
+    },
+    "GVS-0043": {
+      "formal": [
+        "4K 영상 촬영 몇 분 후에 화면 밝기와 성능이 제한됩니다.",
+        "4K 동영상 찍다 보면 금방 디밍되고 느려져요."
+      ],
+      "casual": [
+        "4K 영상 몇 분만 찍으면 화면 어두워지고 버벅여요.",
+        "4K 촬영 얼마 안 했는데 성능 제한이 걸려요."
+      ],
+      "short": [
+        "4K 촬영 후 밝기·성능 제한.",
+        "4K 영상 촬영 시 쓰로틀링."
+      ]
+    },
+    "GVS-0044": {
+      "formal": [
+        "영상통화 중 기기 과열 알림으로 인해 통화가 종료되었습니다.",
+        "영상통화하다가 뜨겁다고 꺼져 버렸어요."
+      ],
+      "casual": [
+        "화상통화 중에 과열 알림 뜨면서 통화가 끊겼어요.",
+        "영상통화 하다가 과열로 종료됐어요."
+      ],
+      "short": [
+        "영상통화 중 과열로 통화 종료.",
+        "화상통화 시 과열 알림으로 중단."
+      ]
+    },
+    "GVS-0045": {
+      "formal": [
+        "차량 거치대에서 내비게이션 사용 중 기기가 과열됩니다.",
+        "차량 거치대에 폰 두고 네비 쓰면 과열돼요."
+      ],
+      "casual": [
+        "차에서 내비 켜면 거치대에서 폰이 엄청 뜨거워져요.",
+        "차량 거치대 충전 내비 동시에 하면 발열 심해요."
+      ],
+      "short": [
+        "차량 내비게이션 사용 중 과열.",
+        "차량 거치대 내비 사용 시 발열."
+      ]
+    },
+    "GVS-0046": {
+      "formal": [
+        "고속 충전 중에 기기 프레임까지 뜨거워집니다.",
+        "빠른 충전할 때 폰 테두리가 많이 뜨거워요."
+      ],
+      "casual": [
+        "고속 충전 중이면 폰 테두리가 엄청 뜨거워져요.",
+        "급속 충전하면 프레임까지 뜨거워요."
+      ],
+      "short": [
+        "고속 충전 중 프레임 발열.",
+        "급속 충전 시 테두리 발열."
+      ]
+    },
+    "GVS-0047": {
+      "formal": [
+        "게임 중 쓰로틀링으로 인해 프레임이 급격히 떨어집니다.",
+        "게임하다 보면 발열 때문에 프레임이 뚝 떨어져요."
+      ],
+      "casual": [
+        "게임 할 때 폰 뜨거워지면서 프레임이 확 떨어져요.",
+        "게임 중 쓰로틀링 걸려서 버벅여요."
+      ],
+      "short": [
+        "게임 중 쓰로틀링으로 프레임 급락.",
+        "게임 시 발열로 성능 저하."
+      ]
+    },
+    "GVS-0048": {
+      "formal": [
+        "After the recent update, my phone has been heating up even when idle for several days.",
+        "The device runs warm even when not in use, which started right after an update."
+      ],
+      "casual": [
+        "Since the update, my phone gets hot even when I'm not using it.",
+        "A few days after the update, it still feels warm when idle."
+      ],
+      "short": [
+        "Phone heats up when idle after update.",
+        "Idle overheating after update."
+      ]
+    },
+    "GVS-0049": {
+      "formal": [
+        "On a hot summer day outdoors, the camera app will not open due to overheating.",
+        "The camera fails to launch when the device is too hot from being outside in summer."
+      ],
+      "casual": [
+        "When I'm outside in summer heat, my camera won't even open.",
+        "The camera just won't start if it's too hot outside."
+      ],
+      "short": [
+        "Camera won't open in outdoor summer heat.",
+        "Camera disabled due to external heat."
+      ]
+    },
+    "GVS-0050": {
+      "formal": [
+        "화면을 꺼도 기기에서 비정상적인 발열이 계속됩니다.",
+        "전원을 끄지 않은 상태에서 화면 꺼짐에도 발열이 있습니다."
+      ],
+      "casual": [
+        "화면 꺼도 발열이 계속돼요.",
+        "폰이 꺼져 있는데도 뜨거워요."
+      ],
+      "short": [
+        "화면 꺼짐 상태에서 발열.",
+        "비정상 발열 지속됨."
+      ]
+    },
+    "GVS-0051": {
+      "formal": [
+        "화면 스크롤이 일정한 간격으로 끊깁니다.",
+        "스크롤할 때 일정 주기로 버벅거려요."
+      ],
+      "casual": [
+        "스크롤 내리다 보면 자꾸 끊겨요.",
+        "스크롤이 일정하게 끊기네요."
+      ],
+      "short": [
+        "스크롤 일정 간격으로 끊김.",
+        "스크롤 시 주기적 버벅임."
+      ]
+    },
+    "GVS-0052": {
+      "formal": [
+        "앱을 전환할 때 빈 화면이 오래 지속됩니다.",
+        "앱 전환 시 빈 화면이 길게 보여요."
+      ],
+      "casual": [
+        "앱 바꾸면 하얀 화면이 오래 떠 있어요.",
+        "앱 전환할 때 빈 화면이 늦게 사라져요."
+      ],
+      "short": [
+        "앱 전환 시 빈 화면 오래 지속.",
+        "앱 전환 때 빈 화면 지연."
+      ]
+    },
+    "GVS-0053": {
+      "formal": [
+        "사진 촬영 후 갤러리로 전환할 때 기기가 멈춥니다.",
+        "사진 찍고 갤러리로 넘어가면 화면이 멈춰요."
+      ],
+      "casual": [
+        "사진 찍고 갤러리 보려고 하면 화면이 얼어버려요.",
+        "사진 후 갤러리 전환에서 멈춤 현상이 있어요."
+      ],
+      "short": [
+        "사진 촬영 후 갤러리 전환 시 멈춤.",
+        "사진 찍고 갤러리 넘어갈 때 Freeze."
+      ]
+    },
+    "GVS-0054": {
+      "formal": [
+        "저장 공간 부족 경고가 발생한 이후 전체적인 성능이 느려졌습니다.",
+        "저장공간 부족 알림 뜨고 나서 폰이 전체적으로 느려졌어요."
+      ],
+      "casual": [
+        "저장공간 부족 알람 후에 폰이 엄청 느려졌어요.",
+        "용량 부족 뜨고 나서 모든 게 버벅거려요."
+      ],
+      "short": [
+        "저장공간 부족 경고 후 성능 저하.",
+        "용량 부족 시 전체적 느려짐."
+      ]
+    },
+    "GVS-0055": {
+      "formal": [
+        "Good Lock을 적용한 후 홈 화면이 반복적으로 꺼집니다.",
+        "Good Lock 깔고 나서 홈 화면이 자주 종료돼요."
+      ],
+      "casual": [
+        "Good Lock 설치하고 홈 화면이 계속 꺼져요.",
+        "Good Lock 쓰면 홈 화면이 자꾸 죽어요."
+      ],
+      "short": [
+        "Good Lock 적용 후 홈 화면 반복 종료.",
+        "Good Lock 사용 시 홈화면 Crash."
+      ]
+    },
+    "GVS-0056": {
+      "formal": [
+        "분할화면에서 실행 중인 두 앱이 동시에 멈춥니다.",
+        "앱 두 개를 분할화면으로 사용하다 보면 둘 다 응답하지 않게 됩니다."
+      ],
+      "casual": [
+        "분할화면에서 앱 두 개가 같이 멈춰요.",
+        "두 앱을 나눠서 쓰는데 갑자기 둘 다 안 움직여요."
+      ],
+      "short": [
+        "분할화면 앱 두 개 멈춤.",
+        "앱 두 개 동시에 멈춤."
+      ]
+    },
+    "GVS-0057": {
+      "formal": [
+        "고주사율 모드에서 터치와 애니메이션이 맞지 않습니다.",
+        "터치 반응과 화면 애니메이션이 어긋나는 현상이 있습니다."
+      ],
+      "casual": [
+        "고주사율인데 터치랑 애니메이션이 안 맞아요.",
+        "터치랑 움직임이 따로 노는 느낌이에요."
+      ],
+      "short": [
+        "터치와 애니메이션 어긋남.",
+        "고주사율에서 터치 딜레이."
+      ]
+    },
+    "GVS-0058": {
+      "formal": [
+        "When many background apps are running, there is a noticeable delay in keyboard input.",
+        "Keyboard input becomes laggy when lots of apps are open in the background."
+      ],
+      "casual": [
+        "Typing gets slow and laggy when I have too many apps running.",
+        "The keyboard is really delayed when lots of background apps are open."
+      ],
+      "short": [
+        "Keyboard input delayed with many background apps.",
+        "Typing lags when many apps are open."
+      ]
+    },
+    "GVS-0059": {
+      "formal": [
+        "The home screen reloads and icons appear slowly after a crash.",
+        "Icons take a while to show up on the home screen after it restarts."
+      ],
+      "casual": [
+        "My home screen keeps reloading and icons are slow to appear.",
+        "After the home screen reloads, icons take forever to show."
+      ],
+      "short": [
+        "Home screen reloads; icons load slowly.",
+        "Icons delayed after home screen restart."
+      ]
+    },
+    "GVS-0060": {
+      "formal": [
+        "부팅 로고에서 멈추거나 반복적으로 재부팅됩니다.",
+        "부팅 시 로고에서 멈추고 재시작을 반복합니다."
+      ],
+      "casual": [
+        "부팅 로고에서 멈추고 계속 재부팅돼요.",
+        "켜질 때 로고에서 걸리고 다시 켜져요."
+      ],
+      "short": [
+        "부팅 로고에서 멈춤 또는 반복 재부팅.",
+        "무한 부팅 현상."
+      ]
+    },
+    "GVS-0061": {
+      "formal": [
+        "낮은 밝기의 회색 화면에서 자글거리는 그레인이 보입니다.",
+        "회색 화면에서 밝기를 낮추면 노이즈 같은 것이 나타납니다."
+      ],
+      "casual": [
+        "회색 화면 밝기 낮추면 자글거려요.",
+        "어두운 회색 화면에서 그레인이 보여요."
+      ],
+      "short": [
+        "회색 화면 그레인.",
+        "저휘도 회색 노이즈."
+      ]
+    },
+    "GVS-0062": {
+      "formal": [
+        "다크모드에서 화면에 녹색 빛이 도는 얼룩이 있습니다.",
+        "어두운 화면에서 녹색 얼룩이 나타납니다."
+      ],
+      "casual": [
+        "다크모드에서 화면에 녹색 얼룩이 보여요.",
+        "어두운 배경에 녹색 빛이 도는 자국이 있어요."
+      ],
+      "short": [
+        "다크모드 녹색 얼룩.",
+        "화면에 녹색 자국."
+      ]
+    },
+    "GVS-0063": {
+      "formal": [
+        "충격 후 화면에 세로줄이 생겼습니다.",
+        "떨어뜨린 후부터 화면에 세로줄이 나타납니다."
+      ],
+      "casual": [
+        "떨어뜨렸는데 화면에 세로줄이 생겼어요.",
+        "충격 받은 후 화면 줄이 갔어요."
+      ],
+      "short": [
+        "충격 후 세로줄 발생.",
+        "화면에 세로줄."
+      ]
+    },
+    "GVS-0064": {
+      "formal": [
+        "야외에서 자동 밝기가 갑자기 낮아집니다.",
+        "밝은 곳에서 자동 밝기가 갑자기 어두워져요."
+      ],
+      "casual": [
+        "야외에서 화면 밝기가 갑자기 어두워져요.",
+        "밖에 나가면 화면이 갑자기 어두워져요."
+      ],
+      "short": [
+        "야외 자동밝기 급감.",
+        "자동밝기 갑자기 어두워짐."
+      ]
+    },
+    "GVS-0065": {
+      "formal": [
+        "영상 재생 중 검은 장면에서 계단 현상이 두드러집니다.",
+        "어두운 영상 장면에서 색상 띠가 보입니다."
+      ],
+      "casual": [
+        "영화 볼 때 검은 장면에서 줄무늬가 보여요.",
+        "어두운 장면에서 색이 띠로 보여요."
+      ],
+      "short": [
+        "검은 장면 밴딩.",
+        "어두운 장면 색띠."
+      ]
+    },
+    "GVS-0066": {
+      "formal": [
+        "AOD 사용 후 일반 화면에서 잔상이 남습니다.",
+        "항상 표시를 끄고 나서도 잔상이 보입니다."
+      ],
+      "casual": [
+        "AOD 쓰고 나면 일반 화면에 잔상이 남아요.",
+        "화면에 AOD 자국이 남아 있어요."
+      ],
+      "short": [
+        "AOD 잔상.",
+        "잔상이 일반 화면에 남음."
+      ]
+    },
+    "GVS-0067": {
+      "formal": [
+        "흰 화면에서 붉은색 편차가 보입니다.",
+        "밝은 화면에서 한쪽이 붉게 보입니다."
+      ],
+      "casual": [
+        "흰 화면에서 빨간 기운이 돌아요.",
+        "화면이 전체적으로 붉게 보여요."
+      ],
+      "short": [
+        "흰 화면 붉은 편차.",
+        "화면 붉은색 띰."
+      ]
+    },
+    "GVS-0068": {
+      "formal": [
+        "The screen flickers when I rotate the device.",
+        "Rotating the phone causes the display to flicker."
+      ],
+      "casual": [
+        "My screen flickers every time I turn my phone sideways.",
+        "When I rotate my phone, the display flickers."
+      ],
+      "short": [
+        "Screen flickers on rotation.",
+        "Flickers when rotated."
+      ]
+    },
+    "GVS-0069": {
+      "formal": [
+        "While charging, the screen's color temperature repeatedly shifts.",
+        "The display color temperature changes back and forth during charging."
+      ],
+      "casual": [
+        "When my phone is charging, the screen color keeps changing.",
+        "The screen's white balance keeps shifting while charging."
+      ],
+      "short": [
+        "Screen color changes during charging.",
+        "Color temperature fluctuates while charging."
+      ]
+    },
+    "GVS-0070": {
+      "formal": [
+        "간헐적으로 화면이 검게 나오지만 진동과 소리는 정상입니다.",
+        "화면이 안 켜지는데 진동과 소리는 들립니다."
+      ],
+      "casual": [
+        "가끔 화면만 안 나오고 진동과 소리는 돼요.",
+        "화면이 검은데 진동은 울려요."
+      ],
+      "short": [
+        "간헐적 화면 꺼짐, 진동과 소리는 정상.",
+        "화면만 안 켜짐."
+      ]
+    },
+    "GVS-0071": {
+      "formal": [
+        "접힘부 중앙에서 보호필름이 들뜨기 시작했습니다.",
+        "화면 중앙 접히는 부분의 필름이 떠오릅니다."
+      ],
+      "casual": [
+        "접히는 부분 중앙 필름이 들떴어요.",
+        "화면 중간 필름이 떠요."
+      ],
+      "short": [
+        "접힘부 필름 들뜸.",
+        "필름 중앙 분리."
+      ]
+    },
+    "GVS-0072": {
+      "formal": [
+        "접을 때 화면 중앙에 기포가 길게 생깁니다.",
+        "폴더블을 접으면 중앙에 기포가 나타납니다."
+      ],
+      "casual": [
+        "접을 때마다 가운데에 기포가 길게 생겨요.",
+        "접으면 화면 중앙에 기포가 생겨요."
+      ],
+      "short": [
+        "접힘부 기포 발생.",
+        "화면 중앙 기포."
+      ]
+    },
+    "GVS-0073": {
+      "formal": [
+        "내부 화면 가운데 검은 점이 점차 커지고 있습니다.",
+        "메인 디스플레이 중앙에 검은 점이 점점 넓어집니다."
+      ],
+      "casual": [
+        "안쪽 화면 가운데 검은 점이 점점 커져요.",
+        "화면 중간에 검은 점이 커지고 있어요."
+      ],
+      "short": [
+        "검은 점 확대.",
+        "화면 중앙 검은 점."
+      ]
+    },
+    "GVS-0074": {
+      "formal": [
+        "추운 날 펼친 후 접힘부에 선이 생깁니다.",
+        "겨울에 폰을 펼치면 접히는 부분에 줄이 생겨요."
+      ],
+      "casual": [
+        "추울 때 펼치면 접히는 곳에 줄이 생겨요.",
+        "날씨가 추우면 접힘부에 선이 생겨요."
+      ],
+      "short": [
+        "저온에서 접힘부 선.",
+        "접힘부에 줄 발생."
+      ]
+    },
+    "GVS-0075": {
+      "formal": [
+        "필름 가장자리가 떠서 먼지가 들어갔습니다.",
+        "보호필름 모서리가 떠서 이물질이 끼었습니다."
+      ],
+      "casual": [
+        "필름 가장자리 뜨고 먼지 들어갔어요.",
+        "필름 끝이 들떠서 먼지가 껴요."
+      ],
+      "short": [
+        "필름 모서리 들뜸.",
+        "필름 아래 먼지 유입."
+      ]
+    },
+    "GVS-0076": {
+      "formal": [
+        "개폐할 때 바스락 소리와 함께 기포가 발생합니다.",
+        "접고 펼 때 소리가 나며 기포가 생깁니다."
+      ],
+      "casual": [
+        "접을 때 바스락거리면서 기포가 생겨요.",
+        "펼 때 소리 나고 기포가 생겨요."
+      ],
+      "short": [
+        "개폐 시 소음 및 기포.",
+        "바스락 소리와 기포."
+      ]
+    },
+    "GVS-0077": {
+      "formal": [
+        "화면 중앙에 검은 줄이 생기고 한쪽 터치가 안 됩니다.",
+        "화면 가운데 검은 줄과 함께 좌측 터치가 불가능합니다."
+      ],
+      "casual": [
+        "화면 중간에 검은 줄 생기고 한쪽 터치가 안 돼요.",
+        "화면에 검은 줄이 가고 터치가 안 먹어요."
+      ],
+      "short": [
+        "화면 중앙 검은 줄.",
+        "터치 불가 및 검은 줄."
+      ]
+    },
+    "GVS-0078": {
+      "formal": [
+        "Part of the inner screen flickers and then turns off intermittently.",
+        "Only a section of the main display flickers and goes black sporadically."
+      ],
+      "casual": [
+        "A part of my inner screen flickers and then just goes black.",
+        "Half the screen flickers and then shuts off randomly."
+      ],
+      "short": [
+        "Inner screen partially flickers and turns off.",
+        "Part of screen flickers then goes black."
+      ]
+    },
+    "GVS-0079": {
+      "formal": [
+        "The inner screen only turns on when the device is fully unfolded.",
+        "The inner display activates only when the fold is completely open."
+      ],
+      "casual": [
+        "My inner screen only works when I fully open the phone.",
+        "The inside screen won't turn on unless it's fully unfolded."
+      ],
+      "short": [
+        "Inner screen on only when fully unfolded.",
+        "Screen works only when fully open."
+      ]
+    },
+    "GVS-0080": {
+      "formal": [
+        "보호필름 제거 후 디스플레이 표면에 흠집이 생기고 불안감이 증가했습니다.",
+        "보호필름을 뗀 뒤 화면에 흠집이 보이고 걱정됩니다."
+      ],
+      "casual": [
+        "보호필름 벗기니까 화면에 흠집이 생겼어요.",
+        "필름 제거 후 표면이 긁혀서 불안해요."
+      ],
+      "short": [
+        "보호필름 제거 후 흠집 발생.",
+        "화면 흠집과 불안감."
+      ]
+    },
+    "GVS-0081": {
+      "formal": [
+        "완전히 펼쳐지지 않고 각도가 남습니다.",
+        "폴더블을 완전히 펼 수 없습니다."
+      ],
+      "casual": [
+        "완전히 펴지지 않고 각도가 남아요.",
+        "폰이 완전히 안 펴져요."
+      ],
+      "short": [
+        "완전 펼침 불가.",
+        "펼쳐도 각도 잔존."
+      ]
+    },
+    "GVS-0082": {
+      "formal": [
+        "힌지에서 모래가 씹히는 듯한 소리가 납니다.",
+        "개폐 시 힌지에서 이물질 소리가 납니다."
+      ],
+      "casual": [
+        "접을 때 힌지에서 모래 씹히는 소리가 나요.",
+        "힌지에서 무언가 갈리는 소리가 나요."
+      ],
+      "short": [
+        "힌지 이물질 소음.",
+        "힌지에서 갈리는 소리."
+      ]
+    },
+    "GVS-0083": {
+      "formal": [
+        "힌지가 헐거워 원하는 각도를 유지하지 못합니다.",
+        "힌지가 너무 헐거워서 각도 고정이 안 됩니다."
+      ],
+      "casual": [
+        "힌지가 헐거워서 각도가 자꾸 움직여요.",
+        "힌지가 풀려서 각도 고정이 안 돼요."
+      ],
+      "short": [
+        "힌지 유격.",
+        "힌지 헐거움."
+      ]
+    },
+    "GVS-0084": {
+      "formal": [
+        "처음보다 힌지가 매우 뻑뻑해졌습니다.",
+        "힌지가 구매 초기보다 훨씬 뻑뻑합니다."
+      ],
+      "casual": [
+        "힌지가 처음보다 엄청 뻑뻑해졌어요.",
+        "접을 때 힌지가 빡빡해요."
+      ],
+      "short": [
+        "힌지 뻑뻑함.",
+        "힌지 경직."
+      ]
+    },
+    "GVS-0085": {
+      "formal": [
+        "모래가 있는 환경에서 사용한 후에 접힘과 펼침이 매끄럽지 않게 되었습니다.",
+        "힌지의 개폐 감각이 거칠어져서 사용에 불편함이 있습니다."
+      ],
+      "casual": [
+        "모래 있는 곳에서 쓰고 나니까 폴더블 접히는 게 뻑뻑해졌어.",
+        "힌지가 거칠게 움직여서 접고 펴기가 불편해."
+      ],
+      "short": [
+        "모래 사용 후 힌지 개폐감 거칠어짐.",
+        "접히는 느낌이 뻑뻑해짐."
+      ]
+    },
+    "GVS-0086": {
+      "formal": [
+        "낙하 후에 한쪽 힌지의 간격이 달라졌습니다.",
+        "힌지 간격이 비대칭이 되어서 접힘 상태가 불안정합니다."
+      ],
+      "casual": [
+        "떨어뜨렸는데 한쪽 힌지 간격이 달라졌어.",
+        "힌지가 삐뚤어져서 접었을 때 간격이 안 맞아."
+      ],
+      "short": [
+        "낙하 후 힌지 간격 비대칭.",
+        "한쪽 힌지 간격 틀어짐."
+      ]
+    },
+    "GVS-0087": {
+      "formal": [
+        "접었을 때 양쪽 프레임 틈이 대칭이 아닙니다.",
+        "프레임 사이의 간격이 한쪽이 더 벌어져 있습니다."
+      ],
+      "casual": [
+        "접었는데 양쪽 프레임 틈이 달라.",
+        "프레임 사이가 한쪽은 더 벌어져 있어."
+      ],
+      "short": [
+        "접었을 때 프레임 틈 대칭 아님.",
+        "양쪽 프레임 간격 비대칭."
+      ]
+    },
+    "GVS-0088": {
+      "formal": [
+        "The inner screen does not turn on when the device is unfolded.",
+        "Opening the phone does not activate the internal display."
+      ],
+      "casual": [
+        "When I open my Flip, the inner screen stays off.",
+        "The inside screen doesn't light up when I unfold it."
+      ],
+      "short": [
+        "Inner screen stays off when unfolded.",
+        "No display on unfolding."
+      ]
+    },
+    "GVS-0089": {
+      "formal": [
+        "The Flex Mode hinge angle does not stay in place and keeps loosening.",
+        "The hinge gradually loses its Flex Mode angle position over time."
+      ],
+      "casual": [
+        "My Fold keeps losing its Flex Mode angle—it won't stay put.",
+        "The hinge angle slips and won't hold in Flex Mode."
+      ],
+      "short": [
+        "Flex Mode hinge angle won't stay.",
+        "Hinge loosens in Flex Mode."
+      ]
+    },
+    "GVS-0090": {
+      "formal": [
+        "사용 기간이 늘면서 힌지 개폐 시 소리가 커졌습니다.",
+        "시간이 지나면서 힌지에서 소음이 발생합니다."
+      ],
+      "casual": [
+        "쓴 지 오래되니까 힌지에서 소리가 더 커졌어요.",
+        "접을 때 소리가 점점 커져요."
+      ],
+      "short": [
+        "힌지 개폐 소리 증가.",
+        "사용 기간에 따라 힌지 소음 커짐."
+      ]
+    },
+    "GVS-0091": {
+      "formal": [
+        "화면 하단의 특정 영역에서 터치가 전혀 작동하지 않습니다.",
+        "하단 특정 구역만 터치 입력이 되지 않습니다."
+      ],
+      "casual": [
+        "화면 아래쪽 특정 부분만 터치가 안 돼.",
+        "하단 특정 구역 터치가 먹통이야."
+      ],
+      "short": [
+        "화면 하단 특정 구역 터치 안 됨.",
+        "하단 일부 터치 불가."
+      ]
+    },
+    "GVS-0092": {
+      "formal": [
+        "키보드 입력 중 누르지 않은 글자가 입력됩니다.",
+        "의도하지 않은 문자 입력이 간헐적으로 발생합니다."
+      ],
+      "casual": [
+        "키보드 칠 때 안 누른 글자가 입력돼.",
+        "자꾸 다른 글자가 쳐져."
+      ],
+      "short": [
+        "키보드 입력 오류로 안 누른 글자 입력됨.",
+        "터치 오입력으로 엉뚱한 글자 쳐짐."
+      ]
+    },
+    "GVS-0093": {
+      "formal": [
+        "타사 충전기 연결 시 고스트 터치가 발생합니다.",
+        "다른 회사 충전기를 쓰면 터치가 저절로 작동합니다."
+      ],
+      "casual": [
+        "다른 충전기 꽂으면 터치가 혼자 움직여.",
+        "타사 충전기 쓸 때 고스트 터치 생겨."
+      ],
+      "short": [
+        "타사 충전기 연결 시 고스트 터치 발생.",
+        "충전기 바꾸니 터치 오작동."
+      ]
+    },
+    "GVS-0094": {
+      "formal": [
+        "젖은 손으로 사용할 때 터치 오입력이 반복됩니다.",
+        "손이 젖은 상태에서 터치가 잘못 인식되는 경우가 많습니다."
+      ],
+      "casual": [
+        "손 젖은 상태로 쓰면 터치 오류가 계속 나.",
+        "젖은 손으로 하면 터치가 이상하게 돼."
+      ],
+      "short": [
+        "젖은 손 사용 시 터치 오입력 반복.",
+        "손 젖으면 터치 오작동."
+      ]
+    },
+    "GVS-0095": {
+      "formal": [
+        "장갑 모드를 켜도 겨울철에 입력이 잘 되지 않습니다.",
+        "겨울에 장갑을 끼고 터치가 제대로 안 됩니다."
+      ],
+      "casual": [
+        "장갑 모드 켜도 겨울에 터치가 잘 안 돼.",
+        "겨울에 장갑 끼면 터치가 먹통이야."
+      ],
+      "short": [
+        "겨울철 장갑 모드 터치 안 됨.",
+        "장갑 모드에서도 입력 불량."
+      ]
+    },
+    "GVS-0096": {
+      "formal": [
+        "게임 중 멀티터치가 풀리는 현상이 있습니다.",
+        "멀티터치 인식이 중간에 끊깁니다."
+      ],
+      "casual": [
+        "게임할 때 멀티터치가 풀려.",
+        "멀티터치가 중간에 끊겨서 게임이 힘들어."
+      ],
+      "short": [
+        "게임 중 멀티터치 풀림.",
+        "멀티터치 인식 끊김."
+      ]
+    },
+    "GVS-0097": {
+      "formal": [
+        "폴더블 내부 화면의 접힘 부분 터치가 간헐적으로 누락됩니다.",
+        "접히는 부위의 터치가 가끔 안 먹힙니다."
+      ],
+      "casual": [
+        "접히는 부분 터치가 가끔 안 돼.",
+        "화면 접힘부 터치 누락이 간헐 발생."
+      ],
+      "short": [
+        "접힘부 터치 간헐 누락.",
+        "폴더블 내부 접힘 부분 터치 불량."
+      ]
+    },
+    "GVS-0098": {
+      "formal": [
+        "After the update, scrolling starts with a noticeable delay.",
+        "There is a lag when initiating a scroll gesture since the update."
+      ],
+      "casual": [
+        "Since the update, scrolling feels delayed when I start.",
+        "My tablet's scrolling is laggy when I first begin to scroll after the update."
+      ],
+      "short": [
+        "Scrolling delayed after update.",
+        "Scroll initiation laggy post-update."
+      ]
+    },
+    "GVS-0099": {
+      "formal": [
+        "While writing on the tablet with a stylus, my palm is incorrectly detected as touch input.",
+        "The tablet registers palm touches as intended input during handwriting."
+      ],
+      "casual": [
+        "When I write on my tablet, my palm keeps making unwanted touches.",
+        "My palm gets recognized as touch when I'm using the pen."
+      ],
+      "short": [
+        "Palm registers as touch during stylus use.",
+        "Palm touch interference while writing."
+      ]
+    },
+    "GVS-0100": {
+      "formal": [
+        "특정 조건 없이 화면이 임의로 눌리는 현상이 있습니다.",
+        "터치 입력이 없는데도 화면이 저절로 터치됩니다."
+      ],
+      "casual": [
+        "아무 이유 없이 화면이 혼자 눌려요.",
+        "터치도 안 했는데 화면이 클릭돼요."
+      ],
+      "short": [
+        "화면 오작동, 임의 터치.",
+        "터치 없이 화면이 눌림."
+      ]
+    },
+    "GVS-0101": {
+      "formal": [
+        "손이 건조할 때 지문 인식을 여러 번 시도해야 인식됩니다.",
+        "건조한 손에서는 지문 인식이 잘 안 되어 여러 번 눌러야 합니다."
+      ],
+      "casual": [
+        "손 건조하면 지문 여러 번 대야 돼.",
+        "손 마르면 지문 인식이 잘 안 돼."
+      ],
+      "short": [
+        "건조한 손 지문 인식 어려움.",
+        "지문 여러 번 시도 필요."
+      ]
+    },
+    "GVS-0102": {
+      "formal": [
+        "젖은 손에서는 지문 인식이 거의 되지 않습니다.",
+        "손이 젖으면 지문 인식이 안 됩니다."
+      ],
+      "casual": [
+        "손 젖으면 지문 인식이 거의 안 돼.",
+        "젖은 손으로 지문 인식 실패."
+      ],
+      "short": [
+        "젖은 손 지문 인식 불가.",
+        "손 젖으면 지문 안 먹힘."
+      ]
+    },
+    "GVS-0103": {
+      "formal": [
+        "보호필름 교체 후 지문 인식률이 크게 저하되었습니다.",
+        "보호필름을 바꾸고 나서 지문이 잘 인식되지 않습니다."
+      ],
+      "casual": [
+        "보호필름 바꾸니까 지문 인식률이 확 떨어졌어.",
+        "필름 교체 후 지문이 잘 안 돼."
+      ],
+      "short": [
+        "보호필름 교체 후 지문 인식률 저하.",
+        "필름 바꾸니 지문 인식 불량."
+      ]
+    },
+    "GVS-0104": {
+      "formal": [
+        "어두운 곳에서 얼굴 인식이 실패합니다.",
+        "조명이 어두우면 얼굴 인식이 되지 않습니다."
+      ],
+      "casual": [
+        "어두운 데서 얼굴 인식이 안 돼.",
+        "어두우면 얼굴 인식 실패해."
+      ],
+      "short": [
+        "어두운 곳 얼굴 인식 실패.",
+        "저조도 얼굴 인식 불가."
+      ]
+    },
+    "GVS-0105": {
+      "formal": [
+        "마스크나 안경 착용 시 얼굴 인식에 지연이 발생합니다.",
+        "마스크나 안경을 쓰면 얼굴 인식이 느려집니다."
+      ],
+      "casual": [
+        "마스크나 안경 쓰면 얼굴 인식이 느려.",
+        "마스크 끼면 얼굴 인식 딜레이 생겨."
+      ],
+      "short": [
+        "마스크/안경 시 얼굴 인식 지연.",
+        "안경 착용 시 얼굴 인식 느림."
+      ]
+    },
+    "GVS-0106": {
+      "formal": [
+        "측면 센서가 주머니에서 반복적으로 오인식됩니다.",
+        "주머니에 넣었을 때 측면 센서가 잘못 작동합니다."
+      ],
+      "casual": [
+        "주머니에 넣으면 측면 센서가 자꾸 오작동해.",
+        "측면 센서가 주머니에서 혼자 반응해."
+      ],
+      "short": [
+        "주머니에서 측면 센서 오인식.",
+        "측면 센서 주머니 내 오작동."
+      ]
+    },
+    "GVS-0107": {
+      "formal": [
+        "화면 수리 후 지문 등록 자체가 실패합니다.",
+        "화면을 수리한 뒤에 지문을 등록할 수 없습니다."
+      ],
+      "casual": [
+        "화면 수리하고 나서 지문 등록이 안 돼.",
+        "화면 고친 후 지문 등록 실패."
+      ],
+      "short": [
+        "화면 수리 후 지문 등록 불가.",
+        "수리 후 지문 등록 실패."
+      ]
+    },
+    "GVS-0108": {
+      "formal": [
+        "Face recognition becomes unreliable in strong sunlight.",
+        "The facial recognition feature is unstable when I am outdoors in bright sunlight."
+      ],
+      "casual": [
+        "Face unlock doesn't work well in bright sunlight.",
+        "When it's sunny outside, face recognition gets really unstable."
+      ],
+      "short": [
+        "Face unlock unstable in bright sunlight.",
+        "Sunlight makes face recognition unreliable."
+      ]
+    },
+    "GVS-0109": {
+      "formal": [
+        "The fingerprint sensor requires multiple attempts even for the same finger.",
+        "Unlocking the device with the same fingerprint often fails on the first try."
+      ],
+      "casual": [
+        "I have to try the same finger several times to unlock the phone.",
+        "Even using the same finger, the fingerprint reader doesn't work first time."
+      ],
+      "short": [
+        "Fingerprint needs multiple tries for same finger.",
+        "Same finger fails to unlock on first attempt."
+      ]
+    },
+    "GVS-0110": {
+      "formal": [
+        "잠금 해제는 얼굴 인식으로 되지만 금융 앱에서 지문 인증이 실패합니다.",
+        "얼굴 인식은 되는데 금융 앱 지문이 안 됩니다."
+      ],
+      "casual": [
+        "얼굴로는 잠금 해제가 되는데 금융 앱 지문이 안 돼요.",
+        "금융 앱에서 지문 인증이 실패해요."
+      ],
+      "short": [
+        "금융 앱 지문 인증 실패.",
+        "얼굴 잠금 해제는 되나 지문 실패."
+      ]
+    },
+    "GVS-0111": {
+      "formal": [
+        "자석 케이스 부근에서 S펜 필기 선이 끊깁니다.",
+        "자석 케이스 근처에서는 펜 입력이 불안정합니다."
+      ],
+      "casual": [
+        "자석 케이스 근처에서 펜 쓰면 선이 끊겨.",
+        "자석 케이스 때문에 펜 필기가 안 돼."
+      ],
+      "short": [
+        "자석 케이스 근처 S펜 필기 끊김.",
+        "자석 케이스 영향으로 펜 입력 불안정."
+      ]
+    },
+    "GVS-0112": {
+      "formal": [
+        "화면 가장자리의 특정 구역에서 S펜이 인식되지 않습니다.",
+        "화면 가장자리 일부 영역에서 펜 입력이 안 됩니다."
+      ],
+      "casual": [
+        "화면 가장자리 특정 부분은 펜이 안 써져.",
+        "화면 끝쪽은 펜 인식이 안 돼."
+      ],
+      "short": [
+        "화면 가장자리 특정 구역 펜 미인식.",
+        "가장자리 펜 입력 불가."
+      ]
+    },
+    "GVS-0113": {
+      "formal": [
+        "업데이트 후 Air Actions 연결이 끊깁니다.",
+        "소프트웨어 업데이트 이후 Air Actions가 자주 연결 해제됩니다."
+      ],
+      "casual": [
+        "업데이트하고 나서 Air Actions 연결이 자꾸 끊겨.",
+        "업뎃 후에 Air Actions가 계속 연결 해제돼."
+      ],
+      "short": [
+        "업데이트 후 Air Actions 연결 끊김.",
+        "업뎃 이후 Air Actions 불안정."
+      ]
+    },
+    "GVS-0114": {
+      "formal": [
+        "S펜 호버 포인터와 실제 펜촉 위치가 일치하지 않습니다.",
+        "호버 상태에서 표시되는 포인터와 펜촉 위치가 다릅니다."
+      ],
+      "casual": [
+        "S펜 호버 포인터랑 실제 펜촉 위치가 안 맞아요.",
+        "호버할 때 포인터가 펜촉 위치랑 달라요."
+      ],
+      "short": [
+        "호버 포인터와 펜촉 위치 불일치.",
+        "S펜 호버 시 포인터 위치 오류."
+      ]
+    },
+    "GVS-0115": {
+      "formal": [
+        "마모된 펜촉으로 필기 시 획이 튀거나 입력이 늦게 반응합니다.",
+        "펜촉이 마모되어 입력이 지연되거나 획이 불안정합니다."
+      ],
+      "casual": [
+        "펜촉 닳아서 획이 튀거나 입력이 느려요.",
+        "펜촉 마모 때문에 글씨가 이상하게 써져요."
+      ],
+      "short": [
+        "마모된 펜촉으로 획 튐 및 입력 지연.",
+        "펜촉 마모로 인한 입력 불안정."
+      ]
+    },
+    "GVS-0116": {
+      "formal": [
+        "Fold 커버 화면에서 S펜이 전혀 동작하지 않습니다.",
+        "커버 디스플레이에서 S펜 사용이 불가능합니다."
+      ],
+      "casual": [
+        "Fold 커버 화면에서 S펜이 안 먹혀요.",
+        "커버 화면에서는 S펜이 작동을 안 해요."
+      ],
+      "short": [
+        "Fold 커버 화면 S펜 동작 안 됨.",
+        "커버 화면 S펜 미작동."
+      ]
+    },
+    "GVS-0117": {
+      "formal": [
+        "Tab FE 기본 S펜에서 Air Actions 메뉴가 나타나지 않습니다.",
+        "기본 S펜으로 Air Actions 기능을 사용할 수 없습니다."
+      ],
+      "casual": [
+        "Tab FE 기본 S펜에는 Air Actions 메뉴가 없네요.",
+        "기본 S펜으로 Air Actions를 쓸 수 없어요."
+      ],
+      "short": [
+        "Tab FE 기본 S펜 Air Actions 미지원.",
+        "기본 S펜 Air Actions 메뉴 없음."
+      ]
+    },
+    "GVS-0118": {
+      "formal": [
+        "Remote control via the S Pen fails when its battery is low.",
+        "When the S Pen battery level is low, the Bluetooth remote feature stops working."
+      ],
+      "casual": [
+        "S Pen remote control doesn't work when the battery is low.",
+        "If the S Pen battery is almost dead, the remote control feature fails."
+      ],
+      "short": [
+        "S Pen remote fails on low battery.",
+        "Low S Pen battery breaks Bluetooth remote control."
+      ]
+    },
+    "GVS-0119": {
+      "formal": [
+        "After a screen repair, some areas of the digitizer are unresponsive.",
+        "The S Pen does not register input in certain areas of the display after it was replaced."
+      ],
+      "casual": [
+        "Some parts of the screen don't respond to the S Pen after a repair.",
+        "After getting the screen fixed, there are dead zones for the S Pen."
+      ],
+      "short": [
+        "Screen repair caused digitizer dead zones.",
+        "S Pen unresponsive in some screen areas after repair."
+      ]
+    },
+    "GVS-0120": {
+      "formal": [
+        "타사 S펜에서 필압과 버튼 기능이 지원되지 않습니다.",
+        "다른 회사 펜으로 필압이나 버튼을 사용할 수 없습니다."
+      ],
+      "casual": [
+        "타사 펜으로 쓰면 필압이나 버튼이 안 먹혀요.",
+        "S펜이 아닌 펜은 기능이 제한돼요."
+      ],
+      "short": [
+        "타사 펜 필압/버튼 미지원.",
+        "비S펜 기능 누락."
+      ]
+    },
+    "GVS-0121": {
+      "formal": [
+        "실내에서 움직이는 아이를 촬영할 때 셔터가 한 박자 늦게 반응합니다.",
+        "움직이는 아이 실내 촬영 시 셔터 지연이 발생합니다."
+      ],
+      "casual": [
+        "실내에서 움직이는 아이 찍으면 셔터가 늦게 눌려요.",
+        "아이 움직일 때 셔터 타이밍이 안 맞아요."
+      ],
+      "short": [
+        "실내 움직이는 아이 촬영 셔터 지연.",
+        "움직이는 피사체 셔터 딜레이."
+      ]
+    },
+    "GVS-0122": {
+      "formal": [
+        "저조도 환경에서 초점을 잡는 동안 피사체를 놓칩니다.",
+        "어두운 곳에서 초점 맞추는 시간이 길어 피사체를 잡지 못합니다."
+      ],
+      "casual": [
+        "저조도에서 초점 맞추다가 피사체를 놓쳐요.",
+        "어두울 때 초점 느려서 사진 놓쳐요."
+      ],
+      "short": [
+        "저조도 초점 지연으로 피사체 손실.",
+        "어두운 곳에서 초점 느림."
+      ]
+    },
+    "GVS-0123": {
+      "formal": [
+        "반려동물 촬영 시 초점이 피사체가 아닌 배경으로 이동합니다.",
+        "애완동물 사진에서 초점이 배경에 맞춰집니다."
+      ],
+      "casual": [
+        "반려동물 찍으면 초점이 배경으로 가요.",
+        "강아지 사진 찍는데 초점이 배경에 맞아요."
+      ],
+      "short": [
+        "반려동물 촬영 초점 배경 이동.",
+        "동물 사진 초점 오류."
+      ]
+    },
+    "GVS-0124": {
+      "formal": [
+        "근접 촬영 시 초점 전환이 반복적으로 발생합니다.",
+        "가까이 찍을 때 초점이 계속 바뀝니다."
+      ],
+      "casual": [
+        "근접 촬영할 때 초점이 계속 왔다 갔다 해요.",
+        "가까이 찍으면 초점이 자꾸 바뀌어요."
+      ],
+      "short": [
+        "근접 촬영 초점 전환 반복.",
+        "가까이서 찍을 때 초점 흔들림."
+      ]
+    },
+    "GVS-0125": {
+      "formal": [
+        "줌 배율 변경 시 프리뷰가 잠시 멈춥니다.",
+        "줌을 바꾸면 뷰파인더가 일시적으로 정지합니다."
+      ],
+      "casual": [
+        "줌 바꾸면 프리뷰가 잠깐 멈춰요.",
+        "줌 변경할 때 화면이 딜레이 돼요."
+      ],
+      "short": [
+        "줌 변경 시 프리뷰 멈춤.",
+        "줌 전환 시 뷰파인더 프리즈."
+      ]
+    },
+    "GVS-0126": {
+      "formal": [
+        "전원 버튼 두 번 눌러 카메라를 실행해도 촬영 버튼 반응이 늦습니다.",
+        "카메라 빠른 실행 후에도 셔터 버튼이 지연됩니다."
+      ],
+      "casual": [
+        "전원 버튼 두 번 눌러도 촬영 버튼이 느려요.",
+        "빠른 실행 카메라에서 셔터가 늦게 눌려요."
+      ],
+      "short": [
+        "빠른 실행 카메라 촬영 버튼 지연.",
+        "전원 버튼 두 번 누른 후 셔터 딜레이."
+      ]
+    },
+    "GVS-0127": {
+      "formal": [
+        "인물모드에서 경계 인식이 머리카락을 정확히 구분하지 못합니다.",
+        "인물모드가 머리카락을 배경으로 잘못 인식합니다."
+      ],
+      "casual": [
+        "인물모드에서 머리카락이 잘려나가요.",
+        "인물모드가 머리카락을 배경으로 인식해요."
+      ],
+      "short": [
+        "인물모드 머리카락 경계 오류.",
+        "인물모드 머리카락 잘림."
+      ]
+    },
+    "GVS-0128": {
+      "formal": [
+        "The automatic edge detection in document mode does not work accurately.",
+        "When scanning documents, the camera fails to correctly identify the corners."
+      ],
+      "casual": [
+        "Document scanning doesn't detect edges correctly.",
+        "The auto edge detection is wrong when I scan documents."
+      ],
+      "short": [
+        "Document scan edge detection inaccurate.",
+        "Auto corner detection fails in document mode."
+      ]
+    },
+    "GVS-0129": {
+      "formal": [
+        "In burst mode, some frames are not saved to the gallery.",
+        "When taking consecutive photos, a number of frames are missing from the saved images."
+      ],
+      "casual": [
+        "Some photos in burst mode don't get saved.",
+        "When I take burst shots, some frames are just lost."
+      ],
+      "short": [
+        "Burst mode drops frames.",
+        "Some burst photos not saved."
+      ]
+    },
+    "GVS-0130": {
+      "formal": [
+        "업데이트 후 카메라 첫 실행 속도가 현저히 느려졌습니다.",
+        "카메라 앱을 처음 열 때 로딩이 오래 걸립니다."
+      ],
+      "casual": [
+        "업데이트하고 나서 카메라 켜는 게 엄청 느려졌어요.",
+        "카메라 첫 실행이 너무 느려요."
+      ],
+      "short": [
+        "카메라 첫 실행 느림.",
+        "업데이트 후 카메라 로딩 지연."
+      ]
+    },
+    "GVS-0131": {
+      "formal": [
+        "인물 사진에서 피부색이 실제보다 노랗게 나타납니다.",
+        "사람 사진 찍으면 피부 톤이 누렇게 나옵니다."
+      ],
+      "casual": [
+        "인물 사진 피부색이 누렇게 나와요.",
+        "사람 찍으면 얼굴이 노랗게 보여요."
+      ],
+      "short": [
+        "인물 사진 피부색 황색 편향.",
+        "피부 톤이 누렇게 나옴."
+      ]
+    },
+    "GVS-0132": {
+      "formal": [
+        "야간 사진이 과도하게 밝아져 원래 분위기가 사라집니다.",
+        "밤에 찍은 사진이 너무 밝아서 야경 느낌이 안 납니다."
+      ],
+      "casual": [
+        "야간 사진이 너무 밝게 나와서 분위기가 없어요.",
+        "밤 사진이 낮처럼 밝아요."
+      ],
+      "short": [
+        "야간 사진 과도한 밝기.",
+        "야경 사진이 너무 밝음."
+      ]
+    },
+    "GVS-0133": {
+      "formal": [
+        "역광 촬영 시 얼굴이 뭉개지고 배경만 선명하게 나옵니다.",
+        "역광에서 얼굴이 선명하지 않고 배경만 또렷합니다."
+      ],
+      "casual": [
+        "역광에서 찍으면 얼굴이 뭉개져요.",
+        "역광 사진 얼굴이 흐리고 배경만 선명해요."
+      ],
+      "short": [
+        "역광 촬영 얼굴 뭉개짐.",
+        "역광 사진 얼굴 흐림."
+      ]
+    },
+    "GVS-0134": {
+      "formal": [
+        "LED 조명 아래에서 사진에 줄무늬가 생깁니다.",
+        "LED 불빛 아래 찍으면 사진에 줄이 나타납니다."
+      ],
+      "casual": [
+        "LED 조명 아래에서 사진에 줄무늬가 생겨요.",
+        "LED 불빛 아래 사진에 줄이 가요."
+      ],
+      "short": [
+        "LED 조명 아래 사진 줄무늬.",
+        "LED 광원에서 사진 밴딩."
+      ]
+    },
+    "GVS-0135": {
+      "formal": [
+        "초광각 카메라와 기본 카메라의 색감 차이가 큽니다.",
+        "광각과 기본 카메라 간 색상 일관성이 없습니다."
+      ],
+      "casual": [
+        "초광각이랑 기본 카메라 색감이 달라요.",
+        "광각 카메라 색감이 기본이랑 차이 나요."
+      ],
+      "short": [
+        "초광각과 기본 카메라 색감 차이.",
+        "카메라 간 색상 불일치."
+      ]
+    },
+    "GVS-0136": {
+      "formal": [
+        "망원 렌즈로 전환되는 순간 색온도와 노출이 급격히 변합니다.",
+        "줌을 망원으로 바꿀 때 색과 밝기가 달라집니다."
+      ],
+      "casual": [
+        "망원으로 바꾸는 순간 색감과 밝기가 확 달라져요.",
+        "망원 전환 시 색온도랑 노출이 변해요."
+      ],
+      "short": [
+        "망원 전환 시 색온도/노출 변화.",
+        "줌 전환 시 색상 및 밝기 불연속."
+      ]
+    },
+    "GVS-0137": {
+      "formal": [
+        "음식 사진 보정이 과해서 색이 부자연스럽습니다.",
+        "음식 사진이 너무 보정돼서 실제 색감과 다릅니다."
+      ],
+      "casual": [
+        "음식 사진 보정이 과해서 색이 인위적이에요.",
+        "음식 찍으면 색이 과장돼서 부자연스러워요."
+      ],
+      "short": [
+        "음식 사진 과도한 보정.",
+        "음식 색감 부자연스러움."
+      ]
+    },
+    "GVS-0138": {
+      "formal": [
+        "The front camera automatically alters the face after taking a selfie.",
+        "Selfies are automatically modified to change the facial appearance after capture."
+      ],
+      "casual": [
+        "My selfies get auto-edited to change my face.",
+        "The camera changes my face automatically after I take a selfie."
+      ],
+      "short": [
+        "Selfie auto-changes face after capture.",
+        "Front camera alters face automatically."
+      ]
+    },
+    "GVS-0139": {
+      "formal": [
+        "The detail difference between RAW and auto mode photos is excessive.",
+        "RAW photos and standard auto shots differ too much in level of detail."
+      ],
+      "casual": [
+        "The difference in detail between RAW and auto is way too big.",
+        "Auto photos look way different in detail compared to RAW."
+      ],
+      "short": [
+        "RAW vs auto detail gap too large.",
+        "Excessive detail difference between RAW and auto."
+      ]
+    },
+    "GVS-0140": {
+      "formal": [
+        "야간 촬영 시 광원 주변 플레어가 크게 번집니다.",
+        "밤에 불빛 주변에 빛 번짐이 심합니다."
+      ],
+      "casual": [
+        "밤에 찍으면 불빛 주변으로 빛이 많이 번져요.",
+        "플레어가 심하게 생겨요."
+      ],
+      "short": [
+        "야간 촬영 플레어 심함.",
+        "광원 주변 빛 번짐."
+      ]
+    },
+    "GVS-0141": {
+      "formal": [
+        "4K 60fps 녹화 중 프레임이 주기적으로 끊깁니다.",
+        "4K60 동영상 촬영 시 프레임 드랍이 발생합니다."
+      ],
+      "casual": [
+        "4K60으로 녹화하면 영상이 주기적으로 끊겨요.",
+        "4K 60fps 동영상 촬영 시 프레임이 끊깁니다."
+      ],
+      "short": [
+        "4K60 녹화 프레임 드랍.",
+        "4K60 동영상 끊김."
+      ]
+    },
+    "GVS-0142": {
+      "formal": [
+        "8K 촬영 시작 후 몇 분 뒤에 녹화가 종료됩니다.",
+        "8K 동영상 녹화 중 갑자기 종료됩니다."
+      ],
+      "casual": [
+        "8K로 찍으면 몇 분 후에 녹화가 멈춰요.",
+        "8K 영상 촬영 중 갑자기 꺼져요."
+      ],
+      "short": [
+        "8K 녹화 조기 종료.",
+        "8K 촬영 중 녹화 중단."
+      ]
+    },
+    "GVS-0143": {
+      "formal": [
+        "걸으면서 동영상을 촬영할 때 화면이 미세하게 떨리는 현상이 있습니다.",
+        "걸을 때 촬영한 영상에서 화면이 살짝 흔들리면서 불안정합니다."
+      ],
+      "casual": [
+        "걸으면서 찍으면 화면이 미세하게 튀어요.",
+        "걸을 때 동영상 찍으면 화면이 흔들려서 거슬려요."
+      ],
+      "short": [
+        "걸으면서 촬영 시 화면 떨림.",
+        "걸을 때 영상 흔들림 발생."
+      ]
+    },
+    "GVS-0144": {
+      "formal": [
+        "줌을 전환할 때 영상의 밝기와 초점이 순간적으로 튀는 문제가 있습니다.",
+        "줌 변환 시점에 영상 밝기와 초점이 불안정하게 변합니다."
+      ],
+      "casual": [
+        "줌 바꿀 때마다 영상 밝기랑 초점이 튀어요.",
+        "줌 전환하면 영상이 갑자기 밝아졌다 어두워졌다 해요."
+      ],
+      "short": [
+        "줌 전환 시 밝기와 초점 튐.",
+        "줌 바꿀 때 영상 밝기·초점 불안정."
+      ]
+    },
+    "GVS-0145": {
+      "formal": [
+        "장시간 녹화한 후에 음성과 영상의 싱크가 맞지 않습니다.",
+        "오래 녹화하면 소리랑 화면이 따로 노는 것 같아요."
+      ],
+      "casual": [
+        "오래 찍으면 목소리랑 영상 싱크가 안 맞아요.",
+        "장시간 녹화 후에 소리와 영상이 밀려요."
+      ],
+      "short": [
+        "녹화 후 음성 지연됨.",
+        "장시간 녹화 시 싱크 어긋남."
+      ]
+    },
+    "GVS-0146": {
+      "formal": [
+        "녹화 중에 바람 소리가 너무 커서 목소리가 거의 들리지 않습니다.",
+        "바람 부는 날 녹화하면 바람 소리가 음성을 완전히 덮어버려요."
+      ],
+      "casual": [
+        "바람 소리에 녹음한 목소리가 묻혀요.",
+        "밖에서 녹화하면 바람 소리 때문에 말소리가 안 들려요."
+      ],
+      "short": [
+        "바람 소리로 음성 녹음 안 됨.",
+        "녹화 시 바람 잡음이 음성 덮음."
+      ]
+    },
+    "GVS-0147": {
+      "formal": [
+        "저조도에서 촬영한 동영상에 잔상이 오래 남는 현상이 있습니다.",
+        "어두운 곳에서 찍은 영상에 잔상이 길게 보여요."
+      ],
+      "casual": [
+        "어두운 데서 찍으면 영상에 잔상이 남아요.",
+        "저조도 영상에서 잔상이 심하게 남습니다."
+      ],
+      "short": [
+        "저조도 영상 잔상 발생.",
+        "어두운 곳 촬영 시 잔상."
+      ]
+    },
+    "GVS-0148": {
+      "formal": [
+        "After connecting a USB microphone, the audio source does not switch back from internal mic.",
+        "When a USB mic is disconnected, the camera still uses the internal microphone instead of switching."
+      ],
+      "casual": [
+        "After using a USB mic, the camera doesn't switch back to internal mic.",
+        "Plugging in a USB mic makes the camera stay on external mic even after unplugging."
+      ],
+      "short": [
+        "USB mic prevents switching back to internal mic.",
+        "Camera audio source stuck on USB mic after disconnect."
+      ]
+    },
+    "GVS-0149": {
+      "formal": [
+        "With strong stabilization enabled, the edges of the video become distorted.",
+        "Heavy video stabilization causes noticeable warping at the frame edges."
+      ],
+      "casual": [
+        "The edges of the video get distorted when using strong stabilization.",
+        "When I turn on heavy stabilization, the sides of the video look weird."
+      ],
+      "short": [
+        "Strong stabilization warps video edges.",
+        "Video edges distorted with high stabilization."
+      ]
+    },
+    "GVS-0150": {
+      "formal": [
+        "낙하 후 영상 촬영 시 비정상적인 진동과 떨림이 발생합니다.",
+        "폰을 떨어뜨린 뒤로 영상에 떨림이 생겼습니다."
+      ],
+      "casual": [
+        "떨어뜨린 후에 영상 찍으면 떨려요.",
+        "OIS가 고장 난 것처럼 흔들려요."
+      ],
+      "short": [
+        "낙하 후 영상 떨림.",
+        "카메라 진동 이상."
+      ]
+    },
+    "GVS-0151": {
+      "formal": [
+        "비에 젖은 후 스피커에서 나는 소리가 먹먹하고 작아졌습니다.",
+        "비 맞은 뒤 스피커 소리가 탁하고 작게 들려요."
+      ],
+      "casual": [
+        "비에 젖고 나니까 스피커 소리가 작고 먹먹해요.",
+        "비 온 후 스피커 음질이 나빠졌어요."
+      ],
+      "short": [
+        "비에 젖은 후 스피커 음량 저하.",
+        "스피커 소리 작아짐 (비 노출)."
+      ]
+    },
+    "GVS-0152": {
+      "formal": [
+        "스피커폰 통화 시 상대방 목소리가 찢어져서 들립니다.",
+        "스피커폰으로 통화하면 상대 음성이 찢어지는 듯한 잡음이 납니다."
+      ],
+      "casual": [
+        "스피커폰 하면 상대방 목소리가 찢어져요.",
+        "통화 중 스피커폰에서 음성이 찢어져 들려요."
+      ],
+      "short": [
+        "스피커폰 음성 찢어짐.",
+        "통화 시 스피커폰 잡음."
+      ]
+    },
+    "GVS-0153": {
+      "formal": [
+        "녹음 파일에 지지직거리는 잡음이 섞여 있습니다.",
+        "녹음하면 지지직하는 노이즈가 계속 들립니다."
+      ],
+      "casual": [
+        "녹음하면 지지직 거리는 잡음이 들어가요.",
+        "녹음 파일에 잡음이 섞여요."
+      ],
+      "short": [
+        "녹음 잡음 발생.",
+        "녹음 파일에 지지직 소리."
+      ]
+    },
+    "GVS-0154": {
+      "formal": [
+        "영상통화 중 상대방이 제 목소리를 듣지 못한다고 합니다.",
+        "영상통화할 때 상대가 제 음성이 안 들린다고 해요."
+      ],
+      "casual": [
+        "영상통화하면 상대방이 내 목소리를 못 들어요.",
+        "통화 중 상대가 제 말을 못 들었다고 해요."
+      ],
+      "short": [
+        "영상통화 시 전송 안 됨.",
+        "통화 중 상대가 내 목소리를 못 들음."
+      ]
+    },
+    "GVS-0155": {
+      "formal": [
+        "최대 음량에서 특정 주파수 대역이 떨리는 현상이 있습니다.",
+        "볼륨을 최대로 올리면 특정 음역에서 떨림이 발생합니다."
+      ],
+      "casual": [
+        "최대 볼륨에서 특정 주파수가 떨려요.",
+        "소리 최대로 하면 특정 음에서 떨림이 느껴져요."
+      ],
+      "short": [
+        "최대 음량에서 특정 주파수 떨림.",
+        "볼륨 최대 시 떨림 발생."
+      ]
+    },
+    "GVS-0156": {
+      "formal": [
+        "가로 모드로 사용할 때 손으로 스피커를 가리게 됩니다.",
+        "가로로 잡으면 손이 스피커를 막아서 소리가 작아져요."
+      ],
+      "casual": [
+        "가로로 들면 손이 스피커를 가려요.",
+        "가로 모드에서 스피커가 손에 막혀요."
+      ],
+      "short": [
+        "가로 모드 시 스피커 차폐.",
+        "손으로 스피커 가려짐."
+      ]
+    },
+    "GVS-0157": {
+      "formal": [
+        "바람이 부는 야외에서 녹음하면 마이크가 포화되어 소리가 찌그러집니다.",
+        "바람 부는 곳에서 녹음하면 마이크가 먹통이 돼요."
+      ],
+      "casual": [
+        "바람 부는 밖에서 녹음하면 마이크가 포화돼요.",
+        "바람 소리에 마이크가 찌그러져요."
+      ],
+      "short": [
+        "야외 바람으로 마이크 포화.",
+        "바람 부는 곳에서 마이크 먹통."
+      ]
+    },
+    "GVS-0158": {
+      "formal": [
+        "After removing the earphones, audio continues to play through Bluetooth instead of the speaker.",
+        "Audio output remains on Bluetooth even after unplugging the wired earphones."
+      ],
+      "casual": [
+        "When I unplug earphones, sound still comes through Bluetooth.",
+        "Audio stays on Bluetooth after removing earphones."
+      ],
+      "short": [
+        "Audio stuck on Bluetooth after earphone unplug.",
+        "Earphone removal doesn't switch audio to speaker."
+      ]
+    },
+    "GVS-0159": {
+      "formal": [
+        "With the all sound mute setting enabled, no audio is produced.",
+        "The device emits no sound when the mute all option is turned on."
+      ],
+      "casual": [
+        "No sound comes out with the mute all setting on.",
+        "When I mute all sounds, nothing plays."
+      ],
+      "short": [
+        "All sound mute results in no audio.",
+        "No sound with mute all enabled."
+      ]
+    },
+    "GVS-0160": {
+      "formal": [
+        "조건 없이 수화부 스피커 음량이 간헐적으로 작아집니다.",
+        "통화 중 상대방 소리가 갑자기 작아질 때가 있습니다."
+      ],
+      "casual": [
+        "통화할 때 가끔 상대방 목소리가 작아져요.",
+        "수화부 소리가 간헐적으로 줄어요."
+      ],
+      "short": [
+        "수화부 음량 간헐적 저하.",
+        "통화 중 소리 작아짐."
+      ]
+    },
+    "GVS-0161": {
+      "formal": [
+        "이동 중에 통화가 반복적으로 끊깁니다.",
+        "걸으면서 통화하면 자주 끊겨요."
+      ],
+      "casual": [
+        "이동 중 통화가 계속 끊겨요.",
+        "걸으면서 전화하면 끊김이 심해요."
+      ],
+      "short": [
+        "이동 중 통화 끊김.",
+        "통화 중 잦은 끊김."
+      ]
+    },
+    "GVS-0162": {
+      "formal": [
+        "지하에서 같은 통신사의 다른 휴대폰보다 신호가 약합니다.",
+        "지하에서 같은 통신사 다른 폰에 비해 신호 세기가 약해요."
+      ],
+      "casual": [
+        "지하에서 다른 폰보다 신호가 약해요.",
+        "같은 통신사인데 지하에서 신호가 안 잡혀요."
+      ],
+      "short": [
+        "지하 신호 약함.",
+        "타 기기 대비 신호 약함."
+      ]
+    },
+    "GVS-0163": {
+      "formal": [
+        "통화를 시작하면 모바일 데이터가 끊기는 현상이 있습니다.",
+        "전화를 걸거나 받으면 데이터 연결이 끊깁니다."
+      ],
+      "casual": [
+        "통화하면 데이터가 끊겨요.",
+        "전화 올 때 데이터가 안 돼요."
+      ],
+      "short": [
+        "통화 시 데이터 끊김.",
+        "전화 중 데이터 차단."
+      ]
+    },
+    "GVS-0164": {
+      "formal": [
+        "해외에서 eSIM을 설치했는데 데이터가 개통되지 않습니다.",
+        "eSIM을 설치했지만 데이터가 안 터져요."
+      ],
+      "casual": [
+        "해외 eSIM 설치했는데 데이터가 안 돼요.",
+        "eSIM 깔았는데 데이터가 안 열려요."
+      ],
+      "short": [
+        "eSIM 데이터 개통 안 됨.",
+        "해외 eSIM 데이터 미작동."
+      ]
+    },
+    "GVS-0165": {
+      "formal": [
+        "Wi-Fi Calling이 활성화되어 있어도 실내에서 통화 품질이 좋지 않습니다.",
+        "Wi-Fi Calling 켜도 실내 통화 음질이 나빠요."
+      ],
+      "casual": [
+        "와이파이 콜링 켜도 실내 통화 음질이 구려요.",
+        "실내에서 Wi-Fi Calling 해도 통화가 안 좋아요."
+      ],
+      "short": [
+        "Wi-Fi Calling 실내 음질 불량.",
+        "실내 통화 품질 저하."
+      ]
+    },
+    "GVS-0166": {
+      "formal": [
+        "VoLTE 표시가 사라지고 통화 연결이 지연됩니다.",
+        "VoLTE 아이콘이 없어지고 통화 연결이 느려요."
+      ],
+      "casual": [
+        "VoLTE 표시가 안 뜨고 통화 연결이 느려요.",
+        "VoLTE가 꺼진 것처럼 통화 연결이 늦어요."
+      ],
+      "short": [
+        "VoLTE 미표시 및 연결 지연.",
+        "통화 연결 느림."
+      ]
+    },
+    "GVS-0167": {
+      "formal": [
+        "통신사를 변경한 후 APN이 자동으로 설정되지 않습니다.",
+        "통신사 바꾸고 APN이 자동으로 안 잡혀요."
+      ],
+      "casual": [
+        "통신사 변경 후 APN 설정이 안 돼요.",
+        "APN이 자동으로 안 잡혀서 인터넷이 안 돼요."
+      ],
+      "short": [
+        "APN 자동 설정 안 됨.",
+        "통신사 변경 후 APN 문제."
+      ]
+    },
+    "GVS-0168": {
+      "formal": [
+        "The device intermittently shows 'emergency calls only' on the status bar.",
+        "Occasionally, the phone displays that only emergency calls are available."
+      ],
+      "casual": [
+        "Sometimes it says 'emergency calls only' even with good signal.",
+        "The phone randomly shows 'emergency calls only'."
+      ],
+      "short": [
+        "Intermittent 'emergency calls only' display.",
+        "Phone shows emergency calls only occasionally."
+      ]
+    },
+    "GVS-0169": {
+      "formal": [
+        "There is a noticeable delay after pressing the answer button before the call connects.",
+        "After tapping the answer button, it takes a while for the call to actually connect."
+      ],
+      "casual": [
+        "When I answer a call, there's a long delay before it connects.",
+        "Pressing answer doesn't connect the call instantly."
+      ],
+      "short": [
+        "Answer button delay in connecting call.",
+        "Call connection delayed after pressing answer."
+      ]
+    },
+    "GVS-0170": {
+      "formal": [
+        "장시간 통화 후 상대방 목소리가 로봇처럼 변합니다.",
+        "통화를 오래 하면 음성이 왜곡됩니다."
+      ],
+      "casual": [
+        "통화 오래 하면 상대방 목소리가 로봇 같아져요.",
+        "음성이 변조돼서 들려요."
+      ],
+      "short": [
+        "장시간 통화 후 음성 왜곡.",
+        "통화 중 음성 로봇화."
+      ]
+    },
+    "GVS-0171": {
+      "formal": [
+        "업데이트 후 Wi-Fi 토글이 회색으로 표시되며 켜지지 않습니다.",
+        "업데이트하고 나니 Wi-Fi 버튼이 회색이고 눌러도 안 켜져요."
+      ],
+      "casual": [
+        "업데이트 후 와이파이가 안 켜져요.",
+        "업데이트 이후 Wi-Fi 토글이 먹통이에요."
+      ],
+      "short": [
+        "업데이트 후 Wi-Fi 토글 회색.",
+        "Wi-Fi 켜지지 않음 (업데이트 후)."
+      ]
+    },
+    "GVS-0172": {
+      "formal": [
+        "메시 공유기 이동 시 Wi-Fi 연결이 자주 끊깁니다",
+        "메시 공유기 근처에서 이동할 때마다 Wi-Fi 연결이 중단됩니다"
+      ],
+      "casual": [
+        "메시 와이파이 공유기 옮겨 다닐 때마다 연결이 계속 끊겨",
+        "메시 공유기 이동 시 자꾸 와이파이가 끊겨요"
+      ],
+      "short": [
+        "메시 공유기 이동 시 Wi-Fi 연결 끊김",
+        "메시 공유기 이동 시 와이파이 자주 끊김"
+      ]
+    },
+    "GVS-0173": {
+      "formal": [
+        "Wi-Fi 6E 공유기에서 속도가 비정상적으로 느립니다",
+        "Wi-Fi 6E 공유기 사용 시 인터넷 속도가 매우 느립니다"
+      ],
+      "casual": [
+        "Wi-Fi 6E 공유기에서 속도가 너무 느려",
+        "6E 공유기 쓰는데 속도가 엄청 느려요"
+      ],
+      "short": [
+        "Wi-Fi 6E 공유기 속도 느림",
+        "6E 공유기 속도 비정상적으로 느림"
+      ]
+    },
+    "GVS-0174": {
+      "formal": [
+        "공공 Wi-Fi 로그인 화면이 열리지 않습니다",
+        "공공 와이파이 접속 시 로그인 페이지가 나타나지 않습니다"
+      ],
+      "casual": [
+        "공공 와이파이 로그인 화면이 안 떠",
+        "공공 와이파이 로그인 창이 열리지 않아요"
+      ],
+      "short": [
+        "공공 Wi-Fi 로그인 화면 안 열림",
+        "공공 와이파이 로그인 페이지 미표시"
+      ]
+    },
+    "GVS-0175": {
+      "formal": [
+        "화면을 끄면 Wi-Fi가 절전 후 연결이 끊깁니다",
+        "화면 꺼짐 후 Wi-Fi 절전 모드에서 연결이 해제됩니다"
+      ],
+      "casual": [
+        "화면 끄면 와이파이가 절전 후 끊겨",
+        "화면 꺼지면 Wi-Fi 절전되면서 끊겨요"
+      ],
+      "short": [
+        "화면 끄면 Wi-Fi 절전 후 끊김",
+        "화면 꺼짐 시 Wi-Fi 연결 해제"
+      ]
+    },
+    "GVS-0176": {
+      "formal": [
+        "핫스팟 사용 후 집 Wi-Fi 자동 연결이 실패합니다",
+        "핫스팟을 켠 뒤에 집 와이파이 자동 연결이 안 됩니다"
+      ],
+      "casual": [
+        "핫스팟 쓰고 나면 집 와이파이 자동 연결이 안 돼",
+        "핫스팟 사용 후 집 Wi-Fi 자동 연결 실패해요"
+      ],
+      "short": [
+        "핫스팟 후 집 Wi-Fi 자동 연결 실패",
+        "핫스팟 사용 뒤 와이파이 자동연결 안 됨"
+      ]
+    },
+    "GVS-0177": {
+      "formal": [
+        "VPN을 켜면 일부 앱만 인터넷이 되지 않습니다",
+        "VPN 활성화 시 특정 앱의 인터넷 연결이 차단됩니다"
+      ],
+      "casual": [
+        "VPN 켜면 어떤 앱들은 인터넷이 안 돼",
+        "VPN 켜면 일부 앱만 인터넷 안 됨"
+      ],
+      "short": [
+        "VPN 켜면 일부 앱 인터넷 안 됨",
+        "VPN 사용 시 특정 앱 인터넷 불가"
+      ]
+    },
+    "GVS-0178": {
+      "formal": [
+        "A specific home router repeatedly requests the Wi-Fi password.",
+        "My device keeps asking for the Wi-Fi password when connecting to a particular router at home."
+      ],
+      "casual": [
+        "My home Wi-Fi keeps asking for the password over and over.",
+        "Only at home, the router keeps demanding the password."
+      ],
+      "short": [
+        "Specific router repeatedly requests Wi-Fi password.",
+        "Home Wi-Fi keeps asking for password."
+      ]
+    },
+    "GVS-0179": {
+      "formal": [
+        "The device shows as connected to a public Wi-Fi but no data passes through.",
+        "Even though it appears connected to a public network, there is no internet access."
+      ],
+      "casual": [
+        "Connected to public Wi-Fi but no internet.",
+        "Public Wi-Fi shows connected but nothing loads."
+      ],
+      "short": [
+        "Public Wi-Fi connected but no data.",
+        "Shows connected to public Wi-Fi but no internet."
+      ]
+    },
+    "GVS-0180": {
+      "formal": [
+        "Smart Switch 복원 후 저장된 Wi-Fi 네트워크 정보가 충돌합니다.",
+        "데이터 복원 뒤 Wi-Fi가 제대로 연결되지 않습니다."
+      ],
+      "casual": [
+        "Smart Switch로 복원했더니 Wi-Fi가 꼬였어요.",
+        "와이파이 저장 정보가 충돌해요."
+      ],
+      "short": [
+        "Smart Switch 복원 후 Wi-Fi 충돌.",
+        "네트워크 정보 충돌."
+      ]
+    },
+    "GVS-0181": {
+      "formal": [
+        "업데이트 후 차량 오디오 블루투스 연결이 몇 분마다 끊깁니다",
+        "업데이트 이후 차량용 오디오와 블루투스 연결이 자주 끊깁니다"
+      ],
+      "casual": [
+        "업데이트 후 차량 블루투스가 몇 분마다 끊겨",
+        "차량 오디오 업데이트 후 블루투스 연결이 자주 끊겨요"
+      ],
+      "short": [
+        "업데이트 후 차량 블루투스 자주 끊김",
+        "차량 오디오 블루투스 연결 수시로 해제"
+      ]
+    },
+    "GVS-0182": {
+      "formal": [
+        "버즈가 연결됨으로 표시되지만 소리는 폰에서 납니다",
+        "버즈 연결 상태인데도 소리가 스마트폰 스피커로 출력됩니다"
+      ],
+      "casual": [
+        "버즈 연결됐다고 뜨는데 소리는 폰에서 나와",
+        "버즈 연결됨인데 소리가 핸드폰에서 나요"
+      ],
+      "short": [
+        "버즈 연결 표시지만 소리 폰에서 남",
+        "버즈 연결됨에도 소리 스피커 출력"
+      ]
+    },
+    "GVS-0183": {
+      "formal": [
+        "멀티포인트 전환 시 소리가 몇 초간 멈춥니다",
+        "멀티포인트 기능으로 기기 전환할 때 오디오가 일시 중단됩니다"
+      ],
+      "casual": [
+        "멀티포인트 전환하면 소리가 몇 초 동안 안 나와",
+        "멀티포인트 바꿀 때 소리가 수초간 끊겨요"
+      ],
+      "short": [
+        "멀티포인트 전환 시 소리 끊김",
+        "멀티포인트 전환 시 오디오 일시중단"
+      ]
+    },
+    "GVS-0184": {
+      "formal": [
+        "워치 블루투스 연결이 밤사이에 해제됩니다",
+        "밤 사이에 갤럭시 워치와 블루투스 연결이 끊깁니다"
+      ],
+      "casual": [
+        "워치가 밤사이에 블루투스 연결이 해제돼",
+        "밤새 워치 블루투스 연결이 끊겨 있어요"
+      ],
+      "short": [
+        "워치 블루투스 밤사이 연결 해제",
+        "야간 워치 블루투스 연결 끊김"
+      ]
+    },
+    "GVS-0185": {
+      "formal": [
+        "게임패드 블루투스 입력이 지연되고 버튼이 누락됩니다",
+        "게임패드를 블루투스로 연결 시 입력이 느리고 버튼이 안 먹힙니다"
+      ],
+      "casual": [
+        "게임패드 블루투스 연결이 느리고 버튼 누락이 있어",
+        "게임패드 블루투스로 하면 입력이 늦고 버튼이 가끔 안 눌려"
+      ],
+      "short": [
+        "게임패드 블루투스 입력 지연 및 버튼 누락",
+        "게임패드 블루투스 반응 느림 및 버튼 미인식"
+      ]
+    },
+    "GVS-0186": {
+      "formal": [
+        "태블릿 키보드가 절전 후 블루투스 재연결되지 않습니다",
+        "태블릿 블루투스 키보드가 절전 모드 후에 다시 연결이 안 됩니다"
+      ],
+      "casual": [
+        "태블릿 키보드 절전 후 블루투스 재연결이 안 돼",
+        "태블릿 블루투스 키보드가 절전 뒤에 다시 안 잡혀요"
+      ],
+      "short": [
+        "태블릿 키보드 절전 후 블루투스 미연결",
+        "태블릿 블루투스 키보드 재연결 실패"
+      ]
+    },
+    "GVS-0187": {
+      "formal": [
+        "액세서리 배터리 잔량이 낮으면 블루투스 연결 품질이 급격히 떨어집니다",
+        "블루투스 액세서리 배터리가 부족하면 연결 상태가 나빠집니다"
+      ],
+      "casual": [
+        "액세서리 배터리 낮으면 블루투스 연결이 확 떨어져",
+        "블루투스 기기 배터리 적으면 연결 품질이 안 좋아져요"
+      ],
+      "short": [
+        "액세서리 배터리 낮을 때 블루투스 품질 저하",
+        "블루투스 액세서리 저배터리 시 연결 불량"
+      ]
+    },
+    "GVS-0188": {
+      "formal": [
+        "Calls do not automatically transfer to a connected Bluetooth headset.",
+        "When a call comes in, it rings on the phone instead of the paired earphones."
+      ],
+      "casual": [
+        "Calls don't switch to my Bluetooth earphones automatically.",
+        "My calls still come through the phone even with earphones connected."
+      ],
+      "short": [
+        "Calls not transferred to Bluetooth headset.",
+        "Bluetooth earphones don't take over calls."
+      ]
+    },
+    "GVS-0189": {
+      "formal": [
+        "Selecting a high-quality audio codec results in noise and frequent dropouts.",
+        "When I choose a high-resolution codec, I hear static and the connection cuts out."
+      ],
+      "casual": [
+        "When I use a high-quality codec, it gets static and disconnects.",
+        "High-quality Bluetooth audio causes crackling and dropouts."
+      ],
+      "short": [
+        "High-quality codec causes noise and dropouts.",
+        "Static and disconnects with premium codec selected."
+      ]
+    },
+    "GVS-0190": {
+      "formal": [
+        "가까운 거리에서도 특정 방향에서 블루투스 신호가 약해집니다.",
+        "블루투스 연결 시 방향에 따라 신호가 약해집니다."
+      ],
+      "casual": [
+        "가까이 있어도 방향에 따라 블루투스가 끊겨요.",
+        "블루투스 신호가 특정 방향에서 약해요."
+      ],
+      "short": [
+        "블루투스 방향성 신호 약화.",
+        "특정 방향에서 블루투스 약함."
+      ]
+    },
+    "GVS-0191": {
+      "formal": [
+        "고층 건물 사이에서 GPS 위치가 반대 도로로 튑니다",
+        "고층 건물 밀집 지역에서 GPS 위치가 실제 도로와 다른 곳을 가리킵니다"
+      ],
+      "casual": [
+        "고층 건물 사이에서 GPS 위치가 반대쪽 도로로 튀어",
+        "빌딩 숲에서 GPS 위치가 엉뚱한 도로로 표시돼요"
+      ],
+      "short": [
+        "고층 건물 사이 GPS 위치 튐",
+        "빌딩 숲 GPS 위치 반대 도로 표시"
+      ]
+    },
+    "GVS-0192": {
+      "formal": [
+        "차량 내비게이션에서 GPS 방향 화살표가 늦게 회전합니다",
+        "자동차 네비게이션에서 방향 지시 화살표가 실제 회전보다 늦게 움직입니다"
+      ],
+      "casual": [
+        "차량 내비에서 GPS 방향 화살표가 늦게 돌아가",
+        "차량 네비게이션 방향 화살표 반응이 느려요"
+      ],
+      "short": [
+        "차량 내비 GPS 방향 화살표 지연",
+        "네비 방향 화살표 회전 느림"
+      ]
+    },
+    "GVS-0193": {
+      "formal": [
+        "도보 이동 경로가 건물을 가로질러 GPS에 기록됩니다",
+        "GPS가 도보 경로를 건물 내부로 잘못 기록합니다"
+      ],
+      "casual": [
+        "걸어가는 경로가 건물을 통과하는 걸로 GPS에 기록돼",
+        "GPS가 건물 뚫고 걸어간 것처럼 표시해요"
+      ],
+      "short": [
+        "도보 GPS 경로 건물 통과 기록",
+        "GPS 보행 경로 건물 내부로 표시"
+      ]
+    },
+    "GVS-0194": {
+      "formal": [
+        "실내에서 나간 후 GPS 최초 위치 확인이 오래 걸립니다",
+        "건물 밖으로 나와도 GPS가 첫 위치를 잡는 데 시간이 많이 소요됩니다"
+      ],
+      "casual": [
+        "실내에서 나와도 GPS 위치 잡는 데 오래 걸려",
+        "건물 밖 나가도 GPS 첫 위치 확인이 느려요"
+      ],
+      "short": [
+        "실외 진출 후 GPS 첫 위치 지연",
+        "GPS 최초 위치 확인 시간 오래 소요"
+      ]
+    },
+    "GVS-0195": {
+      "formal": [
+        "절전 모드에서 GPS 위치 업데이트 간격이 너무 깁니다",
+        "절전 모드 활성화 시 GPS 위치 갱신 주기가 매우 늘어납니다"
+      ],
+      "casual": [
+        "절전모드에서 GPS 위치 업데이트가 너무 드물게 돼",
+        "절전모드 켜면 GPS 위치 업데이트 간격이 너무 길어요"
+      ],
+      "short": [
+        "절전모드 GPS 업데이트 간격 김",
+        "절전 시 GPS 위치 갱신 주기 과도"
+      ]
+    },
+    "GVS-0196": {
+      "formal": [
+        "나침반 방향이 실제 방향과 180도 다르게 표시됩니다",
+        "GPS 나침반이 가리키는 방향이 실제와 반대입니다"
+      ],
+      "casual": [
+        "나침반 방향이 실제랑 180도 반대야",
+        "GPS 나침반이 실제 방향과 정반대를 가리켜요"
+      ],
+      "short": [
+        "나침반 실제와 180도 반대",
+        "GPS 나침반 방향 오차 180도"
+      ]
+    },
+    "GVS-0197": {
+      "formal": [
+        "운동 기록 거리가 실제보다 훨씬 짧게 측정됩니다",
+        "GPS를 이용한 운동 거리 기록이 실제보다 크게 짧습니다"
+      ],
+      "casual": [
+        "운동 기록 거리가 실제보다 훨씬 짧게 나와",
+        "GPS 운동 거리가 실제보다 너무 짧게 측정돼요"
+      ],
+      "short": [
+        "운동 기록 GPS 거리 짧게 측정",
+        "GPS 운동 거리 실제보다 짧음"
+      ]
+    },
+    "GVS-0198": {
+      "formal": [
+        "After exiting a tunnel, the GPS takes a long time to recover the location.",
+        "Location accuracy is slow to restore after being in a tunnel."
+      ],
+      "casual": [
+        "GPS is slow to find my location after leaving a tunnel.",
+        "When I come out of a tunnel, it takes ages to get a GPS fix."
+      ],
+      "short": [
+        "Slow GPS recovery after tunnel exit.",
+        "GPS lag after leaving tunnel."
+      ]
+    },
+    "GVS-0199": {
+      "formal": [
+        "When two map apps are used simultaneously, one of them stops updating the location.",
+        "Running two navigation apps at once causes one app's position to freeze."
+      ],
+      "casual": [
+        "When I use two map apps, one of them stops moving.",
+        "Using two GPS apps makes one location freeze."
+      ],
+      "short": [
+        "One map app location freezes when using two.",
+        "Dual map apps cause one to stop updating."
+      ]
+    },
+    "GVS-0200": {
+      "formal": [
+        "비행기 모드 해제 후 GPS 위치를 다시 잡지 못합니다.",
+        "비행기 모드를 끄면 GPS가 동작하지 않습니다."
+      ],
+      "casual": [
+        "비행기 모드 풀면 GPS가 안 잡혀요.",
+        "위치가 안 잡혀서 네비가 안 돼요."
+      ],
+      "short": [
+        "비행기 모드 해제 후 GPS 미동작.",
+        "GPS 위치 재획득 실패."
+      ]
+    },
+    "GVS-0201": {
+      "formal": [
+        "절전 대상 앱의 알림이 몇 시간 뒤에 한꺼번에 오고 있습니다.",
+        "알림이 실시간으로 오지 않고 몰려서 도착하는 문제가 있습니다."
+      ],
+      "casual": [
+        "절전 앱 알림이 몇 시간 후에 몰려와요.",
+        "알림이 실시간이 아니라 한꺼번에 와요."
+      ],
+      "short": [
+        "절전 앱 알림 지연됨.",
+        "알림이 몰려서 옴."
+      ]
+    },
+    "GVS-0202": {
+      "formal": [
+        "방해금지 모드가 종료된 후에도 일부 알림이 무음으로 유지됩니다.",
+        "방해금지 해제 이후에도 알림 소리가 나오지 않습니다."
+      ],
+      "casual": [
+        "방해금지 끝나도 일부 알림이 무음이에요.",
+        "방해금지 풀렸는데도 알림 소리가 안 나요."
+      ],
+      "short": [
+        "방해금지 후 일부 알림 무음.",
+        "알림 소리 안 남."
+      ]
+    },
+    "GVS-0203": {
+      "formal": [
+        "RCS가 '연결 중' 상태에서 더 이상 진행되지 않습니다.",
+        "RCS 연결이 완료되지 않고 계속 연결 중으로 표시됩니다."
+      ],
+      "casual": [
+        "RCS가 연결 중에서 넘어가지 않아요.",
+        "RCS 연결이 안 되고 계속 연결 중이에요."
+      ],
+      "short": [
+        "RCS 연결 중에서 멈춤.",
+        "RCS 연결 안 됨."
+      ]
+    },
+    "GVS-0204": {
+      "formal": [
+        "모바일 데이터가 켜져 있는데도 MMS 다운로드가 실패합니다.",
+        "데이터가 켜져 있지만 MMS를 받을 수 없습니다."
+      ],
+      "casual": [
+        "데이터 켜도 MMS가 안 다운로드돼요.",
+        "MMS 다운로드가 계속 실패해요."
+      ],
+      "short": [
+        "MMS 다운로드 실패.",
+        "데이터 켜도 MMS 안 됨."
+      ]
+    },
+    "GVS-0205": {
+      "formal": [
+        "은행 인증 문자가 늦게 도착해서 인증 시간이 만료되었습니다.",
+        "인증 문자가 지연되어 도착해 만료되었습니다."
+      ],
+      "casual": [
+        "은행 인증 문자가 늦게 와서 만료됐어요.",
+        "인증 문자가 제때 안 와서 시간이 지났어요."
+      ],
+      "short": [
+        "인증 문자 지연으로 만료.",
+        "문자가 늦게 옴."
+      ]
+    },
+    "GVS-0206": {
+      "formal": [
+        "두 번째 SIM 카드의 문자 메시지만 수신이 누락됩니다.",
+        "듀얼 SIM에서 두 번째 SIM의 문자를 받지 못합니다."
+      ],
+      "casual": [
+        "두 번째 SIM 문자만 안 와요.",
+        "듀얼 SIM에서 한쪽 문자만 누락돼요."
+      ],
+      "short": [
+        "두 번째 SIM 문자 누락.",
+        "SIM2 문자 수신 안 됨."
+      ]
+    },
+    "GVS-0207": {
+      "formal": [
+        "워치에는 알림이 오지만 휴대폰 메시지 기록에는 없습니다.",
+        "워치에서 알림을 받았는데 폰의 문자함에는 메시지가 없습니다."
+      ],
+      "casual": [
+        "워치엔 알림 오는데 폰 문자함에는 없어요.",
+        "워치에만 문자 알림이 와요."
+      ],
+      "short": [
+        "워치 알림 있으나 폰 기록 없음.",
+        "폰에 문자 없음."
+      ]
+    },
+    "GVS-0208": {
+      "formal": [
+        "The notification contents and icons are missing from the lock screen.",
+        "I no longer see notification details or icons on the lock screen."
+      ],
+      "casual": [
+        "My lock screen stopped showing notification content and icons.",
+        "I can't see notifications or their icons on the lock screen anymore."
+      ],
+      "short": [
+        "Lock screen notification content and icons missing.",
+        "No notification details on lock screen."
+      ]
+    },
+    "GVS-0209": {
+      "formal": [
+        "Work profile notifications are being blocked when in personal mode.",
+        "I receive no notifications from my work profile while using personal mode."
+      ],
+      "casual": [
+        "Work profile notifications get blocked in personal mode.",
+        "I don't get work notifications when I'm using personal mode."
+      ],
+      "short": [
+        "Work notifications blocked in personal mode.",
+        "No work profile notifications in personal mode."
+      ]
+    },
+    "GVS-0210": {
+      "formal": [
+        "휴대폰을 재부팅해야만 밀려 있던 메시지들이 한꺼번에 도착합니다.",
+        "재부팅 전까지는 알림이 전혀 오지 않고 있다가 재부팅 후에야 모든 메시지가 한꺼번에 수신됩니다."
+      ],
+      "casual": [
+        "재부팅해야만 밀린 문자들이 한꺼번에 와요.",
+        "재부팅 전에는 알림이 안 오다가 재부팅 하고 나서야 문자들이 몰려와요."
+      ],
+      "short": [
+        "재부팅해야 문자들이 한꺼번에 와요.",
+        "알림 지연, 재부팅 후에야 메시지 수신됨."
+      ]
+    },
+    "GVS-0211": {
+      "formal": [
+        "방지턱을 넘을 때마다 유선 Android Auto 연결이 끊깁니다.",
+        "차량이 방지턱을 지나면 Android Auto가 자주 끊깁니다."
+      ],
+      "casual": [
+        "방지턱 넘을 때마다 Android Auto가 끊겨요.",
+        "유선 Android Auto가 방지턱에서 자주 끊겨요."
+      ],
+      "short": [
+        "방지턱에서 Android Auto 끊김.",
+        "유선 연결 불안정."
+      ]
+    },
+    "GVS-0212": {
+      "formal": [
+        "무선 Android Auto가 차량을 찾지 못합니다.",
+        "차량에서 무선 Android Auto 연결이 되지 않습니다."
+      ],
+      "casual": [
+        "무선 Android Auto가 차량을 못 찾아요.",
+        "차량에 무선 Android Auto 연결이 안 돼요."
+      ],
+      "short": [
+        "무선 Android Auto 연결 안 됨.",
+        "차량 인식 실패."
+      ]
+    },
+    "GVS-0213": {
+      "formal": [
+        "잠금 상태에서 차량 연결 승인이 반복적으로 요구됩니다.",
+        "휴대폰이 잠겨 있을 때마다 Android Auto 연결 승인을 계속 요청합니다."
+      ],
+      "casual": [
+        "잠금 상태에서 차량 연결 승인이 계속 떠요.",
+        "Android Auto 연결 승인이 반복돼요."
+      ],
+      "short": [
+        "연결 승인 반복 요구.",
+        "잠금 시 승인 반복."
+      ]
+    },
+    "GVS-0214": {
+      "formal": [
+        "충전 전용 케이블을 사용해서 데이터 연결이 되지 않습니다.",
+        "사용 중인 케이블이 충전 전용이라 데이터 전송이 안 됩니다."
+      ],
+      "casual": [
+        "충전 전용 케이블이라 데이터 연결이 안 돼요.",
+        "케이블이 데이터를 지원하지 않아요."
+      ],
+      "short": [
+        "충전 케이블로 데이터 불가.",
+        "데이터 연결 안 됨."
+      ]
+    },
+    "GVS-0215": {
+      "formal": [
+        "USB 기본 모드가 충전으로 고정되어 파일 전송이 되지 않습니다.",
+        "파일 전송을 위해 USB 모드를 변경해도 충전 모드로만 작동합니다."
+      ],
+      "casual": [
+        "USB 모드가 충전으로 고정돼서 파일 전송이 안 돼요.",
+        "파일 전송하려고 해도 계속 충전만 돼요."
+      ],
+      "short": [
+        "USB 모드 충전 고정.",
+        "파일 전송 불가."
+      ]
+    },
+    "GVS-0216": {
+      "formal": [
+        "헤드유닛 업데이트 이후에 Android Auto 연결이 되지 않습니다.",
+        "차량 헤드유닛 업데이트 후 휴대폰 연결이 안 됩니다."
+      ],
+      "casual": [
+        "헤드유닛 업데이트하고 나니 연결이 안 돼요.",
+        "차량 업데이트 후 Android Auto가 안 돼요."
+      ],
+      "short": [
+        "헤드유닛 업데이트 후 연결 불가.",
+        "업데이트 후 연결 안 됨."
+      ]
+    },
+    "GVS-0217": {
+      "formal": [
+        "통화 종료 후 차량 오디오가 원래대로 돌아오지 않습니다.",
+        "통화가 끝나도 차량 스피커에서 음악이 재생되지 않습니다."
+      ],
+      "casual": [
+        "통화 끝나도 차량 오디오가 안 돌아와요.",
+        "전화 끊고 나면 음악이 안 나와요."
+      ],
+      "short": [
+        "통화 후 오디오 안 돌아옴.",
+        "차량 오디오 복구 안 됨."
+      ]
+    },
+    "GVS-0218": {
+      "formal": [
+        "The map screen freezes and the connection restarts while driving.",
+        "While navigating, the map display freezes and then reconnects."
+      ],
+      "casual": [
+        "My map screen keeps freezing and reconnecting while I'm driving.",
+        "While driving, the map freezes and the connection drops then comes back."
+      ],
+      "short": [
+        "Map freezes and reconnects while driving.",
+        "Navigation map freezing and restarting."
+      ]
+    },
+    "GVS-0219": {
+      "formal": [
+        "The USB connection only charges the device, but the PC does not recognize it.",
+        "When connected via USB, the device only charges and is not detected by the PC."
+      ],
+      "casual": [
+        "My phone only charges when plugged into the PC; the PC doesn't see it.",
+        "USB only charges, PC doesn't recognize the device."
+      ],
+      "short": [
+        "USB only charges, PC doesn't detect device.",
+        "Device not recognized by PC via USB."
+      ]
+    },
+    "GVS-0220": {
+      "formal": [
+        "한 차량에서는 USB 연결이 정상이지만 다른 차량에서는 반복적으로 끊깁니다.",
+        "특정 차량에서만 USB 연결이 지속적으로 끊기는 현상이 발생합니다."
+      ],
+      "casual": [
+        "어느 차에서는 USB가 잘 되는데 다른 차에서는 계속 끊겨요.",
+        "한 차량에서만 USB 연결이 자꾸 끊겨요."
+      ],
+      "short": [
+        "차량에 따라 USB 연결 끊김.",
+        "한 차량에서만 USB 반복 끊김."
+      ]
+    },
+    "GVS-0221": {
+      "formal": [
+        "두꺼운 케이스를 사용하면 NFC 결제 단말기가 인식되지 않습니다.",
+        "케이스 두께 때문에 NFC 결제가 안 됩니다."
+      ],
+      "casual": [
+        "두꺼운 케이스 쓰면 NFC 결제가 안 돼요.",
+        "케이스 때문에 결제 단말기가 인식을 못 해요."
+      ],
+      "short": [
+        "두꺼운 케이스로 NFC 인식 불가.",
+        "케이스 때문에 결제 안 됨."
+      ]
+    },
+    "GVS-0222": {
+      "formal": [
+        "교통카드가 간헐적으로 두 번 인식됩니다.",
+        "교통카드를 태그하면 가끔 두 번 찍힙니다."
+      ],
+      "casual": [
+        "교통카드가 가끔 두 번 인식돼요.",
+        "대중교통 태그할 때 두 번 찍힐 때가 있어요."
+      ],
+      "short": [
+        "교통카드 중복 인식.",
+        "가끔 두 번 찍힘."
+      ]
+    },
+    "GVS-0223": {
+      "formal": [
+        "실물 카드와 함께 있으면 다른 카드가 인식됩니다.",
+        "NFC 결제 시 여러 카드가 있을 때 원하지 않는 카드가 선택됩니다."
+      ],
+      "casual": [
+        "실물 카드랑 같이 있으면 다른 카드가 읽혀요.",
+        "카드 여러 개 있을 때 엉뚱한 카드가 인식돼요."
+      ],
+      "short": [
+        "다른 카드 인식됨.",
+        "원치 않는 카드 선택."
+      ]
+    },
+    "GVS-0224": {
+      "formal": [
+        "은행 인증 후에도 카드 등록이 완료되지 않습니다.",
+        "은행 인증 절차를 마쳤지만 Wallet에 카드가 등록되지 않습니다."
+      ],
+      "casual": [
+        "은행 인증했는데 카드 등록이 안 끝나요.",
+        "인증 후에도 카드 추가가 안 돼요."
+      ],
+      "short": [
+        "인증 후 카드 등록 실패.",
+        "카드 등록 완료 안 됨."
+      ]
+    },
+    "GVS-0225": {
+      "formal": [
+        "해외에서 기존에 사용하던 Wallet 기능을 찾을 수 없습니다.",
+        "해외에서는 Samsung Wallet의 일부 기능이 보이지 않습니다."
+      ],
+      "casual": [
+        "해외에서는 Wallet 기능이 안 보여요.",
+        "해외에서 기존 Wallet을 사용할 수 없어요."
+      ],
+      "short": [
+        "해외 Wallet 기능 노출 안 됨.",
+        "해외 사용 불가."
+      ]
+    },
+    "GVS-0226": {
+      "formal": [
+        "NFC 태그는 읽을 수 있지만 결제만 실패합니다.",
+        "NFC 태그 인식은 되는데 결제가 진행되지 않습니다."
+      ],
+      "casual": [
+        "NFC 태그는 읽는데 결제는 안 돼요.",
+        "태그 인식은 되고 결제만 실패해요."
+      ],
+      "short": [
+        "태그 인식되나 결제 실패.",
+        "NFC 결제만 안 됨."
+      ]
+    },
+    "GVS-0227": {
+      "formal": [
+        "화면을 끈 상태에서 교통카드 인식이 늦어집니다.",
+        "NFC 교통카드를 사용할 때 화면이 꺼져 있으면 인식이 지연됩니다."
+      ],
+      "casual": [
+        "화면 끄고 교통카드 찍으면 인식이 느려요.",
+        "NFC 교통카드가 화면 꺼진 상태에서 늦게 인식돼요."
+      ],
+      "short": [
+        "화면 꺼짐 상태에서 교통카드 인식 지연됨.",
+        "NFC 교통카드 인식이 느림."
+      ]
+    },
+    "GVS-0228": {
+      "formal": [
+        "Samsung Wallet is blocked from running due to work profile policies.",
+        "Work profile policies prevent the Wallet app from launching."
+      ],
+      "casual": [
+        "Work profile policies block Samsung Wallet from opening.",
+        "I can't open Wallet because of work profile restrictions."
+      ],
+      "short": [
+        "Wallet blocked by work profile policy.",
+        "Work profile prevents Wallet from launching."
+      ]
+    },
+    "GVS-0229": {
+      "formal": [
+        "NFC payments are disabled due to a security status warning.",
+        "A security warning is preventing me from making NFC payments."
+      ],
+      "casual": [
+        "A security warning disables NFC payments on my phone.",
+        "I can't use NFC payments because of a security alert."
+      ],
+      "short": [
+        "NFC payments disabled due to security warning.",
+        "Security warning blocks NFC payments."
+      ]
+    },
+    "GVS-0230": {
+      "formal": [
+        "특정 가맹점 단말기에서만 결제가 반복적으로 실패합니다.",
+        "일부 가맹점에서만 삼성페이 결제가 계속 안 됩니다."
+      ],
+      "casual": [
+        "어떤 가맹점에서만 결제가 계속 실패해요.",
+        "특정 가맹점 단말에서만 삼성페이가 안 돼요."
+      ],
+      "short": [
+        "특정 가맹점에서만 결제 실패.",
+        "일부 가맹점 단말에서 결제 반복 실패."
+      ]
+    },
+    "GVS-0231": {
+      "formal": [
+        "빠른 설정 버튼 배열이 바뀌어 자주 쓰는 기능을 찾기 어렵습니다.",
+        "업데이트 후 빠른 설정의 아이콘 위치가 변경되어 불편합니다."
+      ],
+      "casual": [
+        "빠른 설정 배열이 바뀌어서 자주 쓰는 걸 찾기가 힘들어요.",
+        "업데이트하고 나니 빠른 설정 아이콘 위치가 다 바뀌었어요."
+      ],
+      "short": [
+        "빠른 설정 배열 변경으로 기능 찾기 어려움.",
+        "업데이트 후 빠른 설정 위치가 바뀜."
+      ]
+    },
+    "GVS-0232": {
+      "formal": [
+        "업데이트 후 제스처 동작이 이전과 달라졌습니다.",
+        "새 버전에서 제스처 사용감이 변경되어 적응이 어렵습니다."
+      ],
+      "casual": [
+        "제스처 동작이 업데이트 전하고 다르게 느껴져요.",
+        "제스처 사용감이 바뀌어서 불편해요."
+      ],
+      "short": [
+        "제스처 동작이 이전과 다름.",
+        "업데이트 후 제스처 사용감 변경."
+      ]
+    },
+    "GVS-0233": {
+      "formal": [
+        "Good Lock 모듈이 업데이트된 One UI 버전과 충돌하여 실행되지 않습니다.",
+        "새 One UI 업데이트 후 Good Lock 모듈이 호환되지 않습니다."
+      ],
+      "casual": [
+        "Good Lock 모듈이 업데이트하고 충돌 나요.",
+        "Good Lock이 새 One UI랑 안 맞아요."
+      ],
+      "short": [
+        "Good Lock 모듈이 업데이트 후 충돌.",
+        "Good Lock이 새 버전과 호환 안 됨."
+      ]
+    },
+    "GVS-0234": {
+      "formal": [
+        "업데이트 후 카메라 앱이 반복해서 종료됩니다.",
+        "카메라 앱이 업데이트 이후 계속 꺼집니다."
+      ],
+      "casual": [
+        "업데이트하고 카메라가 자꾸 꺼져요.",
+        "카메라 앱이 반복 종료되네요."
+      ],
+      "short": [
+        "카메라 앱이 업데이트 후 반복 종료.",
+        "카메라가 자주 꺼짐."
+      ]
+    },
+    "GVS-0235": {
+      "formal": [
+        "업데이트 이후 배터리 소모와 발열이 심해졌습니다.",
+        "새 업데이트를 적용한 후 배터리 성능이 나빠지고 기기가 뜨거워집니다."
+      ],
+      "casual": [
+        "업데이트하고 나서 배터리가 빨리 닳고 발열이 심해졌어요.",
+        "업데이트 후에 배터리랑 발열이 더 안 좋아진 것 같아요."
+      ],
+      "short": [
+        "업데이트 후 배터리 소모 및 발열 증가.",
+        "배터리와 발열이 악화됨."
+      ]
+    },
+    "GVS-0236": {
+      "formal": [
+        "접근성 설정 중 일부가 업데이트 후 초기화되었습니다.",
+        "시스템 업데이트 이후 접근성 설정이 기본값으로 돌아갔습니다."
+      ],
+      "casual": [
+        "접근성 설정이 업데이트하고 리셋됐어요.",
+        "접근성 설정 일부가 초기화됐네요."
+      ],
+      "short": [
+        "접근성 설정 일부 초기화됨.",
+        "업데이트 후 접근성 설정 리셋."
+      ]
+    },
+    "GVS-0237": {
+      "formal": [
+        "업데이트 후 홈 화면의 아이콘 배열이 바뀌거나 일부 아이콘이 사라졌습니다.",
+        "홈 화면 아이콘이 업데이트 이후 재배열되고 누락되었습니다."
+      ],
+      "casual": [
+        "홈 화면 아이콘 배열이 바뀌고 몇 개가 없어졌어요.",
+        "업데이트하고 홈 화면 아이콘이 사라졌어요."
+      ],
+      "short": [
+        "홈 화면 아이콘 배열 변경 및 누락.",
+        "업데이트 후 아이콘 일부 사라짐."
+      ]
+    },
+    "GVS-0238": {
+      "formal": [
+        "After the update, the font and UI size changed unexpectedly.",
+        "The font and overall UI size are different from what I expected after updating."
+      ],
+      "casual": [
+        "After the update, my font and UI size got messed up.",
+        "The font and size changed in a weird way after the update."
+      ],
+      "short": [
+        "Font and UI size changed after update.",
+        "Unexpected font and size change after update."
+      ]
+    },
+    "GVS-0239": {
+      "formal": [
+        "App permissions were reset after the update, causing some features to stop working.",
+        "After the update, app permissions reset and several functions stopped working."
+      ],
+      "casual": [
+        "The update reset my app permissions and broke some features.",
+        "After updating, all my app permissions got reset and things stopped working."
+      ],
+      "short": [
+        "App permissions reset after update, features broken.",
+        "Update reset permissions, causing feature loss."
+      ]
+    },
+    "GVS-0240": {
+      "formal": [
+        "이전 One UI 버전으로 되돌리는 방법을 알고 싶습니다.",
+        "One UI 업데이트 후 이전 버전으로 다운그레이드하는 방법을 문의합니다."
+      ],
+      "casual": [
+        "예전 One UI로 다시 돌아가는 방법 좀 알려주세요.",
+        "One UI 업데이트를 취소하고 이전 버전으로 어떻게 가나요?"
+      ],
+      "short": [
+        "이전 One UI로 되돌리는 방법 문의.",
+        "One UI 다운그레이드 방법 문의."
+      ]
+    },
+    "GVS-0241": {
+      "formal": [
+        "은행 앱 업데이트 후 실행하자마자 종료됩니다.",
+        "업데이트된 은행 앱이 실행 즉시 강제 종료됩니다."
+      ],
+      "casual": [
+        "은행 앱 업데이트하고 켜자마자 꺼져요.",
+        "은행 앱이 업데이트 후 바로 종료돼요."
+      ],
+      "short": [
+        "은행 앱 실행 즉시 종료.",
+        "은행 앱 업데이트 후 크래시."
+      ]
+    },
+    "GVS-0242": {
+      "formal": [
+        "Smart Switch로 데이터를 옮긴 후 일부 사진의 촬영일자가 사라졌습니다.",
+        "데이터 마이그레이션 이후 사진의 원본 촬영 날짜가 누락되었습니다."
+      ],
+      "casual": [
+        "Smart Switch로 옮기고 나니 사진 찍은 날짜가 없어졌어요.",
+        "사진 촬영일자가 사라졌어요."
+      ],
+      "short": [
+        "사진 촬영일자 누락.",
+        "Smart Switch 후 날짜 정보 사라짐."
+      ]
+    },
+    "GVS-0243": {
+      "formal": [
+        "연락처가 계정별로 중복되어 표시되거나 일부 연락처가 보이지 않습니다.",
+        "계정 동기화 후 연락처가 중복 또는 누락되었습니다."
+      ],
+      "casual": [
+        "연락처가 계정별로 중복되거나 몇 개가 안 보여요.",
+        "연락처가 중복되고 누락됐어요."
+      ],
+      "short": [
+        "연락처 중복 및 누락.",
+        "계정별 연락처 문제."
+      ]
+    },
+    "GVS-0244": {
+      "formal": [
+        "메신저 대화 내용이 새 기기로 백업에서 복원되지 않습니다.",
+        "데이터 백업 후 새 기기에서 메신저 대화가 복원되지 않습니다."
+      ],
+      "casual": [
+        "메신저 대화가 새 폰으로 복원이 안 돼요.",
+        "백업한 메신저 채팅이 복원되지 않아요."
+      ],
+      "short": [
+        "메신저 대화 복원 안 됨.",
+        "백업 데이터 복원 실패."
+      ]
+    },
+    "GVS-0245": {
+      "formal": [
+        "인증 앱 이전에 실패하여 계정에 접근할 수 없습니다.",
+        "인증 앱을 새 기기로 옮기는 과정에서 오류가 발생해 계정 로그인이 차단되었습니다."
+      ],
+      "casual": [
+        "인증 앱 옮기다 실패해서 계정에 로그인이 안 돼요.",
+        "인증 앱 이전 실패로 계정 접근이 막혔어요."
+      ],
+      "short": [
+        "인증 앱 이전 실패.",
+        "계정 접근 차단됨."
+      ]
+    },
+    "GVS-0246": {
+      "formal": [
+        "SD 카드에 저장된 데이터가 갤러리 앱에 표시되지 않습니다.",
+        "갤러리에서 SD 카드의 사진과 동영상이 보이지 않습니다."
+      ],
+      "casual": [
+        "SD 카드에 있는 사진이 갤러리에 안 떠요.",
+        "갤러리 앱에 SD 카드 데이터가 안 나와요."
+      ],
+      "short": [
+        "SD 카드 데이터 갤러리 미표시.",
+        "갤러리에서 SD 카드 파일 안 보임."
+      ]
+    },
+    "GVS-0247": {
+      "formal": [
+        "클라우드 동기화가 시작되지 않고 계속 대기 상태입니다.",
+        "클라우드 동기화가 완료되지 않고 멈춰 있습니다."
+      ],
+      "casual": [
+        "클라우드 동기화가 계속 대기 상태에서 안 끝나요.",
+        "동기화가 진행이 안 되고 멈췄어요."
+      ],
+      "short": [
+        "클라우드 동기화 대기 상태.",
+        "동기화가 완료되지 않음."
+      ]
+    },
+    "GVS-0248": {
+      "formal": [
+        "Work profile data is excluded from personal backups.",
+        "My work profile data is not included when I back up my personal data."
+      ],
+      "casual": [
+        "My work profile data doesn't get backed up with personal data.",
+        "Personal backups leave out work profile stuff."
+      ],
+      "short": [
+        "Work profile data excluded from personal backup.",
+        "No work data in personal backup."
+      ]
+    },
+    "GVS-0249": {
+      "formal": [
+        "Older apps fail to install on the new One UI version.",
+        "Some legacy apps cannot be installed in the latest One UI."
+      ],
+      "casual": [
+        "Old apps won't install on the new One UI.",
+        "I can't install some older apps after the One UI update."
+      ],
+      "short": [
+        "Old apps not installable on new One UI.",
+        "Legacy apps fail to install in One UI."
+      ]
+    },
+    "GVS-0250": {
+      "formal": [
+        "대용량 데이터 이전 도중에 전송이 중단되고 처음부터 다시 시작됩니다.",
+        "데이터 이동 시 중간에 끊기면서 재시작되어 완료되지 않습니다."
+      ],
+      "casual": [
+        "데이터 옮기다가 중간에 끊기고 다시 처음부터 시작해요.",
+        "대용량 이전이 자꾸 끊겨서 처음부터 다시 해야 해요."
+      ],
+      "short": [
+        "데이터 이전 중간에 끊기고 재시작.",
+        "대용량 이전 실패, 계속 처음부터 다시 시작됨."
+      ]
+    },
+    "GVS-0251": {
+      "formal": [
+        "USB-C 허브를 통해 모니터를 연결해도 화면이 출력되지 않습니다.",
+        "DeX 유선 연결 시 외부 모니터에 영상이 나오지 않습니다."
+      ],
+      "casual": [
+        "USB-C 허브로 모니터 연결했는데 화면이 안 나와요.",
+        "DeX 유선 연결해도 모니터에 출력이 안 돼요."
+      ],
+      "short": [
+        "USB-C 허브로 모니터 출력 안 됨.",
+        "DeX 유선 연결 시 화면 미출력."
+      ]
+    },
+    "GVS-0252": {
+      "formal": [
+        "무선 DeX로 TV에 연결하면 화면은 나오지만 지연이 심합니다.",
+        "무선 DeX 사용 시 TV 연결은 되나 반응이 느립니다."
+      ],
+      "casual": [
+        "무선 DeX로 TV 연결하면 딜레이가 너무 심해요.",
+        "무선 DeX 쓸 때 TV는 연결되는데 반응이 느려요."
+      ],
+      "short": [
+        "무선 DeX 지연 심함.",
+        "TV 연결 시 반응 느림."
+      ]
+    },
+    "GVS-0253": {
+      "formal": [
+        "One UI 7 업데이트 후 PC에서 DeX 기능이 보이지 않습니다.",
+        "PC용 DeX가 업데이트 이후 실행되지 않거나 표시되지 않습니다."
+      ],
+      "casual": [
+        "One UI 7 올리고 PC DeX가 안 보여요.",
+        "PC에서 DeX가 사라졌어요."
+      ],
+      "short": [
+        "PC DeX 미표시.",
+        "One UI 7 후 PC DeX 안 됨."
+      ]
+    },
+    "GVS-0254": {
+      "formal": [
+        "Tab FE 모델에서 HDMI 출력이 되지 않습니다.",
+        "Tab FE로 외부 디스플레이에 HDMI 출력이 안 됩니다."
+      ],
+      "casual": [
+        "Tab FE에서 HDMI 출력이 안 돼요.",
+        "HDMI로 모니터 연결해도 화면이 안 나와요."
+      ],
+      "short": [
+        "Tab FE HDMI 출력 안 됨.",
+        "HDMI 연결 시 화면 미출력."
+      ]
+    },
+    "GVS-0255": {
+      "formal": [
+        "DeX 창 모드에서 앱 화면 비율이 깨지고 버튼이 가려집니다.",
+        "DeX 사용 시 앱 창의 비율이 맞지 않아 버튼이 잘 보이지 않습니다."
+      ],
+      "casual": [
+        "DeX에서 앱 창 비율이 깨져서 버튼이 가려져요.",
+        "DeX 창 모드에서 앱 화면이 이상해요."
+      ],
+      "short": [
+        "DeX 창 앱 비율 깨짐.",
+        "버튼이 가려져 보이지 않음."
+      ]
+    },
+    "GVS-0256": {
+      "formal": [
+        "DeX 유선 연결 상태에서 DRM 보호 영상을 외부 모니터로 출력하니 화면이 검게 나옵니다.",
+        "외부 모니터에 DRM 콘텐츠를 재생하면 검은 화면만 나타납니다."
+      ],
+      "casual": [
+        "DeX로 외부 모니터에 DRM 영상 띄우니까 검은 화면만 떠요.",
+        "DRM 걸린 영상을 외부 모니터에서 보려고 하면 화면이 까맣게 나와요."
+      ],
+      "short": [
+        "외부 모니터 DRM 영상 검은 화면",
+        "DeX 유선 DRM 콘텐츠 검은 화면"
+      ]
+    },
+    "GVS-0257": {
+      "formal": [
+        "DeX 모드에서 외부 키보드 단축키가 앱마다 다르게 동작하여 일관성이 없습니다.",
+        "앱별로 외부 키보드 단축키가 제각각이라 사용하기 불편합니다."
+      ],
+      "casual": [
+        "DeX에서 외장 키보드 단축키가 앱마다 달라서 헷갈려요.",
+        "키보드 단축키가 앱에 따라 다르게 먹히네요."
+      ],
+      "short": [
+        "앱마다 키보드 단축키 달라요",
+        "DeX 외부 키보드 단축키 불일치"
+      ]
+    },
+    "GVS-0258": {
+      "formal": [
+        "Apps are force-closing when used in split-screen mode.",
+        "When I use split screen, apps crash and close unexpectedly."
+      ],
+      "casual": [
+        "Apps keep force closing when I try split screen.",
+        "Split screen makes my apps crash and close."
+      ],
+      "short": [
+        "Apps force closing in split screen.",
+        "Split screen causes app crashes."
+      ]
+    },
+    "GVS-0259": {
+      "formal": [
+        "On a high-resolution monitor, only lower display resolutions are available.",
+        "When using a high-resolution external monitor, the selectable resolutions are limited to lower options."
+      ],
+      "casual": [
+        "On my high-res monitor, I can only choose low resolutions.",
+        "Even with a high-resolution monitor, available resolutions are low."
+      ],
+      "short": [
+        "Only low resolutions available on high-res monitor.",
+        "High-resolution monitor shows limited resolution options."
+      ]
+    },
+    "GVS-0260": {
+      "formal": [
+        "이전 Z Flip 모델에서는 DeX 기능을 찾을 수 없었습니다.",
+        "Z Flip에서 DeX 유선 연결 기능이 보이지 않아 사용할 수 없습니다."
+      ],
+      "casual": [
+        "예전 Z Flip에서는 DeX 기능이 아예 없었어요.",
+        "Z Flip에서 DeX를 찾을 수가 없어요."
+      ],
+      "short": [
+        "이전 Z Flip에 DeX 기능 없음.",
+        "Z Flip에서 DeX 사용 불가."
+      ]
+    },
+    "GVS-0261": {
+      "formal": [
+        "사투리가 섞인 통화 번역 시 의미가 반대로 전달되어 정확도가 떨어집니다.",
+        "사투리 포함 통화에서 번역이 잘못되어 상대방이 반대로 이해합니다."
+      ],
+      "casual": [
+        "사투리 쓰면 통화 번역이 뜻을 반대로 전달해요.",
+        "사투리 있는 전화 통화 번역이 의미를 반대로 알려줘요."
+      ],
+      "short": [
+        "사투리 번역 반대 의미",
+        "통화 번역 사투리 오류"
+      ]
+    },
+    "GVS-0262": {
+      "formal": [
+        "소음이 있는 환경에서 실시간 번역이 자주 누락되어 사용이 어렵습니다.",
+        "시끄러운 장소에서는 실시간 번역이 빠지는 경우가 많습니다."
+      ],
+      "casual": [
+        "시끄러운 곳에서 실시간 번역이 자꾸 안 돼요.",
+        "소음 때문에 번역이 누락돼요."
+      ],
+      "short": [
+        "소음 환경 번역 누락",
+        "실시간 번역 자주 누락"
+      ]
+    },
+    "GVS-0263": {
+      "formal": [
+        "긴 노트 요약 시 핵심 결정사항이 포함되지 않고 누락됩니다.",
+        "노트 요약 결과에서 중요한 결정 내용이 빠져 있습니다."
+      ],
+      "casual": [
+        "긴 노트 요약하면 중요한 결정이 빠져요.",
+        "노트 요약에 핵심 내용이 없어요."
+      ],
+      "short": [
+        "요약에 핵심 결정 누락",
+        "긴 노트 요약 불완전"
+      ]
+    },
+    "GVS-0264": {
+      "formal": [
+        "회의 녹음 전사에서 화자 구분이 정확하지 않아 혼란스럽습니다.",
+        "녹음된 회의를 전사할 때 화자가 잘못 지정됩니다."
+      ],
+      "casual": [
+        "회의 녹음 전사할 때 화자가 잘못 구분돼요.",
+        "누가 말했는지 전사가 틀리게 표시되네요."
+      ],
+      "short": [
+        "회의 전사 화자 오류",
+        "화자 구분 불일치"
+      ]
+    },
+    "GVS-0265": {
+      "formal": [
+        "오프라인 상태에서 일부 AI 기능이 실행되지 않아 불편합니다.",
+        "네트워크 연결 없이 AI 기능을 사용할 수 없습니다."
+      ],
+      "casual": [
+        "오프라인에서는 AI 기능이 안 돼요.",
+        "와이파이 없으면 AI 기능 실행이 안 되네요."
+      ],
+      "short": [
+        "오프라인 AI 기능 미작동",
+        "네트워크 없음 AI 실행 불가"
+      ]
+    },
+    "GVS-0266": {
+      "formal": [
+        "원하는 언어가 번역 언어팩 목록에 포함되어 있지 않습니다.",
+        "언어팩 다운로드 목록에 필요한 언어가 없습니다."
+      ],
+      "casual": [
+        "내가 원하는 언어팩이 목록에 없어요.",
+        "언어팩 리스트에 제가 쓰는 언어가 없네요."
+      ],
+      "short": [
+        "원하는 언어팩 없음",
+        "번역 언어팩 부재"
+      ]
+    },
+    "GVS-0267": {
+      "formal": [
+        "기기 내 처리만 허용하면 요약 기능이 비활성화되어 사용할 수 없습니다.",
+        "요약 기능이 온디바이스 모드에서 동작하지 않습니다."
+      ],
+      "casual": [
+        "디바이스 전용 모드에서는 요약이 안 돼요.",
+        "온디바이스 설정하면 요약 기능이 꺼져요."
+      ],
+      "short": [
+        "온디바이스 요약 비활성",
+        "기기 내 처리 요약 불가"
+      ]
+    },
+    "GVS-0268": {
+      "formal": [
+        "In Generative Edit, human hands and the background become distorted.",
+        "The Generative Edit feature distorts people's hands and the background."
+      ],
+      "casual": [
+        "Generative Edit makes hands and background look weird.",
+        "When I use Generative Edit, hands and background get distorted."
+      ],
+      "short": [
+        "Generative Edit distorts hands and background.",
+        "Hands and background distorted in Generative Edit."
+      ]
+    },
+    "GVS-0269": {
+      "formal": [
+        "Handwriting recognition is mixing up numbers and units.",
+        "The handwriting recognition results show incorrect numbers and unit symbols."
+      ],
+      "casual": [
+        "My handwriting recognition swaps numbers and units.",
+        "When I write, numbers and units get mixed up by the recognition."
+      ],
+      "short": [
+        "Handwriting recognition swaps numbers and units.",
+        "Numbers and units misrecognized in handwriting."
+      ]
+    },
+    "GVS-0270": {
+      "formal": [
+        "AI 번역 기능 사용 시 어떤 데이터가 클라우드로 전송되는지 알기 어렵습니다.",
+        "번역 과정에서 클라우드로 보내지는 데이터의 종류를 확인할 수 없어 불편합니다."
+      ],
+      "casual": [
+        "AI 번역 쓸 때 어떤 데이터가 클라우드로 가는지 모르겠어요.",
+        "번역하면서 클라우드에 뭐가 올라가는지 알 수가 없네요."
+      ],
+      "short": [
+        "AI 번역 시 클라우드 데이터 전송 내역 미확인.",
+        "어떤 데이터가 클라우드로 가는지 알 수 없음."
+      ]
+    },
+    "GVS-0271": {
+      "formal": [
+        "Auto Blocker가 활성화되어 필요한 APK 파일을 설치할 수 없습니다.",
+        "Auto Blocker 때문에 특정 앱 설치가 차단됩니다."
+      ],
+      "casual": [
+        "Auto Blocker 켜져 있으면 필요한 apk 설치 안 돼요.",
+        "보안 기능 때문에 원하는 앱을 못 깔아요."
+      ],
+      "short": [
+        "Auto Blocker 설치 차단",
+        "필요 APK 설치 불가"
+      ]
+    },
+    "GVS-0272": {
+      "formal": [
+        "사이드로딩 설정을 찾을 위치를 알기가 어렵습니다.",
+        "설정 메뉴에서 사이드로딩 옵션을 찾기 힘듭니다."
+      ],
+      "casual": [
+        "사이드로딩 설정 위치를 못 찾겠어요.",
+        "외부 앱 설치 설정이 어디 있는지 모르겠네요."
+      ],
+      "short": [
+        "사이드로딩 설정 찾기 어려움",
+        "설정 위치 불명확"
+      ]
+    },
+    "GVS-0273": {
+      "formal": [
+        "2단계 인증 코드가 이전 기기로만 전송되어 새 기기에서 확인이 어렵습니다.",
+        "인증 코드가 계속 예전 폰으로만 옵니다."
+      ],
+      "casual": [
+        "2단계 인증 코드가 옛날 폰으로만 와요.",
+        "새 폰에 인증 코드가 안 오고 예전 폰에만 오네요."
+      ],
+      "short": [
+        "인증 코드 이전 기기 전송",
+        "2단계 인증 코드 기기 오류"
+      ]
+    },
+    "GVS-0274": {
+      "formal": [
+        "기기 변경 후 삼성 계정 로그인을 반복해서 요구합니다.",
+        "옮긴 기기에서 삼성 계정 로그인 창이 계속 뜹니다."
+      ],
+      "casual": [
+        "폰 바꾸고 삼성 계정 로그인이 자꾸 떠요.",
+        "기기 이전 후 삼성 계정 로그인 반복 요청."
+      ],
+      "short": [
+        "로그인 반복 요구",
+        "기기 변경 후 계정 로그인 반복"
+      ]
+    },
+    "GVS-0275": {
+      "formal": [
+        "Google 계정 동기화가 지속적으로 실패합니다.",
+        "Google 계정 동기화가 계속 안 됩니다."
+      ],
+      "casual": [
+        "구글 계정 동기화가 계속 실패해요.",
+        "구글 동기화가 자꾸 안 되네요."
+      ],
+      "short": [
+        "Google 계정 동기화 실패",
+        "동기화 계속 실패"
+      ]
+    },
+    "GVS-0276": {
+      "formal": [
+        "회사 보안 정책으로 카메라와 화면 캡처가 차단되어 사용할 수 없습니다.",
+        "회사 정책이 카메라와 캡처 기능을 사용하지 못하게 막습니다."
+      ],
+      "casual": [
+        "회사 보안 때문에 카메라랑 캡처가 안 돼요.",
+        "회사 정책이 카메라와 스크린샷을 차단해요."
+      ],
+      "short": [
+        "회사 정책 카메라 차단",
+        "캡처 기능 차단"
+      ]
+    },
+    "GVS-0277": {
+      "formal": [
+        "설정에서 원격 잠금 해제 옵션을 찾을 수 없습니다.",
+        "원격 잠금 해제 기능이 설정 메뉴에 보이지 않습니다."
+      ],
+      "casual": [
+        "원격 잠금 해제 옵션이 안 보여요.",
+        "설정에 찾아봐도 원격 잠금 해제가 없네요."
+      ],
+      "short": [
+        "원격 잠금 해제 옵션 미표시",
+        "설정에 원격 잠금 해제 없음"
+      ]
+    },
+    "GVS-0278": {
+      "formal": [
+        "Secure Folder backup did not transfer to the new device.",
+        "The backup from Secure Folder was not restored on my new device."
+      ],
+      "casual": [
+        "My Secure Folder backup didn't carry over to the new phone.",
+        "I couldn't restore Secure Folder data on the new device."
+      ],
+      "short": [
+        "Secure Folder backup not restored on new device.",
+        "Secure Folder data didn't transfer."
+      ]
+    },
+    "GVS-0279": {
+      "formal": [
+        "When using passkey login with biometrics, the screen returns to the previous one after authentication.",
+        "After biometric verification for passkey login, the device goes back to the original screen instead of proceeding."
+      ],
+      "casual": [
+        "When I try passkey login, after scanning my fingerprint it just goes back.",
+        "Passkey login with biometrics just returns to the same screen."
+      ],
+      "short": [
+        "Passkey login returns to screen after biometrics.",
+        "Biometric passkey login fails and goes back."
+      ]
+    },
+    "GVS-0280": {
+      "formal": [
+        "국가를 변경한 후 계정 서비스와 스토어가 이전과 다르게 표시됩니다.",
+        "국가 변경 이후 삼성 계정 서비스와 앱 스토어가 변경되어 혼란스럽습니다."
+      ],
+      "casual": [
+        "국가 바꾸니까 계정 서비스랑 스토어가 달라졌어요.",
+        "국가 변경 후 계정과 스토어가 예전하고 다르게 보여요."
+      ],
+      "short": [
+        "국가 변경 후 계정 서비스 및 스토어 변경.",
+        "국가 변경 이후 계정과 스토어가 달라짐."
+      ]
+    },
+    "GVS-0281": {
+      "formal": [
+        "수면 측정을 하면 하룻밤 사이에 배터리가 크게 소모됩니다.",
+        "밤에 수면 추적 켜고 자면 배터리가 급격히 줄어듭니다."
+      ],
+      "casual": [
+        "잘 때 수면 측정하면 배터리가 확 줄어요.",
+        "수면 측정 키고 자면 배터리가 많이 닳아요."
+      ],
+      "short": [
+        "수면 측정 배터리 급감",
+        "밤새 배터리 대량 소모"
+      ]
+    },
+    "GVS-0282": {
+      "formal": [
+        "GPS 운동 경로 기록이 실제 코너를 직선으로 잘라서 부정확합니다.",
+        "달리기 GPS 경로가 코너를 뭉뚱그려 직선으로 표시됩니다."
+      ],
+      "casual": [
+        "운동할 때 GPS가 코너를 잘라서 직선으로 기록해요.",
+        "GPS 경로가 실제보다 코너를 못 따라가네요."
+      ],
+      "short": [
+        "GPS 경로 코너 생략",
+        "운동 GPS 경로 부정확"
+      ]
+    },
+    "GVS-0283": {
+      "formal": [
+        "LTE만 사용하면 몇 시간 만에 배터리가 완전히 방전됩니다.",
+        "LTE 전용 모드에서 배터리가 극히 짧은 시간에 소모됩니다."
+      ],
+      "casual": [
+        "LTE 모드로만 쓰면 몇 시간 만에 방전돼요.",
+        "LTE 단독으로 사용하면 배터리가 너무 빨리 닳아요."
+      ],
+      "short": [
+        "LTE 모드 급방전",
+        "LTE 단독 사용 배터리 소모"
+      ]
+    },
+    "GVS-0284": {
+      "formal": [
+        "AOD를 켜면 배터리가 하루를 채 버티지 못합니다.",
+        "AOD 기능 사용 시 배터리가 하루를 못 가고 방전됩니다."
+      ],
+      "casual": [
+        "AOD 키면 배터리가 하루도 안 가요.",
+        "시계 화면 항상 켜기 하면 배터리가 금방 떨어져요."
+      ],
+      "short": [
+        "AOD 하루 배터리 미만",
+        "AOD 켜면 배터리 부족"
+      ]
+    },
+    "GVS-0285": {
+      "formal": [
+        "새 워치를 처음 설정한 직후부터 배터리 소모가 빨라요.",
+        "초기 설정 후 워치 배터리가 너무 빨리 닳아요."
+      ],
+      "casual": [
+        "새 워치 셋팅하고 나서 배터리가 엄청 빨리 떨어져요.",
+        "처음 켜고 설정만 했는데 배터리가 닳는 속도가 너무 빠르네요."
+      ],
+      "short": [
+        "새 워치 초기 설정 후 배터리 소모 빠름.",
+        "셋팅 직후 배터리 광탈."
+      ]
+    },
+    "GVS-0286": {
+      "formal": [
+        "야외에서 달리기할 때 GPS 위치가 자주 튀어요.",
+        "달리기 중 GPS 위치가 불안정하게 움직입니다."
+      ],
+      "casual": [
+        "밖에서 달리면 GPS 위치가 계속 튀어서 답답해요.",
+        "야외 러닝할 때 GPS가 자꾸 딴 데로 가요."
+      ],
+      "short": [
+        "야외 달리기 GPS 위치 튐.",
+        "러닝 중 GPS 불안정."
+      ]
+    },
+    "GVS-0287": {
+      "formal": [
+        "실내 운동할 때 GPS 신호가 잡히는 데 시간이 오래 걸려요.",
+        "실내에서 운동 시작 후 GPS 고정이 늦어집니다."
+      ],
+      "casual": [
+        "실내에서 운동 시작하면 GPS 연결이 느려요.",
+        "실내 운동할 때 GPS 위치 잡히는 게 너무 늦어요."
+      ],
+      "short": [
+        "실내 운동 GPS 고정 지연.",
+        "실내에서 GPS 신호 잡히는 데 시간 오래 걸림."
+      ]
+    },
+    "GVS-0288": {
+      "formal": [
+        "During LTE music streaming, the watch overheats and battery consumption increases.",
+        "Streaming music over LTE causes the watch to overheat and drain the battery faster."
+      ],
+      "casual": [
+        "Streaming music on LTE makes my watch hot and kills the battery.",
+        "My watch gets really hot and the battery drains fast when I stream music over LTE."
+      ],
+      "short": [
+        "Watch overheats and battery drains during LTE music streaming.",
+        "LTE streaming causes overheating and high battery drain."
+      ]
+    },
+    "GVS-0289": {
+      "formal": [
+        "The battery level drops sharply in cold weather.",
+        "In cold temperatures, the battery percentage plummets quickly."
+      ],
+      "casual": [
+        "In cold weather, my battery drops like crazy.",
+        "The battery tanks when it's cold outside."
+      ],
+      "short": [
+        "Battery drops sharply in cold weather.",
+        "Cold weather causes rapid battery drain."
+      ]
+    },
+    "GVS-0290": {
+      "formal": [
+        "워치 충전 중에 기기가 뜨거워지면서 충전이 중단됩니다.",
+        "Galaxy Watch 충전 시 과열로 인해 충전이 멈춥니다."
+      ],
+      "casual": [
+        "워치 충전할 때 너무 뜨거워져서 충전이 중단돼요.",
+        "충전 중 워치가 뜨거워지면서 충전이 안 돼요."
+      ],
+      "short": [
+        "충전 중 워치 과열로 충전 중단.",
+        "워치 충전 시 뜨거워지며 충전 중단."
+      ]
+    },
+    "GVS-0291": {
+      "formal": [
+        "문신 있는 부위에서 심박 센서가 자주 측정을 중단합니다.",
+        "팔에 문신이 있는 곳에서는 심박 측정이 잘 안 돼요."
+      ],
+      "casual": [
+        "문신 한 곳에 워치 차면 심박 측정이 자꾸 끊겨요.",
+        "문신 부위에서 심박 센서가 작동을 멈춰요."
+      ],
+      "short": [
+        "문신 부위 심박 측정 중단.",
+        "문신 있는 곳에서 심박 센서 불량."
+      ]
+    },
+    "GVS-0292": {
+      "formal": [
+        "워치를 느슨하게 차면 심박이 실제보다 낮게 기록됩니다.",
+        "밴드가 헐렁할 때 심박 수치가 실제보다 낮아요."
+      ],
+      "casual": [
+        "워치를 헐겁게 차니까 심박이 낮게 나와요.",
+        "느슨하게 착용하면 심박이 실제보다 낮게 측정돼요."
+      ],
+      "short": [
+        "느슨한 착용 시 심박 낮게 기록.",
+        "헐겁게 차면 심박 수치 낮게 나옴."
+      ]
+    },
+    "GVS-0293": {
+      "formal": [
+        "인터벌 운동에서 빠른 심박 변화가 늦게 반영됩니다.",
+        "격한 운동 시 심박이 실제보다 늦게 올라가요."
+      ],
+      "casual": [
+        "인터벌 운동할 때 심박 변화가 느리게 따라와요.",
+        "운동 중 심박이 빨리 뛰는데 워치 반응이 늦어요."
+      ],
+      "short": [
+        "인터벌 운동 심박 변화 지연.",
+        "격한 운동 시 심박 업데이트 늦음."
+      ]
+    },
+    "GVS-0294": {
+      "formal": [
+        "밤중에 깨어 있는 시간을 수면으로 계속 기록해요.",
+        "잠에서 깼는데도 워치가 계속 잠자는 걸로 인식합니다."
+      ],
+      "casual": [
+        "밤에 깨서 핸드폰 봤는데도 워치는 계속 잔다고 해요.",
+        "중간에 깼는데 수면 기록이 계속 자는 걸로 나와요."
+      ],
+      "short": [
+        "각성을 수면으로 잘못 기록.",
+        "밤중 각성 시 수면 기록 오류."
+      ]
+    },
+    "GVS-0295": {
+      "formal": [
+        "낮잠을 자도 수면 기록에 포함되지 않아요.",
+        "낮에 잠깐 잔 낮잠이 수면 데이터에 반영되지 않습니다."
+      ],
+      "casual": [
+        "낮잠 자도 워치가 기록을 안 해줘요.",
+        "낮잠은 수면 측정이 안 되는 것 같아요."
+      ],
+      "short": [
+        "낮잠 수면 기록 미포함.",
+        "낮잠 측정 안 됨."
+      ]
+    },
+    "GVS-0296": {
+      "formal": [
+        "피부 상태에 따라 심박 측정값이 달라질까 걱정됩니다.",
+        "피부 조건에 따라 측정 오차가 생길까 우려됩니다."
+      ],
+      "casual": [
+        "피부 타입에 따라 심박 측정이 다르게 나오지 않을까요?",
+        "피부 상태 따라서 측정값이 달라질 것 같아 걱정돼요."
+      ],
+      "short": [
+        "피부 조건별 측정 편차 우려.",
+        "피부 상태에 따른 심박 오차 걱정."
+      ]
+    },
+    "GVS-0297": {
+      "formal": [
+        "땀을 많이 흘리며 운동하면 심박 센서 값이 불규칙하게 튀어요.",
+        "땀이 많은 운동 중 심박수가 불안정하게 표시됩니다."
+      ],
+      "casual": [
+        "땀 많이 흘리면서 운동하면 심박이 갑자기 튀어요.",
+        "운동할 때 땀 때문에 심박 센서가 불안정해요."
+      ],
+      "short": [
+        "땀 많은 운동 시 심박 값 튐.",
+        "운동 중 땀으로 심박 센서 불안정."
+      ]
+    },
+    "GVS-0298": {
+      "formal": [
+        "Heart rate measurement is delayed in cold weather when worn on the wrist.",
+        "When it's cold, the wrist-based heart rate sensor takes longer to measure."
+      ],
+      "casual": [
+        "In cold weather, my watch takes forever to read my heart rate.",
+        "Cold temps delay the heart rate reading on my watch."
+      ],
+      "short": [
+        "Heart rate measurement delayed in cold weather.",
+        "Cold weather slows heart rate reading."
+      ]
+    },
+    "GVS-0299": {
+      "formal": [
+        "Pressing the manual measurement button does not produce any results.",
+        "No results appear when I press the manual heart rate measurement button."
+      ],
+      "casual": [
+        "Pressing the manual HR button does nothing.",
+        "The manual heart rate button doesn't give any reading."
+      ],
+      "short": [
+        "Manual heart rate button gives no result.",
+        "Manual HR measurement yields no output."
+      ]
+    },
+    "GVS-0300": {
+      "formal": [
+        "워치에서 기록한 수면 데이터가 Samsung Health에 동기화되지 않습니다.",
+        "Galaxy Watch의 수면 기록이 Samsung Health 앱에 반영되지 않습니다."
+      ],
+      "casual": [
+        "워치에서 잰 수면 데이터가 삼성 헬스에 안 올라와요.",
+        "워치 수면 기록이 Samsung Health에 동기화가 안 돼요."
+      ],
+      "short": [
+        "워치 수면 데이터 Samsung Health 미동기화.",
+        "수면 기록이 삼성 헬스에 동기화 안 됨."
+      ]
+    },
+    "GVS-0301": {
+      "formal": [
+        "휴대폰 화면이 켜져 있을 때는 워치로 알림이 오지 않아 혼란스러워요.",
+        "폰 사용 중에는 워치 알림이 오지 않아서 불편합니다."
+      ],
+      "casual": [
+        "핸드폰 보고 있으면 워치 알림이 안 와서 헷갈려요.",
+        "폰 화면 켜져 있을 때 워치 알림 안 오는 게 불편해요."
+      ],
+      "short": [
+        "폰 사용 중 워치 알림 없음.",
+        "폰 켜져 있으면 워치 알림 미수신."
+      ]
+    },
+    "GVS-0302": {
+      "formal": [
+        "방해금지 모드가 워치와 폰 중 한쪽에만 적용됩니다.",
+        "방해금지 동기화가 제대로 안 되어서 한 기기에서만 동작해요."
+      ],
+      "casual": [
+        "방해금지 모드가 워치랑 폰 중에 하나만 설정돼요.",
+        "방해금지 동기화가 엉터리라 한쪽만 꺼져 있어요."
+      ],
+      "short": [
+        "방해금지 동기화 불일치.",
+        "한쪽만 방해금지 적용됨."
+      ]
+    },
+    "GVS-0303": {
+      "formal": [
+        "특정 메신저의 알림만 워치에 표시되지 않습니다.",
+        "일부 메신저 알림이 워치로 전달되지 않아요."
+      ],
+      "casual": [
+        "어떤 메신저 알림은 워치에 안 떠요.",
+        "특정 앱 알림만 워치에서 안 와요."
+      ],
+      "short": [
+        "특정 메신저 알림 누락.",
+        "일부 앱 알림 워치 미수신."
+      ]
+    },
+    "GVS-0304": {
+      "formal": [
+        "원격 연결 상태에서 알림이 늦게 도착합니다.",
+        "워치가 폰과 멀리 떨어져 있을 때 알림 전달이 지연돼요."
+      ],
+      "casual": [
+        "폰이랑 떨어져 있으면 알림이 늦게 와요.",
+        "원격으로 연결되면 알림이 느리게 도착해요."
+      ],
+      "short": [
+        "원격 연결 시 알림 지연.",
+        "떨어져 있으면 알림 늦게 옴."
+      ]
+    },
+    "GVS-0305": {
+      "formal": [
+        "Watch LTE eSIM 활성화가 완료되지 않습니다.",
+        "워치의 eSIM 활성화 과정이 끝나지 않았어요."
+      ],
+      "casual": [
+        "워치 LTE eSIM 설정이 안 끝나요.",
+        "eSIM 활성화가 계속 진행 중이에요."
+      ],
+      "short": [
+        "eSIM 활성화 실패.",
+        "LTE eSIM 설정 완료 안 됨."
+      ]
+    },
+    "GVS-0306": {
+      "formal": [
+        "휴대폰 없이 워치만으로 통화할 때 발신이 실패합니다.",
+        "워치 단독으로 전화 걸기가 안 돼요."
+      ],
+      "casual": [
+        "폰 없이 워치로 전화하려는데 연결이 안 돼요.",
+        "워치만으로 전화 걸기가 실패해요."
+      ],
+      "short": [
+        "워치 단독 발신 실패.",
+        "폰 없이 통화 시 발신 불가."
+      ]
+    },
+    "GVS-0307": {
+      "formal": [
+        "해외에서 워치 단독으로 로밍이 되지 않습니다.",
+        "외국에서 워치만 사용할 때 로밍이 안 돼요."
+      ],
+      "casual": [
+        "해외에서 워치 로밍이 안 터져요.",
+        "외국 나가면 워치 단독으로는 통신이 안 돼요."
+      ],
+      "short": [
+        "해외 워치 단독 로밍 불가.",
+        "외국에서 워치 로밍 안 됨."
+      ]
+    },
+    "GVS-0308": {
+      "formal": [
+        "After leaving Bluetooth range, the reconnection to the watch takes too long.",
+        "The LTE watch delays reconnecting when I step out of Bluetooth range."
+      ],
+      "casual": [
+        "It takes forever to reconnect after I walk out of Bluetooth range.",
+        "When I go out of Bluetooth range, my watch takes ages to get back online."
+      ],
+      "short": [
+        "Slow to reconnect after leaving Bluetooth.",
+        "Reconnection delay when out of Bluetooth range."
+      ]
+    },
+    "GVS-0309": {
+      "formal": [
+        "Replies sent from the watch do not appear in the phone conversation.",
+        "Messages replied from the watch are not reflected in the phone chat."
+      ],
+      "casual": [
+        "When I reply from my watch, it doesn't show up on my phone.",
+        "My watch replies aren't syncing to the phone conversation."
+      ],
+      "short": [
+        "Watch replies missing from phone chat.",
+        "Watch replies not shown on phone."
+      ]
+    },
+    "GVS-0310": {
+      "formal": [
+        "단독 긴급통화 사용 시 위치 정보가 전송되는지 알고 싶습니다.",
+        "워치 단독 긴급통화 때 위치가 상대방에게 전송되는지 문의드립니다."
+      ],
+      "casual": [
+        "워치로 긴급통화 할 때 위치도 같이 보내지나요?",
+        "단독 긴급통화 시 위치 전송 여부가 궁금해요."
+      ],
+      "short": [
+        "단독 긴급통화 시 위치 전송 여부 문의.",
+        "긴급통화 때 위치 정보 전송됩니까?"
+      ]
+    },
+    "GVS-0311": {
+      "formal": [
+        "한쪽 이어버드의 음량이 다른 쪽보다 매우 작습니다.",
+        "왼쪽과 오른쪽 이어버드 음량이 크게 차이 나요."
+      ],
+      "casual": [
+        "한쪽 이어폰만 소리가 너무 작아요.",
+        "오른쪽은 괜찮은데 왼쪽이 거의 들리지 않아요."
+      ],
+      "short": [
+        "한쪽 이어버드 음량 저하.",
+        "좌우 음량 불균형."
+      ]
+    },
+    "GVS-0312": {
+      "formal": [
+        "스피커 망의 이물질을 제거한 후에 잠시 음량이 회복되었습니다.",
+        "스피커 그릴 청소 후 일시적으로 소리가 커졌어요."
+      ],
+      "casual": [
+        "스피커 망에 끼었던 먼지 빼니까 잠깐 소리가 다시 커졌어요.",
+        "이물 제거 후에 소리가 좀 나아졌다가 다시 작아졌어요."
+      ],
+      "short": [
+        "스피커 이물 제거 후 임시 음량 회복.",
+        "망 청소 후 일시적 음량 개선."
+      ]
+    },
+    "GVS-0313": {
+      "formal": [
+        "ANC 사용 시 한쪽 이어버드에서만 화이트노이즈가 들립니다.",
+        "노이즈 캔슬링 켜면 한쪽에서만 쉬~하는 소리가 나요."
+      ],
+      "casual": [
+        "ANC 켜면 한쪽 귀에서만 화이트노이즈가 들려요.",
+        "노캔 사용 시 한쪽 버즈에서 지지직 소리가 나요."
+      ],
+      "short": [
+        "ANC 시 한쪽 화이트노이즈 발생.",
+        "노캔 켜면 한쪽에서 잡음."
+      ]
+    },
+    "GVS-0314": {
+      "formal": [
+        "주변소리 모드가 기계음처럼 들립니다.",
+        "주변소리 모드에서 소리가 인공적으로 느껴집니다."
+      ],
+      "casual": [
+        "주변소리 모드가 기계음처럼 들려요.",
+        "주변소리 모드 소리가 인위적이에요."
+      ],
+      "short": [
+        "주변소리 모드 기계음.",
+        "주변소리 소리 인공적."
+      ]
+    },
+    "GVS-0315": {
+      "formal": [
+        "바람이 불면 ANC 마이크에서 큰 소음이 발생합니다.",
+        "바람이 불 때 ANC 마이크에서 심한 소음이 납니다."
+      ],
+      "casual": [
+        "바람 불면 ANC 마이크에서 큰 소음이 나요.",
+        "바람 부는 날 ANC 마이크 소음 심해요."
+      ],
+      "short": [
+        "바람 불면 ANC 마이크 소음.",
+        "ANC 마이크 바람 소음 큼."
+      ]
+    },
+    "GVS-0316": {
+      "formal": [
+        "착용 테스트 결과가 귀팁마다 일관되지 않습니다.",
+        "귀팁에 따라 착용 테스트 결과가 다릅니다."
+      ],
+      "casual": [
+        "착용 테스트 결과가 귀팁마다 달라요.",
+        "귀팁 바꿀 때마다 테스트 결과가 일정하지 않아요."
+      ],
+      "short": [
+        "착용 테스트 귀팁마다 다름.",
+        "귀팁 따라 테스트 결과 불일치."
+      ]
+    },
+    "GVS-0317": {
+      "formal": [
+        "좌우 밸런스 설정이 한쪽으로 치우쳐져 있습니다.",
+        "좌우 음량 밸런스가 한쪽으로 편향되어 있습니다."
+      ],
+      "casual": [
+        "좌우 밸런스가 한쪽으로 치우쳐 있어요.",
+        "소리가 한쪽에서만 더 크게 들려요."
+      ],
+      "short": [
+        "좌우 밸런스 한쪽 치우침.",
+        "소리 한쪽 더 큼."
+      ]
+    },
+    "GVS-0318": {
+      "formal": [
+        "The bass distorts with loud sounds when ANC is on.",
+        "Bass sounds crackle at high volumes in ANC mode."
+      ],
+      "casual": [
+        "The bass gets all crackly when I turn it up loud.",
+        "At high volume, the low sounds are distorted."
+      ],
+      "short": [
+        "Bass distorts at high volume.",
+        "Low sounds crackle when loud."
+      ]
+    },
+    "GVS-0319": {
+      "formal": [
+        "After changing the codec, the audio quality becomes muddy.",
+        "The sound gets dull and unclear after switching codecs."
+      ],
+      "casual": [
+        "After changing codecs, the sound quality went bad.",
+        "The audio sounds muddy after I switched the codec."
+      ],
+      "short": [
+        "Audio muddy after codec change.",
+        "Sound quality worse after codec switch."
+      ]
+    },
+    "GVS-0320": {
+      "formal": [
+        "이어버드를 청소한 후 삐 소리와 함께 피드백이 발생합니다.",
+        "청소 이후 한쪽 이어버드에서 삐 소리가 나고 터치 반응이 이상합니다."
+      ],
+      "casual": [
+        "청소하고 나니까 이어버드에서 삐 소리가 나고 피드백이 생겼어요.",
+        "버즈 청소 후 삐 소리와 함께 터치 피드백이 발생해요."
+      ],
+      "short": [
+        "청소 후 이어버드 삐 소리 및 피드백 발생.",
+        "버즈 청소 후 삐 소리와 피드백 문제."
+      ]
+    },
+    "GVS-0321": {
+      "formal": [
+        "왼쪽 이어버드만 케이스에서 충전되지 않습니다.",
+        "왼쪽 이어버드가 충전 케이스에서 충전이 안 됩니다."
+      ],
+      "casual": [
+        "왼쪽 이어버드만 충전이 안 돼요.",
+        "왼쪽 이어버드가 케이스에 넣어도 충전이 안 돼요."
+      ],
+      "short": [
+        "왼쪽 이어버드 충전 안 됨.",
+        "왼쪽만 충전 불가."
+      ]
+    },
+    "GVS-0322": {
+      "formal": [
+        "케이스 배터리가 낮으면 한쪽 충전이 중단됩니다.",
+        "충전 케이스 배터리 부족 시 한쪽 이어버드 충전이 멈춥니다."
+      ],
+      "casual": [
+        "케이스 배터리 낮으면 한쪽 충전이 중단돼요.",
+        "케이스 배터리 적을 때 한쪽만 충전 안 돼요."
+      ],
+      "short": [
+        "케이스 배터리 낮으면 충전 중단.",
+        "배터리 부족 시 한쪽 충전 중단."
+      ]
+    },
+    "GVS-0323": {
+      "formal": [
+        "충전 접점 이물 때문에 표시등이 깜빡입니다.",
+        "충전 접점에 이물질이 있어 LED가 깜빡입니다."
+      ],
+      "casual": [
+        "충전 접점에 이물질 있어서 불이 깜빡여요.",
+        "충전 부분 더러워서 표시등이 깜빡거려요."
+      ],
+      "short": [
+        "충전 접점 이물질로 LED 깜빡임.",
+        "이물질 때문에 충전 표시등 깜빡."
+      ]
+    },
+    "GVS-0324": {
+      "formal": [
+        "뚜껑을 열어도 폰에 팝업이 나타나지 않습니다.",
+        "충전 케이스 뚜껑을 열어도 연결 팝업이 안 뜹니다."
+      ],
+      "casual": [
+        "뚜껑 열어도 폰에 팝업이 안 떠요.",
+        "케이스 열면 연결 팝업이 나와야 하는데 안 나와요."
+      ],
+      "short": [
+        "뚜껑 열어도 팝업 없음.",
+        "케이스 열 때 팝업 안 뜸."
+      ]
+    },
+    "GVS-0325": {
+      "formal": [
+        "초기화 후에도 페어링 목록에 나오지 않습니다.",
+        "버즈를 초기화했는데도 기기 목록에 표시되지 않습니다."
+      ],
+      "casual": [
+        "초기화했는데도 페어링 목록에 안 떠요.",
+        "리셋했는데도 블루투스 목록에 안 나타나요."
+      ],
+      "short": [
+        "초기화 후 페어링 목록 없음.",
+        "리셋해도 목록에 안 뜸."
+      ]
+    },
+    "GVS-0326": {
+      "formal": [
+        "노트북과 폰 사이 전환 때 연결이 끊깁니다.",
+        "노트북에서 폰으로 전환할 때 연결이 끊어집니다."
+      ],
+      "casual": [
+        "노트북에서 폰으로 바꾸면 연결이 끊겨요.",
+        "기기 전환할 때마다 연결이 끊어져요."
+      ],
+      "short": [
+        "기기 전환 시 연결 끊김.",
+        "노트북-폰 전환 때 연결 끊어짐."
+      ]
+    },
+    "GVS-0327": {
+      "formal": [
+        "잠들며 착용 후 한쪽만 완전히 방전됩니다.",
+        "잠들 때 착용하고 일어나면 한쪽 배터리가 완전히 방전되어 있습니다."
+      ],
+      "casual": [
+        "자고 일어나면 한쪽만 배터리가 다 닳아 있어요.",
+        "잠들 때 착용하면 한쪽만 방전돼요."
+      ],
+      "short": [
+        "수면 후 한쪽 방전.",
+        "잠들며 착용 시 한쪽 배터리 방전."
+      ]
+    },
+    "GVS-0328": {
+      "formal": [
+        "The connection drops when the buds are in a pocket while walking outdoors.",
+        "While walking outside, the position of the buds in my pocket causes disconnections."
+      ],
+      "casual": [
+        "When I'm walking outside and the buds are in my pocket, they keep cutting out.",
+        "The connection breaks depending on which pocket I keep the buds in while walking."
+      ],
+      "short": [
+        "Connection drops based on pocket position outdoors.",
+        "Buds disconnect depending on pocket location."
+      ]
+    },
+    "GVS-0329": {
+      "formal": [
+        "During a firmware update, one of the buds disconnected.",
+        "While installing a firmware update, one earbud lost connection."
+      ],
+      "casual": [
+        "One bud disconnected while I was updating the firmware.",
+        "During the firmware update, one side just dropped out."
+      ],
+      "short": [
+        "One bud disconnected during firmware update.",
+        "Firmware update caused one bud to disconnect."
+      ]
+    },
+    "GVS-0330": {
+      "formal": [
+        "교체한 한쪽 이어버드가 기존 이어버드와 페어링되지 않습니다.",
+        "한쪽 버즈를 교체했는데 기존 제품과 커플링이 되지 않습니다."
+      ],
+      "casual": [
+        "한쪽 버즈를 새로 교체했는데 기존 거랑 연결이 안 돼요.",
+        "교체한 이어버드가 기존 버즈와 페어링이 안 됩니다."
+      ],
+      "short": [
+        "교체한 이어버드 기존 제품과 커플링 안 됨.",
+        "한쪽 버즈 교체 후 페어링 불가."
+      ]
+    },
+    "GVS-0331": {
+      "formal": [
+        "통화 상대가 목소리가 멀고 작다고 합니다.",
+        "통화 시 상대방이 제 목소리가 작고 멀게 들린다고 합니다."
+      ],
+      "casual": [
+        "통화할 때 상대방이 목소리가 작고 멀게 들린대요.",
+        "통화 시 상대가 제 목소리가 안 들린다고 해요."
+      ],
+      "short": [
+        "통화 시 목소리 작게 들림.",
+        "상대방이 목소리 작다고 함."
+      ]
+    },
+    "GVS-0332": {
+      "formal": [
+        "화상회의에서 노이즈 억제가 음성을 잘라냅니다.",
+        "화상 회의 중 노이즈 캔슬링이 제 목소리를 자주 끊습니다."
+      ],
+      "casual": [
+        "화상회의에서 노이즈 억제 때문에 말이 잘려요.",
+        "줌 할 때 노이즈 캔슬이 말을 잘라요."
+      ],
+      "short": [
+        "화상회의 노이즈 억제로 음성 손실.",
+        "노이즈 캔슬이 목소리 자름."
+      ]
+    },
+    "GVS-0333": {
+      "formal": [
+        "바람 부는 곳에서 말이 알아듣기 어렵습니다.",
+        "바람이 부는 환경에서 통화 시 상대방이 말을 알아듣기 힘들어합니다."
+      ],
+      "casual": [
+        "바람 부는 곳에서는 말이 잘 안 들린대요.",
+        "바람 쐬면서 통화하면 상대방이 못 알아들어요."
+      ],
+      "short": [
+        "바람 부는 곳 통화 어려움.",
+        "바람 시 마이크 인식 불량."
+      ]
+    },
+    "GVS-0334": {
+      "formal": [
+        "땀에 젖은 뒤 마이크 품질이 나빠집니다.",
+        "운동 후 땀으로 인해 마이크 음질이 저하됩니다."
+      ],
+      "casual": [
+        "땀에 젖으면 마이크 음질이 나빠져요.",
+        "땀 흘리고 나면 마이크가 이상해요."
+      ],
+      "short": [
+        "땀에 젖은 후 마이크 품질 저하.",
+        "땀 후 마이크 음질 나빠짐."
+      ]
+    },
+    "GVS-0335": {
+      "formal": [
+        "귀가 작아 오래 착용하면 통증이 있습니다.",
+        "귀 크기가 작아 장시간 착용 시 통증을 느낍니다."
+      ],
+      "casual": [
+        "귀가 작아서 오래 끼면 아파요.",
+        "오래 착용하면 귀가 아파요."
+      ],
+      "short": [
+        "장시간 착용 시 귀 통증.",
+        "귀 작아서 착용 시 아픔."
+      ]
+    },
+    "GVS-0336": {
+      "formal": [
+        "착용 감지가 실제로 뺐는데도 재생을 유지합니다.",
+        "이어버드를 귀에서 빼도 착용 감지가 작동하지 않고 재생이 계속됩니다."
+      ],
+      "casual": [
+        "버즈를 빼도 재생이 멈추지 않아요.",
+        "귀에서 뺐는데도 음악이 계속 나와요."
+      ],
+      "short": [
+        "착용 감지 오작동으로 재생 유지.",
+        "벗어도 재생 계속됨."
+      ]
+    },
+    "GVS-0337": {
+      "formal": [
+        "한쪽만 착용하면 마이크 선택이 불안정합니다.",
+        "한쪽 이어버드만 사용 시 마이크가 자주 전환됩니다."
+      ],
+      "casual": [
+        "한쪽만 끼면 마이크가 왔다 갔다 해요.",
+        "한쪽만 사용할 때 마이크가 불안정해요."
+      ],
+      "short": [
+        "한쪽 착용 시 마이크 불안정.",
+        "단일 사용 시 마이크 전환 문제."
+      ]
+    },
+    "GVS-0338": {
+      "formal": [
+        "In ambient sound mode, my own voice echoes.",
+        "My voice sounds hollow or reverberates when ambient sound is on."
+      ],
+      "casual": [
+        "When I use ambient sound mode, my voice echoes back at me.",
+        "My own voice sounds weird and echoey in ambient mode."
+      ],
+      "short": [
+        "Voice echoes in ambient sound mode.",
+        "Own voice sounds hollow with ambient sound."
+      ]
+    },
+    "GVS-0339": {
+      "formal": [
+        "The voice detection feature activates too often, even when I cough.",
+        "The voice detect triggers frequently for non-speech sounds like coughing."
+      ],
+      "casual": [
+        "The voice detection keeps turning on when I cough.",
+        "Even a cough sets off the voice detect way too often."
+      ],
+      "short": [
+        "Voice detect triggers on cough.",
+        "Voice activation too sensitive, includes coughs."
+      ]
+    },
+    "GVS-0340": {
+      "formal": [
+        "초기화를 진행했지만 한쪽 마이크가 여전히 작동하지 않습니다.",
+        "초기화 후에도 한쪽 이어버드의 마이크가 인식되지 않습니다."
+      ],
+      "casual": [
+        "초기화해도 한쪽 마이크가 안 되네요.",
+        "리셋했는데도 한쪽 마이크가 작동을 안 해요."
+      ],
+      "short": [
+        "초기화 후에도 한쪽 마이크 불량.",
+        "리셋 후 한쪽 마이크 작동 안 함."
+      ]
+    },
+    "GVS-0341": {
+      "formal": [
+        "가로로 들었는데 앱이 세로 고정으로 작게 열립니다.",
+        "태블릿을 가로 모드로 사용해도 앱이 세로 고정되어 작게 표시됩니다."
+      ],
+      "casual": [
+        "가로로 들고 있는데 앱이 세로로 작게 열려요.",
+        "화면을 가로로 해도 앱이 세로로 나와요."
+      ],
+      "short": [
+        "가로 모드에서 앱 세로 고정.",
+        "앱이 가로에서 세로로 작게 열림."
+      ]
+    },
+    "GVS-0342": {
+      "formal": [
+        "세로 전용 앱의 빈 공간이 너무 큽니다.",
+        "세로 모드 전용 앱을 사용할 때 양옆 여백이 너무 넓습니다."
+      ],
+      "casual": [
+        "세로 전용 앱 쓸 때 양옆 공간이 너무 넓어요.",
+        "세로 앱이 가로에서 양옆이 비어요."
+      ],
+      "short": [
+        "세로 앱 가로 모드 여백 큼.",
+        "세로 전용 앱 빈 공간 과다."
+      ]
+    },
+    "GVS-0343": {
+      "formal": [
+        "분할 화면에서 특정 앱이 최소 폭을 강제해서 사용이 불편합니다.",
+        "분할 화면 모드에서 한 앱이 강제로 최소 폭을 적용하면서 앱이 충돌합니다."
+      ],
+      "casual": [
+        "분할화면에서 어떤 앱이 최소 폭을 강제로 지정해서 앱이 팅겨요.",
+        "분할화면 쓸 때 한 앱이 최소 폭을 강제해서 실행이 안 돼요."
+      ],
+      "short": [
+        "분할화면에서 앱 최소 폭 강제로 충돌.",
+        "분할화면 앱 최소 폭 강제 문제."
+      ]
+    },
+    "GVS-0344": {
+      "formal": [
+        "팝업 창의 크기 조절 손잡이가 화면 밖으로 나가서 조절이 어렵습니다.",
+        "팝업 창 크기 변경 핸들이 화면 밖으로 벗어나 사용이 불편합니다."
+      ],
+      "casual": [
+        "팝업창 크기 조절 손잡이가 화면 밖으로 나가서 조절이 안 돼요.",
+        "팝업창 핸들이 화면 밖으로 밀려나서 크기 조절을 못 하겠어요."
+      ],
+      "short": [
+        "팝업창 크기 조절 손잡이 화면 밖.",
+        "팝업창 핸들 화면 밖으로 나감."
+      ]
+    },
+    "GVS-0345": {
+      "formal": [
+        "앱 화면 비율을 강제로 설정한 후 일부 버튼이 잘려서 보입니다.",
+        "앱 화면비를 강제로 변경했더니 버튼이 화면 밖으로 잘립니다."
+      ],
+      "casual": [
+        "앱 화면비를 강제로 바꾸니까 버튼이 잘려 보여요.",
+        "앱 화면비 강제 설정 후 버튼이 짤려서 안 보여요."
+      ],
+      "short": [
+        "앱 화면비 강제 설정 시 버튼 잘림.",
+        "앱 화면비 변경 후 버튼 짤림."
+      ]
+    },
+    "GVS-0346": {
+      "formal": [
+        "태스크바가 동영상 재생 컨트롤을 가려서 제어가 어렵습니다.",
+        "영상 시청 중 태스크바가 컨트롤을 덮어 사용에 불편이 있습니다."
+      ],
+      "casual": [
+        "태스크바가 영상 컨트롤을 가려서 조작이 불편해요.",
+        "동영상 볼 때 태스크바 때문에 버튼이 안 보여요."
+      ],
+      "short": [
+        "태스크바가 영상 컨트롤을 가림.",
+        "태스크바 때문에 영상 조작 불편."
+      ]
+    },
+    "GVS-0347": {
+      "formal": [
+        "외부 디스플레이와 태블릿 화면의 앱 배치가 다르게 표시됩니다.",
+        "외부 화면과 태블릿 화면의 앱 위치 배열이 일치하지 않아 혼란스럽습니다."
+      ],
+      "casual": [
+        "외부 화면이랑 태블릿 화면 앱 배치가 달라서 헷갈려요.",
+        "듀얼 모니터 사용할 때 앱 배치가 뒤죽박죽이에요."
+      ],
+      "short": [
+        "외부 화면과 태블릿 배치 불일치.",
+        "듀얼 화면 앱 배치 혼란."
+      ]
+    },
+    "GVS-0348": {
+      "formal": [
+        "When I open a game in multi-window mode, it closes immediately.",
+        "Games crash when trying to enter multi-window."
+      ],
+      "casual": [
+        "Whenever I try to use a game in split screen, it just closes.",
+        "Games force close when I put them in multi-window."
+      ],
+      "short": [
+        "Game crashes on multi-window entry.",
+        "Game closes when entering split screen."
+      ]
+    },
+    "GVS-0349": {
+      "formal": [
+        "When two video apps are opened together, playback stops.",
+        "Running two video apps side by side causes playback to halt."
+      ],
+      "casual": [
+        "If I open two video apps at the same time, they both stop playing.",
+        "Playback freezes when I have two video apps open together."
+      ],
+      "short": [
+        "Two video apps together stop playback.",
+        "Playback stops with two video apps open."
+      ]
+    },
+    "GVS-0350": {
+      "formal": [
+        "태블릿에서 폰용 레이아웃이 늘어나 정보 밀도가 낮아 불편합니다.",
+        "태블릿 사용 시 폰 화면이 그대로 확대되어 정보가 듬성듬성 보입니다."
+      ],
+      "casual": [
+        "태블릿에서 폰 레이아웃이 그대로 늘어나서 정보가 너무 듬성듬성해요.",
+        "폰용 화면이 태블릿에서 늘어져서 보기가 불편해요."
+      ],
+      "short": [
+        "태블릿에서 폰 레이아웃 확대되어 정보 밀도 낮음.",
+        "태블릿에 폰 UI 그대로 늘어나 사용 불편."
+      ]
+    },
+    "GVS-0351": {
+      "formal": [
+        "자석 커버 근처에서 S펜으로 선을 그리면 휘어집니다.",
+        "자석 커버 주변에서 S펜 필기 시 선이 휘어지는 현상이 있습니다."
+      ],
+      "casual": [
+        "자석 커버 쪽에서 S펜 쓰면 선이 휘어져요.",
+        "커버 자석 근처에서 펜 선이 구부러져요."
+      ],
+      "short": [
+        "자석 커버 근처 S펜 선 휘어짐.",
+        "S펜 자석 영향으로 선 휘어짐."
+      ]
+    },
+    "GVS-0352": {
+      "formal": [
+        "필기 중 손바닥이 확대 제스처로 인식되어 불편합니다.",
+        "펜으로 글씨를 쓰는 도중 손바닥 접촉이 줌 기능으로 작동합니다."
+      ],
+      "casual": [
+        "필기할 때 손바닥이 확대 제스처로 인식돼요.",
+        "글씨 쓰다 보면 손바닥 때문에 화면이 확대돼요."
+      ],
+      "short": [
+        "손바닥이 확대 제스처로 인식.",
+        "필기 중 손바닥 줌 작동."
+      ]
+    },
+    "GVS-0353": {
+      "formal": [
+        "노트 앱 업데이트 이후 S펜 입력 지연 시간이 늘어났습니다.",
+        "노트 앱을 업데이트한 후 펜 반응 속도가 느려졌습니다."
+      ],
+      "casual": [
+        "노트 앱 업데이트 후 펜 딜레이가 생겼어요.",
+        "노트 앱 업뎃하고 나니 펜이 느려졌어요."
+      ],
+      "short": [
+        "노트 앱 업데이트로 펜 지연 증가.",
+        "앱 업데이트 후 펜 딜레이 발생."
+      ]
+    },
+    "GVS-0354": {
+      "formal": [
+        "키보드 커버 접촉부가 작은 움직임에도 연결이 끊깁니다.",
+        "키보드 커버의 접점이 약간만 움직여도 인식이 불안정합니다."
+      ],
+      "casual": [
+        "키보드 커버 접점이 살짝만 움직여도 끊겨요.",
+        "키보드 커버 조금만 건드려도 연결이 끊겨요."
+      ],
+      "short": [
+        "키보드 커버 접점 불안정.",
+        "키보드 커버 움직이면 연결 끊김."
+      ]
+    },
+    "GVS-0355": {
+      "formal": [
+        "트랙패드의 특정 영역에서 클릭이 작동하지 않습니다.",
+        "일부 구역에서 트랙패드 클릭이 인식되지 않습니다."
+      ],
+      "casual": [
+        "트랙패드 일부 영역에서 클릭이 안 먹혀요.",
+        "트랙패드 어떤 부분은 눌러도 반응이 없어요."
+      ],
+      "short": [
+        "트랙패드 일부 영역 클릭 불가.",
+        "트랙패드 특정 구역 무반응."
+      ]
+    },
+    "GVS-0356": {
+      "formal": [
+        "한영 전환 단축키가 애플리케이션마다 다르게 동작합니다.",
+        "앱에 따라 한영 전환 키가 제대로 작동하지 않거나 다릅니다."
+      ],
+      "casual": [
+        "한영 전환 단축키가 앱마다 달라서 헷갈려요.",
+        "앱별로 한영 전환 키가 다르게 작동해요."
+      ],
+      "short": [
+        "한영 전환 단축키 앱마다 다름.",
+        "한영 키 앱별로 불일치."
+      ]
+    },
+    "GVS-0357": {
+      "formal": [
+        "무릎 위에서 키보드 커버가 쉽게 분리됩니다.",
+        "키보드 커버를 무릎에 올려놓으면 가끔 분리됩니다."
+      ],
+      "casual": [
+        "무릎 위에 키보드 커버 올리면 자주 떨어져요.",
+        "키보드 커버가 무릎에서 쉽게 분리돼요."
+      ],
+      "short": [
+        "무릎에서 키보드 분리됨.",
+        "키보드 커버 분리 현상."
+      ]
+    },
+    "GVS-0358": {
+      "formal": [
+        "When an external mouse is connected, the trackpad becomes inactive.",
+        "Connecting an external mouse disables the trackpad."
+      ],
+      "casual": [
+        "When I plug in a mouse, the trackpad stops working.",
+        "The trackpad turns off as soon as I connect a mouse."
+      ],
+      "short": [
+        "Trackpad disabled when mouse connected.",
+        "External mouse deactivates trackpad."
+      ]
+    },
+    "GVS-0359": {
+      "formal": [
+        "The pen hover position is misaligned at the edges of the screen.",
+        "When hovering the S Pen near the screen edges, the cursor position is off."
+      ],
+      "casual": [
+        "The pen pointer doesn't line up right when I hover it near the edges.",
+        "The hover position is wrong around the edges of the screen."
+      ],
+      "short": [
+        "S Pen hover off at screen edges.",
+        "Hover alignment incorrect near edges."
+      ]
+    },
+    "GVS-0360": {
+      "formal": [
+        "S펜을 지원하지 않는 Tab A 모델에서 S펜 입력이 작동할 것으로 기대했습니다.",
+        "S펜 미지원 태블릿에서 펜 입력을 시도했으나 인식되지 않습니다."
+      ],
+      "casual": [
+        "S펜 안 되는 Tab A인데도 펜이 될 줄 알았어요.",
+        "S펜 미지원 모델인데 펜 입력이 되길 기대했어요."
+      ],
+      "short": [
+        "S펜 미지원 Tab A에서 펜 입력 기대.",
+        "S펜 미지원 모델에서 펜 사용 시도."
+      ]
+    },
+    "GVS-0361": {
+      "formal": [
+        "한 손으로 사용하기에는 기기가 너무 크고 무겁습니다.",
+        "기기가 커서 한 손으로 잡고 사용하기 어렵습니다."
+      ],
+      "casual": [
+        "한 손으로 쓰기엔 너무 크고 무거워요.",
+        "폰이 너무 커서 한 손으로 못 잡겠어요."
+      ],
+      "short": [
+        "한 손 사용에 너무 큼.",
+        "기기 크고 무거워 불편."
+      ]
+    },
+    "GVS-0362": {
+      "formal": [
+        "각진 모서리 부분이 손바닥을 눌러 통증이 있습니다.",
+        "각진 디자인 때문에 손바닥이 눌려 아픕니다."
+      ],
+      "casual": [
+        "모서리가 각져서 손바닥이 아파요.",
+        "각진 부분이 손바닥을 눌러서 불편해요."
+      ],
+      "short": [
+        "각진 모서리 손바닥 압박.",
+        "모서리로 인한 손바닥 통증."
+      ]
+    },
+    "GVS-0363": {
+      "formal": [
+        "카메라 돌출로 인해 책상 위에서 기기가 흔들립니다.",
+        "카메라 부분이 튀어나와서 평평한 곳에 놓으면 흔들립니다."
+      ],
+      "casual": [
+        "카메라가 튀어나와서 책상에 놓으면 흔들려요.",
+        "카메라 돌출 때문에 폰이 평평하지 않아요."
+      ],
+      "short": [
+        "카메라 돌출로 책상 흔들림.",
+        "카메라 튀어나와서 불안정."
+      ]
+    },
+    "GVS-0364": {
+      "formal": [
+        "microSD 슬롯이 없어서 저장공간 확장이 불가능해 불편합니다.",
+        "microSD 슬롯이 삭제되어 추가 저장이 어렵습니다."
+      ],
+      "casual": [
+        "microSD 슬롯이 없어서 용량 확장을 못 해요.",
+        "SD카드 슬롯이 없어서 불편해요."
+      ],
+      "short": [
+        "microSD 슬롯 없음.",
+        "SD카드 슬롯 삭제로 불편."
+      ]
+    },
+    "GVS-0365": {
+      "formal": [
+        "이어폰 단자가 없어 기존 유선 이어폰을 사용할 수 없습니다.",
+        "3.5mm 이어폰 잭이 없어서 예전 이어폰을 못 씁니다."
+      ],
+      "casual": [
+        "이어폰 단자가 없어서 예전 이어폰을 못 써요.",
+        "유선 이어폰 꽂을 구멍이 없어요."
+      ],
+      "short": [
+        "이어폰 단자 없음.",
+        "3.5mm 이어폰 잭 미지원."
+      ]
+    },
+    "GVS-0366": {
+      "formal": [
+        "충전기가 포함되지 않았는데 가격이 비싸다고 느껴집니다.",
+        "충전기 미포함임에도 제품 가격이 높다고 생각합니다."
+      ],
+      "casual": [
+        "충전기도 안 주면서 가격이 너무 비싸요.",
+        "가격이 비싼데 충전기가 없어요."
+      ],
+      "short": [
+        "충전기 없이 가격 높음.",
+        "가격 대비 충전기 미포함 불만."
+      ]
+    },
+    "GVS-0367": {
+      "formal": [
+        "저장용량별 가격 차이가 너무 커서 부담됩니다.",
+        "용량 단계별 가격 차이가 과도하다고 생각합니다."
+      ],
+      "casual": [
+        "저장용량에 따라 가격 차이가 너무 심해요.",
+        "용량 올리면 가격이 너무 올라가요."
+      ],
+      "short": [
+        "용량별 가격 차이 과도.",
+        "저장용량 가격 차이 심함."
+      ]
+    },
+    "GVS-0368": {
+      "formal": [
+        "The charging speed is slower compared to competing products.",
+        "I see that other brands charge much faster than this device."
+      ],
+      "casual": [
+        "This phone charges way slower than the competition.",
+        "Other phones charge a lot faster than this one."
+      ],
+      "short": [
+        "Charging slower than competitors.",
+        "Slower charge speed versus other brands."
+      ]
+    },
+    "GVS-0369": {
+      "formal": [
+        "The resale value drops quickly, making the overall value low.",
+        "The fast depreciation lowers the value of this product."
+      ],
+      "casual": [
+        "This thing loses value so fast, it's not worth it.",
+        "The resale value tanked too quickly."
+      ],
+      "short": [
+        "Resale value drops fast.",
+        "Quick depreciation hurts value."
+      ]
+    },
+    "GVS-0370": {
+      "formal": [
+        "전작과 체감 성능 차이가 거의 없어 업그레이드할 이유를 느끼지 못하겠습니다.",
+        "이전 모델과 비교해 실사용 체감이 비슷해 업그레이드 동기가 부족합니다."
+      ],
+      "casual": [
+        "전작이랑 써보면 차이가 거의 없어서 업글할 맘이 안 들어요.",
+        "예전 거랑 느낌이 비슷해서 왜 업그레이드해야 하는지 모르겠어요."
+      ],
+      "short": [
+        "전작과 체감 차이 없어 업그레이드 이유 부족.",
+        "업그레이드 동기 부족, 전작과 유사한 성능."
+      ]
+    },
+    "GVS-0371": {
+      "formal": [
+        "사전예약 주문 상태가 며칠째 '준비 중'으로 표시됩니다.",
+        "사전예약 후 주문 상태가 계속 '준비 중'으로 업데이트되지 않습니다."
+      ],
+      "casual": [
+        "사전예약 주문이 며칠째 준비 중이에요.",
+        "예약 주문 상태가 계속 준비 중으로 떠요."
+      ],
+      "short": [
+        "사전예약 주문 상태 준비 중.",
+        "주문 상태 업데이트 안 됨."
+      ]
+    },
+    "GVS-0372": {
+      "formal": [
+        "쿠폰 조건을 모두 충족했는데도 쿠폰이 적용되지 않았습니다.",
+        "할인 쿠폰을 사용하려고 했는데 조건은 맞는데 적용이 안 됩니다."
+      ],
+      "casual": [
+        "쿠폰 조건 다 충족했는데 왜 적용이 안 되는 거죠?",
+        "조건에 맞는 쿠폰인데 적용이 안 돼요."
+      ],
+      "short": [
+        "쿠폰 조건 충족했는데 적용 안 됨",
+        "조건 맞는데 쿠폰 미적용"
+      ]
+    },
+    "GVS-0373": {
+      "formal": [
+        "교육 할인 인증을 시도했지만 계속 실패합니다.",
+        "교육 할인 인증이 반복적으로 실패하고 있습니다."
+      ],
+      "casual": [
+        "교육 할인 인증이 자꾸 실패해요.",
+        "교육 할인 인증 계속 안 되네요."
+      ],
+      "short": [
+        "교육 할인 인증 반복 실패",
+        "교육 할인 인증 실패"
+      ]
+    },
+    "GVS-0374": {
+      "formal": [
+        "장바구니에 담긴 가격과 결제 단계에서의 가격이 다릅니다.",
+        "장바구니에서 결제 페이지로 넘어가면 가격이 변경됩니다."
+      ],
+      "casual": [
+        "장바구니 가격이랑 결제할 때 가격이 달라요.",
+        "결제 단계 가서 보니 가격이 바뀌었어요."
+      ],
+      "short": [
+        "장바구니-결제 가격 변경",
+        "결제 시 가격 변동"
+      ]
+    },
+    "GVS-0375": {
+      "formal": [
+        "결제는 승인되었는데 주문 내역이 생성되지 않았습니다.",
+        "결제가 완료됐는데 주문 내역이 안 보입니다."
+      ],
+      "casual": [
+        "결제됐는데 주문 내역이 없어요.",
+        "돈은 나갔는데 주문이 안 생겼어요."
+      ],
+      "short": [
+        "결제 승인됐으나 주문 내역 없음",
+        "결제 후 주문 미생성"
+      ]
+    },
+    "GVS-0376": {
+      "formal": [
+        "재고가 있는 상품인데도 주문이 자동으로 취소되었습니다.",
+        "재고가 있다고 표시되는데 주문이 자동 취소됩니다."
+      ],
+      "casual": [
+        "재고 있는데 주문이 자동 취소됐어요.",
+        "재고 있다고 떠서 주문했는데 자동 취소됐네요."
+      ],
+      "short": [
+        "재고 있음에도 주문 자동 취소",
+        "재고 있음 주문 자동 취소"
+      ]
+    },
+    "GVS-0377": {
+      "formal": [
+        "출시일이 지났는데도 배송 일정에 대한 안내가 없습니다.",
+        "출시일이 지났는데 배송 일정 안내를 받지 못했습니다."
+      ],
+      "casual": [
+        "출시일 지났는데 배송 일정 안 알려주나요?",
+        "배송 일정 언제인지 소식이 없네요."
+      ],
+      "short": [
+        "출시일 후 배송 일정 안내 없음",
+        "배송 일정 안내 미수신"
+      ]
+    },
+    "GVS-0378": {
+      "formal": [
+        "I received a product of a different color than the one I ordered.",
+        "The delivered item does not match the color I ordered."
+      ],
+      "casual": [
+        "I got the wrong color – not what I ordered.",
+        "The product I received is a different color than I ordered."
+      ],
+      "short": [
+        "Wrong color delivered.",
+        "Item color mismatched from order."
+      ]
+    },
+    "GVS-0379": {
+      "formal": [
+        "The free gift application record is missing.",
+        "My application for the promotional gift was not recorded."
+      ],
+      "casual": [
+        "They lost my promo gift request.",
+        "My free gift was not registered."
+      ],
+      "short": [
+        "Gift request missing from records.",
+        "Promo gift application lost."
+      ]
+    },
+    "GVS-0380": {
+      "formal": [
+        "배송된 박스와 제품 외관이 모두 파손된 상태로 도착했습니다.",
+        "제품과 포장 박스 모두 파손되어 배송되었습니다."
+      ],
+      "casual": [
+        "배송 박스랑 제품이 다 깨져서 왔어요.",
+        "박스도 망가지고 제품도 파손되어 배송됐어요."
+      ],
+      "short": [
+        "배송 박스 및 제품 파손.",
+        "제품과 포장 모두 파손되어 배송됨."
+      ]
+    },
+    "GVS-0381": {
+      "formal": [
+        "작은 외관 흠집 때문에 무상수리를 거절당했습니다.",
+        "외관에 흠집이 있다는 이유로 무상수리가 안 된다고 합니다."
+      ],
+      "casual": [
+        "작은 흠집 때문에 무상수리 거절 당했어요.",
+        "겉에 흠집 있다고 무상수리 안 해준대요."
+      ],
+      "short": [
+        "외관 흠집 이유 무상수리 거절",
+        "작은 흠집으로 무상수리 불가"
+      ]
+    },
+    "GVS-0382": {
+      "formal": [
+        "고장과 상관없는 찍힘이 과실 판정의 근거로 사용되었습니다.",
+        "고장 원인과 무관한 찍힘 때문에 제 과실로 처리됐습니다."
+      ],
+      "casual": [
+        "고장이랑 상관없는 찍힘 때문에 과실 판정 받았어요.",
+        "찍힌 게 고장과 무관한데 과실로 봤네요."
+      ],
+      "short": [
+        "고장 무관 찍힘으로 과실 판정",
+        "무관한 찍힘 과실 처리"
+      ]
+    },
+    "GVS-0383": {
+      "formal": [
+        "같은 증상으로 여러 번 수리했지만 계속 재발하고 있습니다.",
+        "동일한 증상으로 여러 차례 수리를 받았는데도 재발합니다."
+      ],
+      "casual": [
+        "같은 문제로 여러 번 수리했는데 또 똑같은 증상이에요.",
+        "수리했는데 같은 증상이 계속 나타나요."
+      ],
+      "short": [
+        "동일 증상 수리 후 재발",
+        "같은 증상 반복 수리"
+      ]
+    },
+    "GVS-0384": {
+      "formal": [
+        "부품 재고가 없어서 수리 일정이 계속 미뤄지고 있습니다.",
+        "필요한 부품 재고가 없다며 수리가 계속 연기됩니다."
+      ],
+      "casual": [
+        "부품이 없다고 수리가 계속 밀려요.",
+        "부품 재고 없어서 수리 일정이 계속 늦춰지네요."
+      ],
+      "short": [
+        "부품 재고 부족 수리 지연",
+        "부품 없어 수리 일정 연기"
+      ]
+    },
+    "GVS-0385": {
+      "formal": [
+        "서비스센터에서는 정상이라고 하는데 집에서는 증상이 재현됩니다.",
+        "센터에서 정상 진단을 받았지만 집에서 사용할 때 동일한 문제가 발생합니다."
+      ],
+      "casual": [
+        "센터에서는 괜찮다는데 집에서는 문제가 있어요.",
+        "센터 가면 정상인데 집에 오면 또 증상이 나와요."
+      ],
+      "short": [
+        "센터 정상 진단 집 재현",
+        "센터-집 증상 불일치"
+      ]
+    },
+    "GVS-0386": {
+      "formal": [
+        "메인보드 교체 전에 데이터가 삭제된다는 안내를 충분히 받지 못했습니다.",
+        "메인보드 교체 시 데이터 삭제에 대한 사전 안내가 부족했습니다."
+      ],
+      "casual": [
+        "메인보드 교체 전에 데이터 지워진다는 말을 제대로 못 들었어요.",
+        "메인보드 바꾼다고 데이터 날아간다는 얘기를 미리 안 해줬네요."
+      ],
+      "short": [
+        "메인보드 교체 데이터 삭제 안내 부족",
+        "데이터 삭제 사전 안내 없음"
+      ]
+    },
+    "GVS-0387": {
+      "formal": [
+        "수리 후에 사진과 인증 정보가 모두 사라졌습니다.",
+        "수리를 받고 나니 저장된 사진과 인증 정보가 전부 없어졌습니다."
+      ],
+      "casual": [
+        "수리하고 나니까 사진이랑 인증 정보가 다 사라졌어요.",
+        "수리 후에 사진과 인증이 다 날아갔네요."
+      ],
+      "short": [
+        "수리 후 사진·인증 정보 소실",
+        "수리 후 데이터 사라짐"
+      ]
+    },
+    "GVS-0388": {
+      "formal": [
+        "I did not receive guidance on how to use Maintenance Mode.",
+        "No information was provided about how to activate Maintenance Mode."
+      ],
+      "casual": [
+        "Nobody told me how to use Maintenance Mode.",
+        "I wasn't shown how to turn on Maintenance Mode."
+      ],
+      "short": [
+        "No instructions for Maintenance Mode.",
+        "Maintenance Mode usage not explained."
+      ]
+    },
+    "GVS-0389": {
+      "formal": [
+        "I cannot find out the repair status during the shipping repair process.",
+        "The progress of my mail-in repair is unknown."
+      ],
+      "casual": [
+        "I have no idea what's happening with my repair shipment.",
+        "I can't track the status of my repair while it's in the mail."
+      ],
+      "short": [
+        "Repair status not trackable.",
+        "No update during mail-in repair."
+      ]
+    },
+    "GVS-0390": {
+      "formal": [
+        "서비스센터와 고객지원센터의 안내 내용이 서로 달라 혼란스럽습니다.",
+        "센터와 고객지원의 설명이 일치하지 않아 신뢰하기 어렵습니다."
+      ],
+      "casual": [
+        "센터에서 한 말이랑 고객지원에서 한 말이 달라요.",
+        "서비스센터와 고객지원의 설명이 서로 달라서 헷갈려요."
+      ],
+      "short": [
+        "센터와 고객지원 설명 상이.",
+        "서비스센터 및 고객지원 안내 불일치."
+      ]
+    },
+    "GVS-0391": {
+      "formal": [
+        "온라인에서 예상했던 가격보다 실제 판정 가격이 훨씬 낮았습니다.",
+        "예상 견적보다 실제 판정 가격이 크게 낮게 나왔습니다."
+      ],
+      "casual": [
+        "온라인 예상가보다 실제 판정가가 훨씬 낮아요.",
+        "예상보다 견적이 너무 낮게 나왔네요."
+      ],
+      "short": [
+        "온라인 예상가 대비 실제 판정가 낮음",
+        "실제 판정가 예상보다 낮음"
+      ]
+    },
+    "GVS-0392": {
+      "formal": [
+        "화면 번인을 이유로 등급이 하락했습니다.",
+        "화면 번인이 있다고 판정되어 예상보다 낮은 등급을 받았습니다."
+      ],
+      "casual": [
+        "화면 번인 때문에 등급이 떨어졌어요.",
+        "화면에 번인 있다고 등급 낮게 나왔네요."
+      ],
+      "short": [
+        "화면 번인으로 등급 하락",
+        "번인 이유 등급 낮춤"
+      ]
+    },
+    "GVS-0393": {
+      "formal": [
+        "IMEI 입력에 오류가 있어서 접수가 취소되었습니다.",
+        "IMEI를 잘못 입력했다며 접수가 진행되지 않았습니다."
+      ],
+      "casual": [
+        "IMEI 입력 잘못해서 접수 취소됐어요.",
+        "IMEI 오류로 접수가 안 됐네요."
+      ],
+      "short": [
+        "IMEI 오류 접수 취소",
+        "IMEI 잘못 입력 접수 불가"
+      ]
+    },
+    "GVS-0394": {
+      "formal": [
+        "택배가 배송 완료로 조회되지만 실제로 기기를 찾지 못했습니다.",
+        "택배는 배송됐다고 뜨는데 제품을 받지 못했습니다."
+      ],
+      "casual": [
+        "택배 배송 완료됐다고 뜨는데 기기가 안 왔어요.",
+        "배송 완료인데 물건을 못 찾겠어요."
+      ],
+      "short": [
+        "배송 완료 표시지만 미수취",
+        "택배 배송 완료 미수령"
+      ]
+    },
+    "GVS-0395": {
+      "formal": [
+        "발송 전에 찍은 사진과 실제 검수 결과가 다릅니다.",
+        "보내기 전 사진과 검수 결과가 일치하지 않습니다."
+      ],
+      "casual": [
+        "보내기 전 사진이랑 검수 결과가 달라요.",
+        "사진에 없는 흠집이 검수에서 발견됐네요."
+      ],
+      "short": [
+        "발송 전 사진과 검수 결과 상이",
+        "사진-검수 상태 불일치"
+      ]
+    },
+    "GVS-0396": {
+      "formal": [
+        "반납 기한 안내를 늦게 받아서 혜택이 취소되었습니다.",
+        "기기 반납 기한을 늦게 통보받아 보상 혜택을 받지 못했습니다."
+      ],
+      "casual": [
+        "반납 기한 안내를 늦게 받아서 혜택이 날아갔어요.",
+        "반납 기한을 늦게 알려줘서 혜택 취소됐네요."
+      ],
+      "short": [
+        "반납 기한 늦게 안내 혜택 취소",
+        "반납 기한 미인지 혜택 소멸"
+      ]
+    },
+    "GVS-0397": {
+      "formal": [
+        "차액 청구 이메일을 받지 못했습니다.",
+        "차액 청구 관련 이메일이 오지 않았습니다."
+      ],
+      "casual": [
+        "차액 청구 이메일이 안 왔어요.",
+        "차액 청구 메일 못 받았는데요."
+      ],
+      "short": [
+        "차액 청구 이메일 미수신",
+        "차액 청구 메일 안 옴"
+      ]
+    },
+    "GVS-0398": {
+      "formal": [
+        "The trade-in estimates differ across channels for the same device condition.",
+        "I got different quotes from different channels for the same condition."
+      ],
+      "casual": [
+        "Different places gave me different trade-in values for the same phone condition.",
+        "Trade-in offers vary depending on where I go."
+      ],
+      "short": [
+        "Trade-in estimates vary by channel.",
+        "Different quotes for same condition."
+      ]
+    },
+    "GVS-0399": {
+      "formal": [
+        "The trade-in was rejected because of an account lock, even after a factory reset.",
+        "Despite resetting, my trade-in was denied due to an account lock."
+      ],
+      "casual": [
+        "They rejected my trade-in saying there's an account lock, even after I reset the phone.",
+        "My trade-in got denied because of an account lock that should have been removed."
+      ],
+      "short": [
+        "Trade-in rejected due to account lock post-reset.",
+        "Account lock caused trade-in rejection even after reset."
+      ]
+    },
+    "GVS-0400": {
+      "formal": [
+        "보상 거절된 기기의 반환이 지연되고 있습니다.",
+        "보상이 거절된 제품을 반송하는 과정이 지연되어 불편합니다."
+      ],
+      "casual": [
+        "보상 거절된 기기 반환이 계속 늦어지고 있어요.",
+        "보상 거절된 폰을 돌려보내는 게 계속 미뤄지고 있어요."
+      ],
+      "short": [
+        "보상 거절 기기 반환 지연.",
+        "반송 지연으로 불편."
+      ]
+    },
+    "GVS-0401": {
+      "formal": [
+        "휴대폰을 흔들면 카메라 쪽에서 작은 딸깍 소리가 납니다.",
+        "카메라 OIS에서 흔들림에 따른 소음이 발생합니다."
+      ],
+      "casual": [
+        "폰 흔들면 카메라 쪽에서 딸깍 소리 나요.",
+        "카메라에서 소리가 나는데 OIS 문제인가요?"
+      ],
+      "short": [
+        "흔들면 카메라 딸깍 소리",
+        "카메라 OIS 소음"
+      ]
+    },
+    "GVS-0402": {
+      "formal": [
+        "카메라 앱이 꺼져 있을 때만 렌즈에서 소리가 납니다.",
+        "카메라를 사용하지 않을 때 렌즈 소리가 발생합니다."
+      ],
+      "casual": [
+        "카메라 끈 상태에서만 렌즈 소리 나요.",
+        "카메라 안 쓸 때 렌즈 소리 들려요."
+      ],
+      "short": [
+        "카메라 꺼짐 상태 렌즈 소리",
+        "카메라 off시 렌즈 소음"
+      ]
+    },
+    "GVS-0403": {
+      "formal": [
+        "망원 카메라가 탑재된 모델에서 흔들림 소리가 납니다.",
+        "망원 렌즈가 있는 기기에서 흔들 때 소리가 발생합니다."
+      ],
+      "casual": [
+        "망원 카메라 있는 폰인데 흔들면 소리 나요.",
+        "줌 카메라 쪽에서 흔들림 소리 들려요."
+      ],
+      "short": [
+        "망원 카메라 흔들림 소리",
+        "텔레포토 렌즈 소음"
+      ]
+    },
+    "GVS-0404": {
+      "formal": [
+        "강한 진동 설정에서 카메라 근처에서 소리가 들립니다.",
+        "진동 모드가 강할 때 카메라 부위에서 소음이 발생합니다."
+      ],
+      "casual": [
+        "진동 세게 설정하면 카메라 쪽에서 소리 나요.",
+        "강한 진동일 때 카메라에서 달그락 거려요."
+      ],
+      "short": [
+        "진동 강할 때 카메라 소음",
+        "강한 진동시 카메라 소리"
+      ]
+    },
+    "GVS-0405": {
+      "formal": [
+        "걸을 때 가방 안에서 미세한 달그락 소리가 납니다.",
+        "가방에 넣고 걸으면 카메라에서 달그락거리는 소리가 납니다."
+      ],
+      "casual": [
+        "가방에 넣고 걸으면 달그락 소리 나요.",
+        "걸을 때 가방 안에서 카메라 소리 나요."
+      ],
+      "short": [
+        "가방 안에서 달그락 소리",
+        "보행시 가방 내 카메라 소음"
+      ]
+    },
+    "GVS-0406": {
+      "formal": [
+        "가방에서 꺼내 흔들었을 때만 소리가 납니다.",
+        "휴대폰을 가방에서 꺼내 흔들 때만 소음이 발생합니다."
+      ],
+      "casual": [
+        "가방에서 꺼내 흔들 때만 소리 나요.",
+        "꺼내서 흔들어야 소리 나요."
+      ],
+      "short": [
+        "꺼내 흔들 때만 소리",
+        "가방 밖 흔들림시 소음"
+      ]
+    },
+    "GVS-0407": {
+      "formal": [
+        "낙하 후 처음 소리를 알아차렸지만 사진 촬영은 정상입니다.",
+        "떨어뜨린 후 카메라 소리가 났지만 사진은 잘 찍힙니다."
+      ],
+      "casual": [
+        "폰 떨어뜨린 후 카메라 소리 나는데 사진은 괜찮아요.",
+        "낙하 후 카메라 소리 들리는데 촬영은 정상이에요."
+      ],
+      "short": [
+        "낙하 후 카메라 소리, 촬영 정상",
+        "낙하 후 OIS 소음, 사진 양호"
+      ]
+    },
+    "GVS-0408": {
+      "formal": [
+        "I hear a sound from the lens moving at the start of video recording.",
+        "At the beginning of a video, the camera lens makes a moving noise."
+      ],
+      "casual": [
+        "My lens makes a sound when I start recording video.",
+        "I hear the lens moving at the start of video recording."
+      ],
+      "short": [
+        "Lens noise at video start.",
+        "Hear lens moving when starting video."
+      ]
+    },
+    "GVS-0409": {
+      "formal": [
+        "I hear a mechanical click sound when switching zoom levels.",
+        "When changing zoom magnification, there is a mechanical clicking noise."
+      ],
+      "casual": [
+        "My camera clicks when I zoom in or out.",
+        "There's a mechanical click when switching zoom."
+      ],
+      "short": [
+        "Click sound when zooming.",
+        "Mechanical click on zoom switch."
+      ]
+    },
+    "GVS-0410": {
+      "formal": [
+        "OIS에서 나는 유격음이 조용한 방에서만 들립니다.",
+        "OIS 유격음이 특정 환경에서만 발생하는 것 같습니다."
+      ],
+      "casual": [
+        "방에서 조용히 있을 때 OIS 유격음이 들려요.",
+        "OIS에서 나는 소리가 조용한 곳에서만 들리네요."
+      ],
+      "short": [
+        "조용한 방에서 OIS 유격음 발생.",
+        "OIS 유격음이 특정 환경에서만 들림."
+      ]
+    },
+    "GVS-0411": {
+      "formal": [
+        "개통 첫날 앱을 설치하는 동안 배터리가 빨리 소모됩니다.",
+        "새 폰에서 앱 설치 중 배터리 소모가 빠릅니다."
+      ],
+      "casual": [
+        "개통 첫날 앱 설치하는데 배터리 엄청 빨리 닳아요.",
+        "새 폰인데 앱 설치하니까 배터리가 확 줄어요."
+      ],
+      "short": [
+        "개통일 앱 설치 배터리 급소모",
+        "앱 설치 중 배터리 빨리 닳음"
+      ]
+    },
+    "GVS-0412": {
+      "formal": [
+        "Smart Switch로 데이터를 복원하는 동안 발열과 배터리 소모가 큽니다.",
+        "Smart Switch 복원 중 기기가 뜨거워지고 배터리가 많이 소모됩니다."
+      ],
+      "casual": [
+        "Smart Switch로 복원하는데 폰이 뜨겁고 배터리 빨리 닳아요.",
+        "데이터 옮기는 중에 발열 심하고 배터리 많이 먹어요."
+      ],
+      "short": [
+        "Smart Switch 복원중 발열 배터리 소모",
+        "데이터 복원 중 배터리 과소모"
+      ]
+    },
+    "GVS-0413": {
+      "formal": [
+        "배터리 메뉴에 '사용 패턴 학습 중'이라고 표시됩니다.",
+        "배터리 설정에 사용 패턴을 학습 중이라는 메시지가 나타납니다."
+      ],
+      "casual": [
+        "배터리 메뉴에 사용 패턴 학습 중이라고 떠요.",
+        "배터리 사용 패턴 학습 중이라는데요."
+      ],
+      "short": [
+        "배터리 사용 패턴 학습 중 표시",
+        "배터리 학습 중 메시지"
+      ]
+    },
+    "GVS-0414": {
+      "formal": [
+        "5G 신호가 약한 지역에서 LTE보다 배터리 소모가 더 큽니다.",
+        "약한 5G 지역에서 LTE 사용 시보다 배터리가 더 빨리 소모됩니다."
+      ],
+      "casual": [
+        "5G 잘 안 터지는 곳에서는 LTE보다 배터리 더 빨리 닳아요.",
+        "5G 약한 지역에서 배터리 소모 심해요."
+      ],
+      "short": [
+        "약한 5G 지역 배터리 과소모",
+        "5G 약전계 배터리 소모 증가"
+      ]
+    },
+    "GVS-0415": {
+      "formal": [
+        "사진 인덱싱 중 백그라운드 배터리 사용량이 높습니다.",
+        "갤러리 앱이 사진을 인덱싱하는 동안 배터리 소모가 큽니다."
+      ],
+      "casual": [
+        "사진 인덱싱하는 동안 배터리가 많이 닳아요.",
+        "갤러리에서 사진 정리할 때 배터리 소모 심해요."
+      ],
+      "short": [
+        "사진 인덱싱 중 배터리 소모",
+        "갤러리 인덱싱 배터리 과소모"
+      ]
+    },
+    "GVS-0416": {
+      "formal": [
+        "새 워치를 연결한 첫날 업데이트로 배터리 소모가 증가했습니다.",
+        "워치 연결 후 업데이트가 진행되면서 배터리가 많이 소모됩니다."
+      ],
+      "casual": [
+        "새 워치 연결하고 첫날 업데이트 때문에 배터리 빨리 닳아요.",
+        "워치 연결했더니 배터리가 확 줄었어요."
+      ],
+      "short": [
+        "워치 연결 첫날 업데이트 배터리 소모",
+        "새 워치 업데이트 중 배터리 과소모"
+      ]
+    },
+    "GVS-0417": {
+      "formal": [
+        "클라우드 동기화가 완료되기 전에 배터리가 빨리 소모됩니다.",
+        "워치에서 클라우드 동기화가 끝나기 전 배터리 지속 시간이 짧습니다."
+      ],
+      "casual": [
+        "클라우드 동기화 중에는 배터리가 빨리 닳아요.",
+        "워치 동기화 끝나기 전에 배터리가 다 돼요."
+      ],
+      "short": [
+        "클라우드 동기화 중 배터리 소모",
+        "동기화 완료 전 배터리 부족"
+      ]
+    },
+    "GVS-0418": {
+      "formal": [
+        "My watch gets hot during system optimization right after an update.",
+        "After the update, the system optimization causes the watch to heat up."
+      ],
+      "casual": [
+        "My watch overheats after updating during optimization.",
+        "After the update, my watch gets hot when optimizing."
+      ],
+      "short": [
+        "Overheating after update during optimization.",
+        "Watch hot during post-update optimization."
+      ]
+    },
+    "GVS-0419": {
+      "formal": [
+        "Battery drains quickly because multiple app updates run simultaneously.",
+        "Several app updates running at the same time cause excessive battery consumption."
+      ],
+      "casual": [
+        "Battery drains fast when multiple apps update at once.",
+        "Multiple app updates drain my battery quickly."
+      ],
+      "short": [
+        "Battery drain from multiple app updates.",
+        "High consumption during simultaneous app updates."
+      ]
+    },
+    "GVS-0420": {
+      "formal": [
+        "새 eSIM 활성화 후 망 탐색 중 배터리가 많이 소모됩니다.",
+        "eSIM 설정 후 망을 찾는 동안 배터리 사용량이 증가했습니다."
+      ],
+      "casual": [
+        "eSIM 새로 켜고 나서 망 찾느라 배터리가 확 줄었어요.",
+        "eSIM 활성화하고 망 탐색할 때 배터리 빨리 닳아요."
+      ],
+      "short": [
+        "eSIM 활성화 후 망 탐색 시 배터리 소모 증가.",
+        "새 eSIM 사용 시 배터리 소모 심함."
+      ]
+    },
+    "GVS-0421": {
+      "formal": [
+        "방해금지 시간 중에는 알림 소리가 나지 않습니다.",
+        "방해금지 모드가 켜져 있으면 알림음이 울리지 않습니다."
+      ],
+      "casual": [
+        "방해금지 시간에는 알림 소리가 안 나요.",
+        "방해금지 모드면 알림음이 안 들려요."
+      ],
+      "short": [
+        "방해금지 중 알림 무음",
+        "방해금지 모드 알림 소리 없음"
+      ]
+    },
+    "GVS-0422": {
+      "formal": [
+        "수면 모드에서 선택한 앱만 알림이 허용됩니다.",
+        "수면 모드에서는 지정된 앱의 알림만 받을 수 있습니다."
+      ],
+      "casual": [
+        "수면 모드에서는 선택한 앱만 알림 와요.",
+        "잠잘 때는 특정 앱만 알림 허용돼요."
+      ],
+      "short": [
+        "수면 모드 선택 앱만 알림",
+        "수면 모드 앱 알림 제한"
+      ]
+    },
+    "GVS-0423": {
+      "formal": [
+        "앱이 절전 상태라 백그라운드 알림이 지연됩니다.",
+        "절전 모드에서 앱이 백그라운드 알림을 늦게 받습니다."
+      ],
+      "casual": [
+        "앱이 절전 상태라 알림이 늦게 와요.",
+        "절전 모드라 백그라운드 알림이 밀려요."
+      ],
+      "short": [
+        "절전 상태 알림 지연",
+        "백그라운드 알림 지연"
+      ]
+    },
+    "GVS-0424": {
+      "formal": [
+        "앱 내에서 특정 알림 카테고리가 비활성화되어 있습니다.",
+        "해당 앱의 특정 알림 종류가 꺼져 있습니다."
+      ],
+      "casual": [
+        "앱 설정에서 어떤 알림 카테고리가 꺼져 있어요.",
+        "앱 알림 중 일부만 안 오게 설정됐어요."
+      ],
+      "short": [
+        "앱 내 알림 카테고리 비활성",
+        "앱 알림 종류 꺼짐"
+      ]
+    },
+    "GVS-0425": {
+      "formal": [
+        "휴대폰을 사용 중일 때는 워치로 알림이 전송되지 않도록 설정되어 있습니다.",
+        "폰 사용 중에는 워치 알림이 숨겨지는 설정입니다."
+      ],
+      "casual": [
+        "폰 사용할 때는 워치에 알림 안 오게 돼 있어요.",
+        "폰 쓰는 중이면 워치 알림 안 보여요."
+      ],
+      "short": [
+        "폰 사용 중 워치 알림 숨김",
+        "폰 사용시 워치 알림 미전송"
+      ]
+    },
+    "GVS-0426": {
+      "formal": [
+        "배터리 제한 때문에 메신저 푸시 알림이 지연됩니다.",
+        "배터리 최적화로 인해 메신저 알림이 늦게 도착합니다."
+      ],
+      "casual": [
+        "배터리 제한 때문에 메신저 알림이 늦게 와요.",
+        "배터리 아낀다고 메신저 푸시가 밀려요."
+      ],
+      "short": [
+        "배터리 제한 메신저 지연",
+        "푸시 알림 지연"
+      ]
+    },
+    "GVS-0427": {
+      "formal": [
+        "집중 모드가 켜져 있을 때 선택한 앱의 알림이 오지 않습니다.",
+        "선택한 앱의 알림이 차단되어 전달되지 않습니다."
+      ],
+      "casual": [
+        "집중모드 켜놓으면 어떤 앱 알림은 안 와.",
+        "알림 차단된 앱이 있어서 확인이 안 돼."
+      ],
+      "short": [
+        "집중모드에서 선택 앱 알림 안 옴.",
+        "알림 차단돼서 확인 불가."
+      ]
+    },
+    "GVS-0428": {
+      "formal": [
+        "I don't receive notifications because the work profile is paused.",
+        "When the work profile is suspended, no notifications appear."
+      ],
+      "casual": [
+        "I'm not getting any notifications because my work profile is paused.",
+        "No notifications come through when work profile is on pause."
+      ],
+      "short": [
+        "No notifications due to paused work profile.",
+        "Work profile pause blocks notifications."
+      ]
+    },
+    "GVS-0429": {
+      "formal": [
+        "Notifications only show in the status bar because they are set to silent.",
+        "With silent notifications enabled, they only appear in the status bar."
+      ],
+      "casual": [
+        "My notifications only show in the status bar since they're set to silent.",
+        "Silent notifications only appear in the status bar."
+      ],
+      "short": [
+        "Silent notifications only in status bar.",
+        "Notifications only on status bar on silent."
+      ]
+    },
+    "GVS-0430": {
+      "formal": [
+        "대화 알림 채널이 음소거 상태로 설정되어 있습니다.",
+        "사용자가 대화 알림 채널을 음소거한 상태입니다."
+      ],
+      "casual": [
+        "대화 알림이 음소거 되어 있어요.",
+        "대화 채널 알림이 꺼져 있네요."
+      ],
+      "short": [
+        "대화 알림 채널 음소거 상태.",
+        "알림 채널이 음소거됨."
+      ]
+    },
+    "GVS-0431": {
+      "formal": [
+        "장마철 습한 날씨에 수분 감지 경고가 표시됩니다.",
+        "습도가 높은 환경에서 충전 포트에 수분이 감지되었다는 경고가 나타납니다."
+      ],
+      "casual": [
+        "장마철에 습해서 수분 감지 경고 떠.",
+        "습기 때문에 충전 안 된다고 경고 떠."
+      ],
+      "short": [
+        "고습도에서 수분 감지 경고 발생.",
+        "습기로 인한 충전 경고."
+      ]
+    },
+    "GVS-0432": {
+      "formal": [
+        "샤워실 근처에서 사용 후 유선 충전이 안전을 위해 차단됩니다.",
+        "샤워실 근처에서 사용한 후 유선 충전이 차단되어 충전이 되지 않습니다."
+      ],
+      "casual": [
+        "샤워실 가까이서 쓰고 나니까 충전이 안 돼.",
+        "샤워 후에 충전해도 안전 차단 걸려서 안 돼."
+      ],
+      "short": [
+        "샤워실 사용 후 유선 충전 차단.",
+        "샤워 후 충전 안 됨."
+      ]
+    },
+    "GVS-0433": {
+      "formal": [
+        "바닷물에 노출된 후 충분히 건조되지 않은 상태에서 충전 포트에 수분이 감지되었다는 경고가 표시됩니다.",
+        "바닷물에 젖은 후 충분히 말리지 않아 수분 감지 경고가 나타납니다."
+      ],
+      "casual": [
+        "바닷물에 빠지고 제대로 안 말렸더니 충전 경고 떠.",
+        "바닷물 묻고 안 말려서 수분 감지 돼."
+      ],
+      "short": [
+        "바닷물 노출 후 미건조로 경고.",
+        "젖은 상태 충전 경고."
+      ]
+    },
+    "GVS-0434": {
+      "formal": [
+        "충전 포트에 먼지나 이물질이 있어 수분 감지 경고가 표시됩니다.",
+        "포트 안에 먼지와 이물질 때문에 수분 감지 경고가 나타납니다."
+      ],
+      "casual": [
+        "충전 포트에 먼지 껴서 수분 감지 경고 떠.",
+        "포트에 이물질 있어서 충전 경고."
+      ],
+      "short": [
+        "포트 이물질로 수분 감지 경고.",
+        "이물질로 인한 충전 경고."
+      ]
+    },
+    "GVS-0435": {
+      "formal": [
+        "손상된 케이블을 연결할 때만 충전 포트에 수분이 감지되었다는 경고가 표시됩니다.",
+        "케이블이 손상된 경우에만 충전 경고가 나타납니다."
+      ],
+      "casual": [
+        "케이블 망가진 걸 꽂으면 충전 경고 떠.",
+        "손상된 케이블만 꽂으면 경고 나와."
+      ],
+      "short": [
+        "손상 케이블 연결 시 충전 경고.",
+        "불량 케이블 충전 경고."
+      ]
+    },
+    "GVS-0436": {
+      "formal": [
+        "젖은 케이블을 사용한 후 포트가 말랐는데도 수분 감지 경고가 지속됩니다.",
+        "케이블이 젖어서 발생한 경고가 포트가 마른 후에도 사라지지 않습니다."
+      ],
+      "casual": [
+        "케이블 젖은 후 말랐는데도 경고 계속 떠.",
+        "케이블 때문에 생긴 경고가 안 사라져."
+      ],
+      "short": [
+        "케이블 젖은 후 경고 지속.",
+        "포트 마른 후에도 경고 유지."
+      ]
+    },
+    "GVS-0437": {
+      "formal": [
+        "추운 곳에서 따뜻한 실내로 들어온 후 결로로 인해 수분 감지 경고가 표시됩니다.",
+        "외부에서 실내로 이동 시 결로가 생겨 충전 포트에 수분 감지 경고가 나타납니다."
+      ],
+      "casual": [
+        "추운 밖에서 안으로 들어오니까 결로 생겨서 경고 떠.",
+        "실내 들어오니 습기 차서 충전 경고."
+      ],
+      "short": [
+        "결로로 인한 수분 감지 경고.",
+        "온도 차이로 충전 경고."
+      ]
+    },
+    "GVS-0438": {
+      "formal": [
+        "The device does not charge, possibly due to a USB cache error after complete drying.",
+        "After thorough drying, a USB cache error might be preventing charging."
+      ],
+      "casual": [
+        "My phone won't charge even after drying completely, maybe a USB cache issue.",
+        "Not charging after drying, likely a USB cache error."
+      ],
+      "short": [
+        "Not charging after drying, USB cache error.",
+        "No charging, possible USB cache problem."
+      ]
+    },
+    "GVS-0439": {
+      "formal": [
+        "I tried to charge immediately after swimming, but only wiped the exterior.",
+        "After swimming, I only dried the outside and attempted to charge right away."
+      ],
+      "casual": [
+        "I tried charging right after swimming just by wiping it down.",
+        "After swimming, I just wiped the outside and plugged it in."
+      ],
+      "short": [
+        "Charging attempt after swim, exterior wipe only.",
+        "Tried charging right after swimming with just a wipe."
+      ]
+    },
+    "GVS-0440": {
+      "formal": [
+        "차량 에어컨 환경에서 충전 포트에 결로가 생길 수 있습니다.",
+        "에어컨 바람이 닿는 곳에서 충전 포트에 습기가 차는 것 같습니다."
+      ],
+      "casual": [
+        "차 안에서 에어컨 켜면 충전 포트에 물방울이 맺혀요.",
+        "에어컨 때문에 충전 포트에 결로 생길 수 있어요."
+      ],
+      "short": [
+        "차량 에어컨 환경에서 포트 결로 가능.",
+        "에어컨 바람으로 충전 포트 습기 발생."
+      ]
+    },
+    "GVS-0441": {
+      "formal": [
+        "매우 건조한 손가락으로 지문 인식이 잘 되지 않습니다.",
+        "손이 너무 건조해서 지문 인식률이 저하됩니다."
+      ],
+      "casual": [
+        "손이 너무 건조해서 지문 인식이 안 돼.",
+        "건조한 손가락으로는 지문 인식 잘 안 돼."
+      ],
+      "short": [
+        "건조한 손가락 지문 인식 저하.",
+        "손 건조로 인식 불량."
+      ]
+    },
+    "GVS-0442": {
+      "formal": [
+        "젖은 손으로 지문 잠금 해제를 반복 시도했지만 실패합니다.",
+        "손이 젖은 상태에서 지문 인식이 계속 실패합니다."
+      ],
+      "casual": [
+        "손 젖은 상태로 지문 해제하려니까 계속 실패해.",
+        "젖은 손으로 잠금 해제 안 돼."
+      ],
+      "short": [
+        "젖은 손 지문 인식 실패 반복.",
+        "손 젖어서 잠금 해제 불가."
+      ]
+    },
+    "GVS-0443": {
+      "formal": [
+        "손에 로션이 묻은 상태에서 지문 센서가 오인식합니다.",
+        "로션 바른 후 지문 인식이 제대로 되지 않습니다."
+      ],
+      "casual": [
+        "로션 바르고 지문 인식하니까 오작동해.",
+        "로션 묻은 손으로 지문 인식 안 돼."
+      ],
+      "short": [
+        "로션 묻은 손 지문 오인식.",
+        "로션으로 인식 불량."
+      ]
+    },
+    "GVS-0444": {
+      "formal": [
+        "긁힌 보호필름이 지문 센서 영역을 가려 인식이 불가능합니다.",
+        "보호필름에 흠집이 생겨 지문 인식이 되지 않습니다."
+      ],
+      "casual": [
+        "보호필름 긁히니까 지문 인식 안 돼.",
+        "필름 긁혀서 지문 센서 못 읽어."
+      ],
+      "short": [
+        "긁힌 필름으로 지문 인식 불가.",
+        "필름 흠집으로 센서 오작동."
+      ]
+    },
+    "GVS-0445": {
+      "formal": [
+        "두꺼운 강화유리 보호필름을 부착한 후 지문 인식률이 저하되었습니다.",
+        "강화유리 필름 때문에 지문이 잘 인식되지 않습니다."
+      ],
+      "casual": [
+        "강화유리 필름 붙이니까 지문 인식 잘 안 돼.",
+        "두꺼운 필름 때문에 지문이 안 먹혀."
+      ],
+      "short": [
+        "강화유리 부착 후 인식 저하.",
+        "두꺼운 필름으로 인식 불량."
+      ]
+    },
+    "GVS-0446": {
+      "formal": [
+        "손끝만 살짝 대어 등록된 지문 면적이 부족해 인식이 실패합니다.",
+        "지문 등록 시 면적이 부족하여 인식이 잘되지 않습니다."
+      ],
+      "casual": [
+        "지문 등록할 때 손끝만 대서 면적이 부족해.",
+        "등록한 지문 면적이 작아서 인식이 안 돼."
+      ],
+      "short": [
+        "등록 지문 면적 부족으로 인식 실패.",
+        "지문 면적 작아 인식 불가."
+      ]
+    },
+    "GVS-0447": {
+      "formal": [
+        "추운 야외에서 손 상태가 변해 지문 인식이 실패합니다.",
+        "야외에서 추워 손이 변하여 지문 인식이 되지 않습니다."
+      ],
+      "casual": [
+        "밖에 나가니까 추워서 손 상태가 달라져 지문 인식이 안 돼.",
+        "추운 날씨에 손이 달라져서 지문이 안 먹혀."
+      ],
+      "short": [
+        "추위로 손 상태 변화로 인식 실패.",
+        "야외 추위에 지문 인식 불가."
+      ]
+    },
+    "GVS-0448": {
+      "formal": [
+        "The fingerprint sensor does not work because I did not re-register my prints after applying a new screen protector.",
+        "After installing a new film, I failed to re-register my fingerprint, so it doesn't recognize."
+      ],
+      "casual": [
+        "My fingerprint won't work because I didn't re-register after putting on a new screen protector.",
+        "New screen protector, didn't re-register fingerprint, so it's not working."
+      ],
+      "short": [
+        "Fingerprint fails after new screen protector, no re-registration.",
+        "No fingerprint re-register after new film, sensor not working."
+      ]
+    },
+    "GVS-0449": {
+      "formal": [
+        "The fingerprint recognition performance has degraded because there is dust and oil on the sensor area of the screen.",
+        "The sensor area of the screen has dust and grease, reducing fingerprint accuracy."
+      ],
+      "casual": [
+        "Fingerprint sensor works poorly because the screen area has dust and oil.",
+        "Sensor is dirty with dust and oil, fingerprint recognition is bad."
+      ],
+      "short": [
+        "Poor fingerprint due to dust and oil on sensor.",
+        "Dust and oil on screen reduce fingerprint performance."
+      ]
+    },
+    "GVS-0450": {
+      "formal": [
+        "등록하지 않은 손가락으로 지문 인식을 시도했을 때 인식되었습니다.",
+        "다른 손가락으로도 잠금이 해제되는 문제가 있습니다."
+      ],
+      "casual": [
+        "등록 안 한 손가락으로도 지문이 풀려요.",
+        "다른 손가락으로도 잠금이 해제돼요."
+      ],
+      "short": [
+        "미등록 손가락도 지문 인식됨.",
+        "다른 손가락으로 잠금 해제 가능."
+      ]
+    },
+    "GVS-0451": {
+      "formal": [
+        "같은 공유기에 연결된 모든 기기에서 인터넷이 작동하지 않습니다.",
+        "공유기 문제로 모든 기기의 인터넷 연결이 불가능합니다."
+      ],
+      "casual": [
+        "같은 와이파이 쓰는 모든 기기가 인터넷 안 돼.",
+        "공유기 때문에 모든 기기 인터넷 안 됨."
+      ],
+      "short": [
+        "공유기 모든 기기 인터넷 불가.",
+        "와이파이 전체 인터넷 안 됨."
+      ]
+    },
+    "GVS-0452": {
+      "formal": [
+        "지역 통신사 장애 시간과 일치하여 데이터 사용이 불가능했습니다.",
+        "통신사 장애로 인해 데이터가 연결되지 않았습니다."
+      ],
+      "casual": [
+        "통신사 장애 시간에 데이터가 안 됐어.",
+        "통신사 문제로 데이터 안 터짐."
+      ],
+      "short": [
+        "통신사 장애로 데이터 불가.",
+        "지역 장애로 데이터 안 됨."
+      ]
+    },
+    "GVS-0453": {
+      "formal": [
+        "차량 헤드유닛 펌웨어 문제로 여러 휴대폰이 연결이 끊깁니다.",
+        "헤드유닛 펌웨어 문제로 Android Auto 연결이 느리고 끊깁니다."
+      ],
+      "casual": [
+        "차량 헤드유닛 때문에 폰 연결이 계속 끊겨.",
+        "헤드유닛 업데이트 문제로 안드로이드 오토 끊김."
+      ],
+      "short": [
+        "헤드유닛 문제로 연결 끊김.",
+        "펌웨어 문제로 Android Auto 느림."
+      ]
+    },
+    "GVS-0454": {
+      "formal": [
+        "은행 점검 시간에 Wallet 인증이 실패했습니다.",
+        "은행 서비스 점검으로 Wallet 결제 인증이 되지 않습니다."
+      ],
+      "casual": [
+        "은행 점검 시간이라 Wallet 인증이 안 돼.",
+        "은행 점검 때문에 Wallet 결제 실패."
+      ],
+      "short": [
+        "은행 점검으로 Wallet 인증 실패.",
+        "점검 시간에 Wallet 안 됨."
+      ]
+    },
+    "GVS-0455": {
+      "formal": [
+        "외부 서비스 장애로 앱 로그인이 불가능합니다.",
+        "외부 서버 문제로 앱에 로그인할 수 없습니다."
+      ],
+      "casual": [
+        "외부 서비스 문제로 앱 로그인이 안 돼.",
+        "서버 점검인지 로그인이 안 됨."
+      ],
+      "short": [
+        "서비스 장애로 앱 로그인 불가.",
+        "외부 문제로 로그인 안 됨."
+      ]
+    },
+    "GVS-0456": {
+      "formal": [
+        "공공망 이용 약관에 동의하지 않아 Wi-Fi 연결 후 인터넷 차단되었습니다.",
+        "공용 Wi-Fi 접속 시 약관 동의를 하지 않아 인터넷이 안 됩니다."
+      ],
+      "casual": [
+        "공공 와이파이 연결했는데 약관 동의를 안 해서 인터넷이 안 돼요.",
+        "공용 Wi-Fi 썼는데 약관 동의를 안 했더니 인터넷이 차단됐어요."
+      ],
+      "short": [
+        "공공 와이파이 약관 미동의로 인터넷 차단됨.",
+        "공용 Wi-Fi 약관 동의 안 하면 인터넷 안 됨."
+      ]
+    },
+    "GVS-0457": {
+      "formal": [
+        "사용자 지정 DNS 오류로 특정 도메인만 접속이 느립니다.",
+        "DNS 설정 문제로 일부 사이트만 느리게 열립니다."
+      ],
+      "casual": [
+        "DNS를 내가 설정했는데 오류 나서 어떤 사이트는 느려요.",
+        "사용자 DNS 오류로 특정 도메인만 접속이 느려요."
+      ],
+      "short": [
+        "DNS 오류로 일부 도메인만 느림.",
+        "지정 DNS 오류로 특정 사이트 느림."
+      ]
+    },
+    "GVS-0458": {
+      "formal": [
+        "Android Auto is slow because a VPN server issue is affecting all connected apps.",
+        "Due to a VPN server failure, the entire connection, including Android Auto, is sluggish."
+      ],
+      "casual": [
+        "Android Auto is laggy because the VPN server is down and affecting everything.",
+        "VPN server issues make Android Auto and all apps slow."
+      ],
+      "short": [
+        "Android Auto slow due to VPN server issue.",
+        "VPN server failure causes Android Auto lag."
+      ]
+    },
+    "GVS-0459": {
+      "formal": [
+        "Samsung Pay does not work because multiple devices fail to log in due to an account server issue.",
+        "Account server problems prevent login on multiple devices, so Samsung Pay is unavailable."
+      ],
+      "casual": [
+        "Samsung Pay isn't working because the account server is down and I can't log in on any device.",
+        "Account server issues prevent login, so Samsung Pay fails."
+      ],
+      "short": [
+        "Samsung Pay fails due to account server login issue.",
+        "Account server problem blocks Samsung Pay."
+      ]
+    },
+    "GVS-0460": {
+      "formal": [
+        "액세서리 펌웨어가 구버전이라 호환 문제가 발생합니다.",
+        "구버전 펌웨어 때문에 액세서리 연결이 끊깁니다."
+      ],
+      "casual": [
+        "액세서리 펌웨어가 옛날 거라 연결이 자꾸 끊겨요.",
+        "펌웨어 버전이 낮아서 액세서리랑 호환이 안 돼요."
+      ],
+      "short": [
+        "액세서리 펌웨어 구버전으로 호환 문제.",
+        "펌웨어 구버전으로 연결 끊김."
+      ]
+    },
+    "GVS-0461": {
+      "formal": [
+        "무선 충전이 지원되지 않는 A 모델인데 무선 충전 메뉴를 찾고 있습니다.",
+        "이 모델은 무선 충전이 안 되는데 설정에서 메뉴를 찾아봤습니다."
+      ],
+      "casual": [
+        "무선 충전 안 되는 A 모델인데 설정에서 무선 충전 메뉴를 찾았어요.",
+        "무선 충전 미지원 모델인데 왜 메뉴가 있을까요?"
+      ],
+      "short": [
+        "무선 충전 미지원 모델에서 메뉴 찾음.",
+        "무선 충전 안 되는 폰인데 메뉴가 있음."
+      ]
+    },
+    "GVS-0462": {
+      "formal": [
+        "S펜이 지원되지 않는 Tab A에서 기본 펜 입력을 기대했습니다.",
+        "S펜 미지원 태블릿인데 펜 입력이 될 줄 알았습니다."
+      ],
+      "casual": [
+        "S펜 안 되는 Tab A인데 터치펜이 될 줄 알았어요.",
+        "S펜 없는 Tab A에서 기본 펜으로 쓸 수 있을 거라 생각했어요."
+      ],
+      "short": [
+        "S펜 미지원 Tab A에서 펜 입력 기대.",
+        "S펜 없는 태블릿인데 펜이 될 줄 알았음."
+      ]
+    },
+    "GVS-0463": {
+      "formal": [
+        "HDMI 출력이 지원되지 않는 Tab FE에서 유선 DeX를 시도했습니다.",
+        "DeX 유선 연결이 안 되는 Tab FE인데 HDMI로 연결해봤습니다."
+      ],
+      "casual": [
+        "Tab FE는 HDMI 출력이 안 되는데 DeX를 연결해봤어요.",
+        "유선 DeX 안 되는 Tab FE인데 HDMI 케이블로 시도했어요."
+      ],
+      "short": [
+        "HDMI 미지원 Tab FE에서 유선 DeX 시도.",
+        "유선 DeX 안 되는 Tab FE에서 연결 시도."
+      ]
+    },
+    "GVS-0464": {
+      "formal": [
+        "이전 Z Flip 모델인데 DeX 연결이 가능한지 시도했습니다.",
+        "구형 Z Flip에서 DeX를 연결하려고 했지만 지원하지 않습니다."
+      ],
+      "casual": [
+        "예전 Z Flip인데 DeX 연결이 될까 해서 해봤는데 안 되더라고요.",
+        "Z Flip에서 DeX 된다고 해서 해봤는데 구형은 안 되네요."
+      ],
+      "short": [
+        "구형 Z Flip에서 DeX 시도했지만 안 됨.",
+        "이전 Z Flip에서 DeX 연결 시도."
+      ]
+    },
+    "GVS-0465": {
+      "formal": [
+        "S펜이 기본 탑재되지 않은 일반 S 모델에서 S펜 입력을 기대했습니다.",
+        "일반 S 기본형인데 S펜을 사용할 수 있을 거라고 생각했습니다."
+      ],
+      "casual": [
+        "S 기본 모델인데 S펜이 될 줄 알았어요.",
+        "S펜 없는 S 기본형인데 펜이 지원될 거라 생각했어요."
+      ],
+      "short": [
+        "S펜 미지원 S 기본형에서 S펜 입력 기대.",
+        "일반 S 모델인데 S펜이 될 줄 알았음."
+      ]
+    },
+    "GVS-0466": {
+      "formal": [
+        "Bluetooth Watch 모델인데 단독으로 LTE 통화를 시도했습니다.",
+        "블루투스 워치 모델이라 LTE 통화가 되지 않습니다."
+      ],
+      "casual": [
+        "블루투스 워치인데 LTE 단독 통화가 될 줄 알았어요.",
+        "LTE 안 되는 워치인데 통화가 안 되네요."
+      ],
+      "short": [
+        "블루투스 워치에서 LTE 통화 시도.",
+        "LTE 미지원 워치에서 단독 통화 시도."
+      ]
+    },
+    "GVS-0467": {
+      "formal": [
+        "Fold 커버 화면에서는 S펜을 사용할 수 없는데 시도했습니다.",
+        "Fold 커버 디스플레이에서 S펜을 사용하려고 했지만 지원하지 않습니다."
+      ],
+      "casual": [
+        "Fold 접었을 때 커버 화면에서 S펜을 써보려 했는데 안 되네요.",
+        "Fold 작은 화면에서 S펜이 지원 안 되는 걸 몰랐어요."
+      ],
+      "short": [
+        "Fold 커버 화면에서 S펜 사용 시도.",
+        "Fold 접힌 화면에서 S펜 안 됨."
+      ]
+    },
+    "GVS-0468": {
+      "formal": [
+        "Air Actions do not work because the FE S Pen does not have BLE support.",
+        "I expected Air Actions from the FE S Pen, but it lacks Bluetooth Low Energy."
+      ],
+      "casual": [
+        "Air Actions don't work on my Tab S FE because the S Pen doesn't have Bluetooth.",
+        "The FE S Pen doesn't support Air Actions because it has no BLE."
+      ],
+      "short": [
+        "No Air Actions on FE S Pen (no BLE).",
+        "FE S Pen lacks Bluetooth, Air Actions not supported."
+      ]
+    },
+    "GVS-0469": {
+      "formal": [
+        "The eSIM menu is missing because my region or carrier does not support it.",
+        "I cannot find the eSIM option, as it is not supported in my area or by my carrier."
+      ],
+      "casual": [
+        "There's no eSIM menu because my carrier or region doesn't support it.",
+        "eSIM option missing, not supported by my carrier or region."
+      ],
+      "short": [
+        "eSIM menu missing due to region/carrier unsupported.",
+        "No eSIM support for my region/carrier."
+      ]
+    },
+    "GVS-0470": {
+      "formal": [
+        "One UI 7 이상에서 PC용 DeX 기능을 기대합니다.",
+        "새 One UI 버전에서 PC DeX 지원을 원합니다."
+      ],
+      "casual": [
+        "One UI 7 이상에서 PC용 DeX가 되면 좋겠어요.",
+        "DeX가 PC에서도 작동했으면 해요."
+      ],
+      "short": [
+        "One UI 7에서 PC DeX 기대.",
+        "PC용 DeX 기능 요청."
+      ]
+    },
+    "GVS-0471": {
+      "formal": [
+        "카메라 화질과 줌 성능이 매우 만족스럽습니다.",
+        "사진 품질과 줌 기능이 정말 좋습니다."
+      ],
+      "casual": [
+        "카메라 화질이랑 줌이 너무 좋아요.",
+        "카메라 화질과 줌 성능에 완전 만족합니다."
+      ],
+      "short": [
+        "카메라 화질과 줌 만족.",
+        "카메라 화질 및 줌 성능 좋음."
+      ]
+    },
+    "GVS-0472": {
+      "formal": [
+        "배터리가 하루 종일 가서 매우 만족합니다.",
+        "하루 종일 사용해도 배터리가 남아서 좋습니다."
+      ],
+      "casual": [
+        "배터리가 하루 종일 가니까 너무 좋아요.",
+        "배터리 오래 가서 만족해요."
+      ],
+      "short": [
+        "배터리 하루 종일 가서 만족.",
+        "배터리 오래 감."
+      ]
+    },
+    "GVS-0473": {
+      "formal": [
+        "화면 밝기와 색감이 전작보다 개선되어 좋습니다.",
+        "디스플레이 밝기와 색감이 이전 모델보다 좋습니다."
+      ],
+      "casual": [
+        "화면 밝기랑 색감이 전작보다 좋아졌어요.",
+        "화질이 전작보다 더 밝고 선명해졌어요."
+      ],
+      "short": [
+        "화면 밝기와 색감 좋아짐.",
+        "디스플레이가 전작보다 좋음."
+      ]
+    },
+    "GVS-0474": {
+      "formal": [
+        "S펜으로 필기와 메모를 할 수 있어 유용합니다.",
+        "S펜을 이용한 필기와 메모 기능이 실용적입니다."
+      ],
+      "casual": [
+        "S펜으로 필기하고 메모하는 게 진짜 유용해요.",
+        "S펜 메모 기능 좋아요. 잘 쓰고 있어요."
+      ],
+      "short": [
+        "S펜 필기와 메모 유용.",
+        "S펜 메모 기능 좋음."
+      ]
+    },
+    "GVS-0475": {
+      "formal": [
+        "카메라는 좋지만 배터리 성능이 아쉽습니다.",
+        "사진 품질은 만족하지만 배터리 수명이 짧습니다."
+      ],
+      "casual": [
+        "카메라는 괜찮은데 배터리가 빨리 닳아요.",
+        "카메라는 좋은데 배터리가 아쉬워요."
+      ],
+      "short": [
+        "카메라 좋지만 배터리 아쉬움.",
+        "배터리 수명이 짧음."
+      ]
+    },
+    "GVS-0476": {
+      "formal": [
+        "디자인은 마음에 들지만 무게가 무거워 불편합니다.",
+        "제품 디자인은 좋으나 무게가 부담됩니다."
+      ],
+      "casual": [
+        "디자인은 예쁜데 무게가 좀 무거워요.",
+        "디자인은 맘에 드는데 들고 다니기 무거워요."
+      ],
+      "short": [
+        "디자인 좋으나 무게 부담.",
+        "무거워서 불편함."
+      ]
+    },
+    "GVS-0477": {
+      "formal": [
+        "성능은 빠르지만 가격이 비싼 편입니다.",
+        "속도는 만족스러우나 가격이 높습니다."
+      ],
+      "casual": [
+        "성능은 좋은데 가격이 비싸요.",
+        "빠르긴 한데 가격이 부담되네요."
+      ],
+      "short": [
+        "성능 좋지만 가격 높음.",
+        "가격이 비쌈."
+      ]
+    },
+    "GVS-0478": {
+      "formal": [
+        "The large inner screen is great, but the crease in the folding area is bothersome.",
+        "I like the inner display size, but the crease at the fold is distracting."
+      ],
+      "casual": [
+        "The big inner screen is nice, but the crease in the middle is annoying.",
+        "Love the large screen, but the fold crease bothers me."
+      ],
+      "short": [
+        "Large inner screen good, but crease annoying.",
+        "Inner screen great, but crease bothers."
+      ]
+    },
+    "GVS-0479": {
+      "formal": [
+        "Writing on the tablet is good, but the keyboard accessory is too expensive.",
+        "The tablet is excellent for note-taking, but the keyboard price is too high."
+      ],
+      "casual": [
+        "Tablet is great for writing, but the keyboard costs too much.",
+        "Good for notes, but keyboard is overpriced."
+      ],
+      "short": [
+        "Great for writing, but keyboard too expensive.",
+        "Keyboard price too high for good note-taking experience."
+      ]
+    },
+    "GVS-0480": {
+      "formal": [
+        "장기간 사용 후 전반적으로 만족하지만 작은 불편이 있습니다.",
+        "오래 써왔는데 전체적으로는 만족하고 조금 불편한 점도 있습니다."
+      ],
+      "casual": [
+        "오래 사용했는데 전반적으로 괜찮지만 사소한 게 불편해요.",
+        "만족도는 높은데 약간 아쉬운 점도 있어요."
+      ],
+      "short": [
+        "장기 사용 후 전반 만족, 작은 불편 있음.",
+        "전반적으로 만족하나 사소한 불편."
+      ]
+    },
+    "GVS-0481": {
+      "formal": [
+        "통화 녹음 기능이 지원되는지와 위치를 알고 싶습니다.",
+        "통화 녹음 기능 지원 여부와 설정 위치를 문의합니다."
+      ],
+      "casual": [
+        "통화 녹음 기능이 있나요? 어디서 설정하나요?",
+        "통화 녹음 지원하는지와 위치 좀 알려주세요."
+      ],
+      "short": [
+        "통화 녹음 기능 지원 여부와 위치 문의.",
+        "통화 녹음 설정 위치 문의."
+      ]
+    },
+    "GVS-0482": {
+      "formal": [
+        "Galaxy AI에 원하는 언어를 추가해 주세요.",
+        "AI 번역 기능에 특정 언어를 추가 요청합니다."
+      ],
+      "casual": [
+        "갤럭시 AI에 제가 원하는 언어를 추가해 주세요.",
+        "AI 번역에 이 언어도 넣어주세요."
+      ],
+      "short": [
+        "Galaxy AI에 언어 추가 요청.",
+        "AI 번역 언어 추가 요청."
+      ]
+    },
+    "GVS-0483": {
+      "formal": [
+        "무선 DeX 연결 방법을 알고 싶습니다.",
+        "무선으로 DeX를 연결하는 방법을 문의합니다."
+      ],
+      "casual": [
+        "무선 DeX 어떻게 연결하나요?",
+        "와이파이로 DeX 쓰는 방법 좀 알려주세요."
+      ],
+      "short": [
+        "무선 DeX 연결 방법 문의.",
+        "무선 DeX 사용법 문의."
+      ]
+    },
+    "GVS-0484": {
+      "formal": [
+        "Smart Switch가 어떤 데이터를 옮기는지 궁금합니다.",
+        "Smart Switch로 이전되는 데이터 종류를 알고 싶습니다."
+      ],
+      "casual": [
+        "Smart Switch가 뭘 옮겨주는지 알려주세요.",
+        "Smart Switch로 어떤 데이터가 옮겨지나요?"
+      ],
+      "short": [
+        "Smart Switch 데이터 종류 문의.",
+        "Smart Switch 전송 데이터 문의."
+      ]
+    },
+    "GVS-0485": {
+      "formal": [
+        "배터리 보호 충전 한도 설정이 어디 있는지 알려주세요.",
+        "배터리 보호를 위한 충전 한도 설정 위치를 문의합니다."
+      ],
+      "casual": [
+        "배터리 보호 충전 한도 설정 어디 있는지 알려줘.",
+        "배터리 충전 한도 설정 위치 좀 알려줄래?"
+      ],
+      "short": [
+        "배터리 보호 충전 한도 설정 위치.",
+        "충전 한도 설정 어디?"
+      ]
+    },
+    "GVS-0486": {
+      "formal": [
+        "카메라 보정 강도를 줄이는 방법을 알려주세요.",
+        "카메라 보정 강도를 낮추는 방법을 문의합니다."
+      ],
+      "casual": [
+        "카메라 보정 강도 어떻게 낮춰?",
+        "카메라 보정 너무 센데 줄이는 방법 알려줘."
+      ],
+      "short": [
+        "카메라 보정 강도 줄이는 방법.",
+        "보정 강도 낮추기."
+      ]
+    },
+    "GVS-0487": {
+      "formal": [
+        "Fold 태스크바 자동 숨김 설정을 추가해 주세요.",
+        "Fold 태스크바가 자동으로 숨겨지는 기능을 요청합니다."
+      ],
+      "casual": [
+        "Fold 태스크바 자동 숨김 기능 좀 넣어줘.",
+        "태스크바 자동 숨김 설정 추가해 줘."
+      ],
+      "short": [
+        "Fold 태스크바 자동 숨김 기능 요청.",
+        "태스크바 자동 숨김 추가."
+      ]
+    },
+    "GVS-0488": {
+      "formal": [
+        "I request the return of the microSD slot for expandable storage.",
+        "Please bring back the microSD card slot for additional storage."
+      ],
+      "casual": [
+        "I wish they'd bring back the microSD slot.",
+        "Please add the microSD slot again."
+      ],
+      "short": [
+        "Request microSD slot return.",
+        "Bring back microSD slot."
+      ]
+    },
+    "GVS-0489": {
+      "formal": [
+        "I would like a feature to set a precise upper limit for charging to protect the battery.",
+        "Please add an option to specify the maximum charge percentage more precisely."
+      ],
+      "casual": [
+        "I want to set a custom charging limit to stop at a certain percentage.",
+        "Please let me choose the exact percentage to stop charging."
+      ],
+      "short": [
+        "Request precise charging limit setting.",
+        "Add customizable charge upper limit."
+      ]
+    },
+    "GVS-0490": {
+      "formal": [
+        "자신의 기기 업데이트 일정을 문의합니다.",
+        "내 기기에 업데이트가 언제 올지 알고 싶습니다."
+      ],
+      "casual": [
+        "내 폰 업데이트는 언제쯤 되나요?",
+        "업데이트 일정이 궁금해요."
+      ],
+      "short": [
+        "기기 업데이트 일정 문의.",
+        "업데이트 언제 오나요?"
+      ]
+    },
+    "GVS-0491": {
+      "formal": [
+        "후면이 들릴 정도로 배터리가 부풀어 올랐습니다.",
+        "배터리가 부풀어서 후면 커버가 들뜨는 현상이 발생합니다."
+      ],
+      "casual": [
+        "배터리 부풀어서 뒤판이 들떴어.",
+        "배터리 팽창해서 뒷면이 뜨는데 괜찮은 거야?"
+      ],
+      "short": [
+        "배터리 부풀어서 후면 들림.",
+        "배터리 팽창으로 뒤판 들뜸."
+      ]
+    },
+    "GVS-0492": {
+      "formal": [
+        "충전 중에 연기와 타는 냄새가 발생했습니다.",
+        "충전을 하는 도중 연기가 나고 타는 냄새가 났습니다."
+      ],
+      "casual": [
+        "충전하는데 연기 나고 타는 냄새가 나.",
+        "충전 중에 연기랑 탄 냄새가 났어."
+      ],
+      "short": [
+        "충전 중 연기와 타는 냄새 발생.",
+        "충전할 때 연기 나고 탄내 남."
+      ]
+    },
+    "GVS-0493": {
+      "formal": [
+        "전원을 끈 후에도 탄 냄새가 계속 납니다.",
+        "전원을 종료했는데도 타는 냄새가 남아 있습니다."
+      ],
+      "casual": [
+        "전원 껐는데도 탄 냄새가 계속 나.",
+        "폰 꺼도 탄 냄새가 안 사라져."
+      ],
+      "short": [
+        "전원 꺼도 탄 냄새 지속됨.",
+        "종료 후에도 탄내 남음."
+      ]
+    },
+    "GVS-0494": {
+      "formal": [
+        "충전기와 포트가 만지기 어려울 정도로 뜨겁습니다.",
+        "충전기와 충전 포트가 매우 뜨거워서 손을 댈 수 없습니다."
+      ],
+      "casual": [
+        "충전기랑 포트가 너무 뜨거워서 못 만지겠어.",
+        "충전기랑 충전 포트가 엄청 뜨거워."
+      ],
+      "short": [
+        "충전기와 포트 과열로 접촉 불가.",
+        "충전기랑 포트 너무 뜨거움."
+      ]
+    },
+    "GVS-0495": {
+      "formal": [
+        "워치를 착용한 부위에 화상 자국이 생겼습니다.",
+        "워치를 착용한 팔목에 화상 흔적이 나타났습니다."
+      ],
+      "casual": [
+        "워치 찬 자리에 화상 자국이 생겼어.",
+        "워치 때문에 손목에 화상 입었어."
+      ],
+      "short": [
+        "워치 착용 부위 화상 자국.",
+        "워치 차고 화상 생김."
+      ]
+    },
+    "GVS-0496": {
+      "formal": [
+        "이어버드가 귀 안에서 과도하게 뜨거워집니다.",
+        "이어버드를 착용 중 귀 내부에서 열감이 느껴집니다."
+      ],
+      "casual": [
+        "이어버드가 귀에서 너무 뜨거워.",
+        "버즈 끼면 귀 안이 뜨거워져."
+      ],
+      "short": [
+        "이어버드 과열로 귀 화상 위험.",
+        "버즈 귀에서 뜨거움."
+      ]
+    },
+    "GVS-0497": {
+      "formal": [
+        "낙하로 손상된 배터리에서 열이 발생합니다.",
+        "떨어뜨려서 손상된 배터리에서 발열이 있습니다."
+      ],
+      "casual": [
+        "폰 떨어뜨렸는데 배터리에서 열이 나.",
+        "액정 깨지고 배터리 뜨거워짐."
+      ],
+      "short": [
+        "낙하 손상 배터리 발열.",
+        "떨어뜨린 후 배터리 뜨거움."
+      ]
+    },
+    "GVS-0498": {
+      "formal": [
+        "I am concerned about sparks when attempting to charge immediately after liquid exposure.",
+        "There is a risk of sparking if I try to charge right after the device got wet."
+      ],
+      "casual": [
+        "I'm worried about sparks if I charge right after it gets wet.",
+        "Afraid of sparks when charging immediately after liquid exposure."
+      ],
+      "short": [
+        "Worried about sparks charging after wet.",
+        "Spark risk if charging right after liquid."
+      ]
+    },
+    "GVS-0499": {
+      "formal": [
+        "After motherboard repair, data was lost and could not be recovered.",
+        "Data loss occurred and was irrecoverable after a mainboard repair."
+      ],
+      "casual": [
+        "I lost all my data after the motherboard repair and couldn't get it back.",
+        "Data gone after mainboard repair, unrecoverable."
+      ],
+      "short": [
+        "Data lost after motherboard repair, not recoverable.",
+        "Irrecoverable data loss post mainboard repair."
+      ]
+    },
+    "GVS-0500": {
+      "formal": [
+        "짧은 시간에 배터리가 부풀어 화면과 후면이 벌어졌습니다.",
+        "배터리 팽창으로 기기가 벌어지는 현상이 발생했습니다."
+      ],
+      "casual": [
+        "배터리가 부풀어서 폰이 벌어졌어요.",
+        "갑자기 배터리가 터질 것처럼 부풀었어요."
+      ],
+      "short": [
+        "배터리 팽창으로 기기 벌어짐.",
+        "단시간에 배터리 부풀어 케이스 이격."
+      ]
+    }
+  }
+}

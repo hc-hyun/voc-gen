@@ -1,0 +1,35 @@
+release_period,series,marketing_name,marketing_name_ko,model_family,project_code,project_name,project_evidence,representative,market_scope,source_id
+2024-07,Galaxy Z,Galaxy Z Fold6,갤럭시 Z 폴드6,SM-F956,Q6,,official_trace,true,global,SAMSUNG_LCA_2026
+2024-07,Galaxy Z,Galaxy Z Flip6,갤럭시 Z 플립6,SM-F741,B6,,official_trace,true,global,SAMSUNG_LCA_2026
+2024-09,Galaxy S FE,Galaxy S24 FE,갤럭시 S24 FE,SM-S721,R12,,public_report,true,global,SAMSUNG_LCA_2026
+2024-09,Galaxy A,Galaxy A06,갤럭시 A06,SM-A065,,,unconfirmed,false,select_markets,SAMSUNG_OFFICIAL_A06
+2024-10,Galaxy Z,Galaxy Z Fold Special Edition,갤럭시 Z 폴드 스페셜 에디션,SM-F958,Q6A,,public_report,true,korea_china,SAMSUNG_LCA_2026
+2024-10,Galaxy A,Galaxy A16 5G,갤럭시 A16 5G,SM-A166,,,unconfirmed,true,global,SAMSUNG_LCA_2026
+2024-10,Galaxy A,Galaxy A16,갤럭시 A16,SM-A165,,,unconfirmed,false,select_markets,SAMSUNG_LCA_2026
+2025-01,Galaxy S,Galaxy S25,갤럭시 S25,SM-S931,PA1,Paradigm,official_trace,true,global,SAMSUNG_LCA_2026
+2025-01,Galaxy S,Galaxy S25+,갤럭시 S25 플러스,SM-S936,PA2,Paradigm,official_trace,true,global,SAMSUNG_LCA_2026
+2025-01,Galaxy S,Galaxy S25 Ultra,갤럭시 S25 울트라,SM-S938,PA3,Paradigm,official_trace,true,global,SAMSUNG_LCA_2026
+2025-02,Galaxy A,Galaxy A06 5G,갤럭시 A06 5G,SM-A066,,,unconfirmed,false,select_markets,SAMSUNG_OFFICIAL_A06_5G
+2025-03,Galaxy A,Galaxy A56 5G,갤럭시 A56 5G,SM-A566,,,unconfirmed,true,global,SAMSUNG_LCA_2026
+2025-03,Galaxy A,Galaxy A36 5G,갤럭시 A36 5G,SM-A366,,,unconfirmed,true,global,SAMSUNG_LCA_2026
+2025-03,Galaxy A,Galaxy A26 5G,갤럭시 A26 5G,SM-A266,,,unconfirmed,true,global,SAMSUNG_LCA_2026
+2025-04,Galaxy XCover,Galaxy XCover7 Pro,갤럭시 엑스커버7 프로,SM-G766,,,unconfirmed,true,select_markets,SAMSUNG_LCA_2026
+2025-05,Galaxy S,Galaxy S25 Edge,갤럭시 S25 엣지,SM-S937,Slim,,public_report,true,global,SAMSUNG_LCA_2026
+2025-07,Galaxy Z,Galaxy Z Fold7,갤럭시 Z 폴드7,SM-F966,Q7,,public_report,true,global,SAMSUNG_LCA_2026
+2025-07,Galaxy Z,Galaxy Z Flip7,갤럭시 Z 플립7,SM-F766,B7,,public_report,true,global,SAMSUNG_LCA_2026
+2025-07,Galaxy Z FE,Galaxy Z Flip7 FE,갤럭시 Z 플립7 FE,SM-F761,B7R,,official_trace,true,global,SAMSUNG_LCA_2026
+2025-08,Galaxy A,Galaxy A17 5G,갤럭시 A17 5G,SM-A176,,,unconfirmed,true,global,SAMSUNG_LCA_2026
+2025-08,Galaxy A,Galaxy A17,갤럭시 A17,SM-A175,,,unconfirmed,false,select_markets,SAMSUNG_LCA_2026
+2025-08,Galaxy A,Galaxy A07,갤럭시 A07,SM-A075,,,unconfirmed,false,select_markets,SAMSUNG_OFFICIAL_A07
+2025-09,Galaxy S FE,Galaxy S25 FE,갤럭시 S25 FE,SM-S731,R13,,public_report,true,global,SAMSUNG_LCA_2026
+2025-12,Galaxy Z,Galaxy Z TriFold,갤럭시 Z 트라이폴드,SM-F968,Q7M,,public_report,true,select_markets,SAMSUNG_OFFICIAL_TRIFOLD
+2026-01,Galaxy A,Galaxy A07 5G,갤럭시 A07 5G,SM-A076,,,unconfirmed,true,select_markets,SAMSUNG_OFFICIAL_A07_5G
+2026-02,Galaxy S,Galaxy S26,갤럭시 S26,SM-S942,M1,Miracle,public_report,true,global,SAMSUNG_OFFICIAL_S26
+2026-02,Galaxy S,Galaxy S26+,갤럭시 S26 플러스,SM-S947,M2,Miracle,public_report,true,global,SAMSUNG_OFFICIAL_S26
+2026-02,Galaxy S,Galaxy S26 Ultra,갤럭시 S26 울트라,SM-S948,M3,Miracle,public_report,true,global,SAMSUNG_OFFICIAL_S26
+2026-03,Galaxy A,Galaxy A57 5G,갤럭시 A57 5G,SM-A576,,,unconfirmed,true,global,SAMSUNG_OFFICIAL_A57_A37
+2026-03,Galaxy A,Galaxy A37 5G,갤럭시 A37 5G,SM-A376,,,unconfirmed,true,global,SAMSUNG_OFFICIAL_A57_A37
+2026-06,Galaxy A,Galaxy A27 5G,갤럭시 A27 5G,SM-A276,,,unconfirmed,true,select_markets,SAMSUNG_OFFICIAL_A27
+2026-07,Galaxy Z,Galaxy Z Fold8 Ultra,갤럭시 Z 폴드8 울트라,SM-F976,Q8,,public_report,true,global,SAMSUNG_OFFICIAL_Z8
+2026-07,Galaxy Z,Galaxy Z Fold8,갤럭시 Z 폴드8,SM-F971,H8,,public_report,true,global,SAMSUNG_OFFICIAL_Z8
+2026-07,Galaxy Z,Galaxy Z Flip8,갤럭시 Z 플립8,SM-F776,B8,,public_report,true,global,SAMSUNG_OFFICIAL_Z8

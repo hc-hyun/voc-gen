@@ -1,0 +1,20 @@
+{
+  "version": "Galaxy_VoC_DataPack_v0.1",
+  "generated_at": "2026-07-25",
+  "files": {
+    "Galaxy_VoC_Review_v0.1.xlsx": "819253bf1a237329bf9f293b39422a6d2b080818be2ab47aa1ff27701b81da29",
+    "QA_REPORT.md": "28a3be43e2da37d88ef450b4982c6661e8c47285901590ce169ea07e72bf2de0",
+    "README.md": "940e9160d94d3120d3f2ae5b073064f5c1e7cee8c4c1374956f8cd0c319813d4",
+    "compatibility_rules.csv": "5332000f6d80b31075a28cf73278621eb2610311e16489a18e9202c6b30ec5af",
+    "coverage_summary.json": "7c2f6771722ab49c039bef5f78335428fde5b40651202fae78d0c81e6289aafd",
+    "generation_prompt.md": "1c7fe529b00c17f10086f0cf0742051becd5844dd33131421f66b7f74680ccba",
+    "ontology_codes.csv": "d7574925fae13d0c7e3dd76fff9a217a4c1b137984e929e4768a47ea5e6c70bf",
+    "raw_voc_examples_30.jsonl": "5f91a73a4131f4e59f26a12c56704b5f54f3ef850ff29cef7da14b0817a360e8",
+    "scenario_bank_500.csv": "59f7975a34622902ef0de45b8434576fa14130d3d78d759b842415a66b156c99",
+    "source_register.csv": "5fe4eceb0acf6c4a2fbf531d1c679425ede0b8c6dc5747751ab990409f2531a0",
+    "validation_prompt.md": "cebd10a7cac285d68579867c4a831da0523869ae81b5ce2e9bb83fe74d31f598",
+    "validation_rules.csv": "c95003fe8b896e224ce4c66cfdf9ec0c349a1182904f49b26146c2f90900eebf",
+    "validation_rules.json": "40772885ffd5e63def5bbd9890a55ca9240785457bd0855f6246b5a21ccd2559",
+    "voc_issue.schema.json": "5891fb110a5f9365bce6600f1c06fcc8fae690d3b28f77f6222b728ad7d4167e"
+  }
+}

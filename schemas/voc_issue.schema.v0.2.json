@@ -1,0 +1,540 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.internal/schema/galaxy-voc-issue-v0.2.json",
+  "title": "Galaxy VoC normalized document and atomic issues v0.2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "voc_id",
+    "raw_text",
+    "provenance_type",
+    "source_channel",
+    "language",
+    "region",
+    "pii_redacted",
+    "issues"
+  ],
+  "properties": {
+    "voc_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "title": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "raw_text": {
+      "type": "string",
+      "minLength": 1
+    },
+    "provenance_type": {
+      "enum": [
+        "REAL_PUBLIC",
+        "REAL_INTERNAL",
+        "SYNTHETIC_SCENARIO",
+        "SYNTHETIC_RAW",
+        "HUMAN_AUTHORED_TEST"
+      ]
+    },
+    "synthetic_parent_scenario_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^GVS-[0-9]{4}$"
+    },
+    "synthetic_parent_scenario_ids": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^GVS-[0-9]{4}$"
+      }
+    },
+    "source_channel": {
+      "type": "string"
+    },
+    "source_date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "language": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "pii_redacted": {
+      "type": "boolean"
+    },
+    "dataset_split": {
+      "enum": [
+        "TRAIN",
+        "VALID",
+        "TEST",
+        null
+      ]
+    },
+    "issues": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "issue_id",
+          "parent_scenario_id",
+          "intent_type",
+          "affected_function",
+          "observed_symptom",
+          "severity",
+          "cause_evidence_level",
+          "evidence_spans"
+        ],
+        "properties": {
+          "issue_id": {
+            "type": "string"
+          },
+          "parent_scenario_id": {
+            "type": "string",
+            "pattern": "^GVS-[0-9]{4}$"
+          },
+          "product_type": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "product_family": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "model_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "model_code": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "carrier": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "os_version": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "oneui_version": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "app_version": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "intent_type": {
+            "enum": [
+              "DEFECT_REPORT",
+              "PERFORMANCE_COMPLAINT",
+              "USABILITY_COMPLAINT",
+              "SERVICE_COMPLAINT",
+              "WARRANTY_DISPUTE",
+              "PURCHASE_COMPLAINT",
+              "FEATURE_REQUEST",
+              "HOW_TO",
+              "COMPARISON",
+              "PRAISE",
+              "SAFETY_REPORT"
+            ]
+          },
+          "affected_function": {
+            "enum": [
+              "POWER.BATTERY.ENDURANCE",
+              "POWER.BATTERY.LEVEL",
+              "POWER.SHUTDOWN",
+              "CHARGING.WIRED",
+              "CHARGING.WIRELESS",
+              "CHARGING.POWERSHARE",
+              "THERMAL.DEVICE",
+              "PERFORMANCE.UI",
+              "PERFORMANCE.APP",
+              "STABILITY.OS",
+              "DISPLAY.MAIN",
+              "DISPLAY.INNER",
+              "DISPLAY.COVER",
+              "DISPLAY.PROTECTOR",
+              "MECHANICAL.HINGE",
+              "MECHANICAL.FRAME",
+              "TOUCH.INPUT",
+              "BIOMETRIC.FINGERPRINT",
+              "BIOMETRIC.FACE",
+              "SPEN.INPUT",
+              "SPEN.BLE",
+              "CAMERA.CAPTURE",
+              "CAMERA.FOCUS",
+              "CAMERA.IMAGE_QUALITY",
+              "CAMERA.VIDEO",
+              "CAMERA.OIS",
+              "AUDIO.SPEAKER",
+              "AUDIO.EARPIECE",
+              "AUDIO.MIC",
+              "CALL.VOICE",
+              "NETWORK.MOBILE",
+              "NETWORK.WIFI",
+              "NETWORK.BLUETOOTH",
+              "LOCATION.GPS",
+              "MESSAGING.SMS_RCS",
+              "NOTIFICATION.DELIVERY",
+              "CONNECTIVITY.ANDROID_AUTO",
+              "CONNECTIVITY.USB",
+              "CONNECTIVITY.NFC",
+              "WALLET.PAYMENT",
+              "ONEUI.UPDATE",
+              "APP.COMPATIBILITY",
+              "DATA.BACKUP_MIGRATION",
+              "DEX.WIRED",
+              "DEX.WIRELESS",
+              "DEX.PC",
+              "MULTITASKING.WINDOW",
+              "AI.TRANSLATE",
+              "AI.SUMMARIZE",
+              "AI.GENERATIVE_EDIT",
+              "SECURITY.PRIVACY",
+              "ACCOUNT.LOGIN",
+              "WATCH.BATTERY",
+              "WATCH.GPS",
+              "WATCH.HEART_RATE",
+              "WATCH.SLEEP",
+              "WATCH.NOTIFICATION",
+              "WATCH.LTE",
+              "BUDS.AUDIO",
+              "BUDS.ANC",
+              "BUDS.CHARGING",
+              "BUDS.CONNECTION",
+              "BUDS.MIC",
+              "BUDS.FIT",
+              "TAB.APP_LAYOUT",
+              "TAB.KEYBOARD",
+              "TAB.SPEN",
+              "DESIGN.SIZE_WEIGHT",
+              "PRODUCT.FEATURE_SET",
+              "PRODUCT.VALUE",
+              "COMMERCE.ORDER_PROMO",
+              "COMMERCE.DELIVERY",
+              "SERVICE.WARRANTY",
+              "SERVICE.REPAIR",
+              "SERVICE.DATA_HANDLING",
+              "TRADE_IN.VALUATION",
+              "TRADE_IN.LOGISTICS"
+            ]
+          },
+          "observed_symptom": {
+            "enum": [
+              "NO_FUNCTION",
+              "INTERMITTENT",
+              "DISCONNECT",
+              "DEGRADED",
+              "SLOW",
+              "DELAY",
+              "EXCESS_CONSUMPTION",
+              "OVERHEAT",
+              "CRASH",
+              "FREEZE",
+              "RESTART",
+              "SHUTDOWN",
+              "FALSE_DETECTION",
+              "INACCURATE",
+              "VISUAL_ARTIFACT",
+              "AUDIO_ARTIFACT",
+              "PHYSICAL_DAMAGE",
+              "MISSING_DATA",
+              "INCOMPATIBLE",
+              "DIFFICULT_TO_USE",
+              "FEATURE_MISSING",
+              "VALUE_DISSATISFACTION",
+              "LOW_VOLUME",
+              "NOT_CHARGING",
+              "SLOW_CHARGING",
+              "SIGNAL_WEAK",
+              "NOTIFICATION_MISSING",
+              "FALSE_POSITIVE",
+              "POSITIVE_EXPERIENCE",
+              "INFORMATION_REQUEST",
+              "SAFETY_HAZARD"
+            ]
+          },
+          "symptom_qualifier": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "trigger_event": {
+            "enum": [
+              "OS_UPDATE",
+              "APP_UPDATE",
+              "SETTINGS_CHANGE",
+              "DEVICE_MIGRATION",
+              "INITIAL_SETUP",
+              "IDLE",
+              "GAMING",
+              "CAMERA_USE",
+              "VIDEO_CALL",
+              "NAVIGATION",
+              "HOTSPOT",
+              "CHARGING",
+              "PLUG_IN",
+              "FOLD",
+              "UNFOLD",
+              "TAKE_PHOTO",
+              "RECORD_VIDEO",
+              "RECEIVE_CALL",
+              "WEAK_SIGNAL",
+              "FIVE_G",
+              "ROAMING",
+              "DUAL_SIM",
+              "WIFI_CALLING",
+              "HIGH_TEMP",
+              "LOW_TEMP",
+              "HUMIDITY",
+              "WATER",
+              "DUST",
+              "LOW_LIGHT",
+              "SCREEN_PROTECTOR",
+              "CASE",
+              "CHARGER",
+              "CABLE",
+              "USB_HUB",
+              "CAR_HEAD_UNIT",
+              "FOLD_CYCLES",
+              "BATTERY_CYCLES",
+              "DROP",
+              "IMPACT",
+              "UNKNOWN",
+              null
+            ]
+          },
+          "usage_context": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "onset_relation": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "frequency": {
+            "enum": [
+              "ONCE",
+              "RARE",
+              "INTERMITTENT",
+              "DAILY",
+              "FREQUENT",
+              "ALWAYS",
+              "PROGRESSIVE",
+              "UNKNOWN",
+              null
+            ]
+          },
+          "duration": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "reproducibility": {
+            "enum": [
+              "NOT_TESTED",
+              "NOT_REPRODUCIBLE",
+              "CONDITIONAL",
+              "REPRODUCIBLE",
+              "ALWAYS",
+              "UNKNOWN",
+              null
+            ]
+          },
+          "user_impact": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "severity": {
+            "enum": [
+              "S0",
+              "S1",
+              "S2",
+              "S3",
+              "S4"
+            ]
+          },
+          "user_suspected_cause": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "suspected_component": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "cause_evidence_level": {
+            "enum": [
+              "NONE",
+              "USER_GUESS",
+              "COMMUNITY_ADVICE",
+              "SUPPORT_GUIDANCE",
+              "SERVICE_DIAGNOSED",
+              "ENGINEERING_CONFIRMED"
+            ]
+          },
+          "diagnostic_class": {
+            "enum": [
+              "PRODUCT_DEFECT_POSSIBLE",
+              "SOFTWARE_POSSIBLE",
+              "SETTINGS_RELATED",
+              "ACCESSORY_RELATED",
+              "NETWORK_PROVIDER_RELATED",
+              "ENVIRONMENT_RELATED",
+              "EXPECTED_BEHAVIOR",
+              "UNSUPPORTED_FEATURE",
+              "SERVICE_PROCESS",
+              "COMMERCIAL_PROCESS",
+              "USER_CAUSE_POSSIBLE",
+              "UNKNOWN",
+              null
+            ]
+          },
+          "attempted_actions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "action",
+                "result"
+              ],
+              "properties": {
+                "action": {
+                  "type": "string"
+                },
+                "result": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "desired_resolution": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "safety_flags": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "NONE",
+                "BATTERY_SWELL",
+                "SMOKE_FIRE",
+                "BURN_INJURY",
+                "ELECTRIC_SHOCK",
+                "DATA_IRREVERSIBLE",
+                "DAMAGE_PROGRESSION",
+                "DRIVING_DISTRACTION"
+              ]
+            }
+          },
+          "evidence_spans": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": [
+                "field",
+                "quote",
+                "start",
+                "end",
+                "occurrence"
+              ],
+              "properties": {
+                "field": {
+                  "type": "string"
+                },
+                "quote": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "end": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "occurrence": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              },
+              "additionalProperties": false
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "provenance_type": {
+            "enum": [
+              "SYNTHETIC_RAW",
+              "SYNTHETIC_SCENARIO"
+            ]
+          }
+        },
+        "required": [
+          "provenance_type"
+        ]
+      },
+      "then": {
+        "required": [
+          "synthetic_parent_scenario_id",
+          "synthetic_parent_scenario_ids",
+          "dataset_split"
+        ]
+      }
+    }
+  ]
+}
