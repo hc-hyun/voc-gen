@@ -13,15 +13,21 @@ PROJECT_DIR = Path(__file__).resolve().parents[1]
 load_dotenv(PROJECT_DIR / ".env")
 VOC_MANIFEST = (
     PROJECT_DIR
-    / "data/generated/voc_100k_models_v02.jsonl.gz.manifest.json"
+    / "data/generated/voc_100k_release_dates_v2.jsonl.gz.manifest.json"
 )
 INTERNAL_MANIFEST = (
     PROJECT_DIR
-    / "data/generated/internal_dev_test_100k_models_v02.jsonl.gz.manifest.json"
+    / (
+        "data/generated/"
+        "internal_dev_test_100k_release_dates_v1_approved.jsonl.gz.manifest.json"
+    )
 )
 INTERNAL_PROGRESS = (
     PROJECT_DIR
-    / "data/generated/internal_dev_test_100k_models_v02.jsonl.gz.progress.json"
+    / (
+        "data/generated/"
+        "internal_dev_test_100k_release_dates_v1_approved.jsonl.gz.progress.json"
+    )
 )
 INTERNAL_VALIDATION_PROGRESS = INTERNAL_MANIFEST.with_name(
     INTERNAL_MANIFEST.name + ".validation.progress.json"

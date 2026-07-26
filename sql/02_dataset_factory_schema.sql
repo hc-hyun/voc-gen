@@ -63,6 +63,7 @@ CREATE TABLE IF NOT EXISTS dataset_factory_v01.internal_dev_test_result (
     model_family TEXT NOT NULL,
     representative_model_name TEXT NOT NULL,
     representative_model_name_ko TEXT NOT NULL,
+    release_date DATE NOT NULL,
     project_code TEXT NOT NULL,
     project_name TEXT,
     project_evidence TEXT NOT NULL,
@@ -72,9 +73,15 @@ CREATE TABLE IF NOT EXISTS dataset_factory_v01.internal_dev_test_result (
     report_text TEXT NOT NULL
 );
 
+ALTER TABLE dataset_factory_v01.internal_dev_test_result
+    ADD COLUMN IF NOT EXISTS release_date DATE;
+
 CREATE INDEX IF NOT EXISTS idx_internal_dev_test_model
     ON dataset_factory_v01.internal_dev_test_result
        (model_family, project_code);
+CREATE INDEX IF NOT EXISTS idx_internal_dev_test_release_date
+    ON dataset_factory_v01.internal_dev_test_result
+       (model_family, release_date, tested_at);
 CREATE INDEX IF NOT EXISTS idx_internal_dev_test_product
     ON dataset_factory_v01.internal_dev_test_result
        (product_family, tested_at);

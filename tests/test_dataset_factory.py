@@ -2,7 +2,9 @@ import gzip
 import json
 import tempfile
 import unittest
+from collections import Counter
 from dataclasses import replace
+from datetime import date, datetime
 from pathlib import Path
 
 from jsonschema import Draft202012Validator, FormatChecker
@@ -18,6 +20,7 @@ from dataset_factory.core.workflow import (
     write_text_sample,
 )
 from dataset_factory.types.internal_dev_test.validator import contains_pii
+from dataset_factory.core.virtual_dates import date_window, relative_position
 
 
 PROJECT_DIR = Path(__file__).resolve().parents[1]
@@ -123,6 +126,34 @@ class DatasetFactoryTests(unittest.TestCase):
                 self.assertIn(model_context["project_code"], problem_quote)
         quality = self.adapter.inspect(iter(artifacts), self.profile)
         self.assertTrue(quality["passed"], quality)
+
+    def test_internal_dates_are_pre_release_and_development_early_biased(self):
+        profile = load_dataset_profile(
+            PROJECT_DIR / "profiles/internal_dev_test.100k.json"
+        )
+        adapter = get_adapter(profile.dataset_type)
+        context = adapter.prepare(profile)
+        quarters = Counter()
+        for sequence_no in range(1, 2001):
+            artifact = adapter.generate(context, sequence_no)
+            model_context = artifact.document["device_model_context"]
+            release_date = date.fromisoformat(model_context["release_date"])
+            tested_date = datetime.fromisoformat(
+                artifact.document["tested_at"]
+            ).date()
+            window_start, window_end = date_window(
+                release_date,
+                "PRE_RELEASE_DEVELOPMENT",
+            )
+            self.assertLessEqual(window_start, tested_date)
+            self.assertLessEqual(tested_date, window_end)
+            position = relative_position(
+                observed_date=tested_date,
+                release_date=release_date,
+                phase="PRE_RELEASE_DEVELOPMENT",
+            )
+            quarters[min(int(position * 4) + 1, 4)] += 1
+        self.assertGreater(quarters[1], quarters[4])
 
     def test_unknown_cause_is_not_fabricated(self):
         context = self.adapter.prepare(self.profile)

@@ -17,6 +17,15 @@
 추가 적재한다. 따라서 구버전 VoC와 모델명이 반영된 새 VoC를 배치 단위로
 비교할 수 있다.
 
+출시일 기준 가상 날짜 규칙으로 전환하는 1회 마이그레이션은 사용자의 기존
+내용 삭제 요청에 따라 예외적으로 구 배치를 제거한다. 두 schema를 따로
+지우다 중간 실패가 나지 않도록 다음 명령이 삭제와 10만 건씩의 재적재를
+하나의 PostgreSQL 트랜잭션에서 수행한다.
+
+```bash
+uv run python scripts/replace_release_date_datasets.py
+```
+
 ## Quick Start
 
 PowerShell에서 DB의 VoC 100건을 JSONL로 출력한다.
@@ -107,6 +116,9 @@ LIMIT 10;
 - `dataset_factory_v01.generation_record`
 - `dataset_factory_v01.internal_dev_test_result`
 - `dataset_factory_v01.internal_dev_test_finding`
+
+`internal_dev_test_result`에는 가상 `tested_at`과 모델 기준
+`release_date`가 모두 있어 출시 전 1년 범위를 SQL에서도 바로 확인할 수 있다.
 
 스키마 초기화:
 

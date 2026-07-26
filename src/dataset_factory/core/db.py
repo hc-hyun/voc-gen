@@ -116,6 +116,8 @@ def verify_load_bundle(
 def load_dataset(
     manifest_path: Path,
     approval_path: Path,
+    *,
+    connection=None,
 ) -> dict:
     manifest, approval, data_path, generation_path = verify_load_bundle(
         manifest_path,
@@ -134,7 +136,12 @@ def load_dataset(
         FROM STDIN
     """
 
-    with _connect() as conn:
+    connection_context = (
+        contextlib.nullcontext(connection)
+        if connection is not None
+        else _connect()
+    )
+    with connection_context as conn:
         existing = conn.execute(
             """
             SELECT id, row_count, loaded_at
@@ -263,7 +270,7 @@ def load_dataset(
                 provenance_type, product_type, product_family,
                 product_model_name, product_model_code, software_build,
                 model_family, representative_model_name,
-                representative_model_name_ko, project_code, project_name,
+                representative_model_name_ko, release_date, project_code, project_name,
                 project_evidence, context_role, test_execution, report_text
             )
             SELECT
@@ -280,6 +287,7 @@ def load_dataset(
                 imp.document#>>'{device_model_context,model_family}',
                 imp.document#>>'{device_model_context,representative_model_name}',
                 imp.document#>>'{device_model_context,representative_model_name_ko}',
+                (imp.document#>>'{device_model_context,release_date}')::DATE,
                 imp.document#>>'{device_model_context,project_code}',
                 imp.document#>>'{device_model_context,project_name}',
                 imp.document#>>'{device_model_context,project_evidence}',

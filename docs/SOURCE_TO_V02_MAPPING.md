@@ -13,7 +13,7 @@
 | `synthetic_parent_scenario_id` | 단일 이슈일 때만 부모 ID, 다중은 `null` |
 | `synthetic_parent_scenario_ids[]` | 선택된 모든 부모 `scenario_id` |
 | `source_channel` | 첫 부모의 `target_channel` |
-| `source_date` | profile 기간 안에서 seed로 계산한 날짜 |
+| `source_date` | 스마트폰 모델은 출시일부터 1년 뒤까지 초기 집중 분포로 계산; 모델 미적용 VoC는 profile 기간 사용 |
 | `language` | 첫 부모의 `target_language` |
 | `region` | `region`; `UNSPECIFIED`는 문서에서 그대로 보존 |
 | `dataset_split` | 첫 부모의 `recommended_split` |

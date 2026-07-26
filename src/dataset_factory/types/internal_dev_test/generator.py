@@ -4,7 +4,7 @@ import copy
 import hashlib
 import random
 from dataclasses import dataclass
-from datetime import datetime, timedelta
+from datetime import datetime
 from pathlib import Path
 
 from dataset_factory.core.contracts import GeneratedArtifact
@@ -14,17 +14,26 @@ from dataset_factory.core.model_catalog import (
     representative_models,
 )
 from dataset_factory.core.profiles import DatasetProfile
+from dataset_factory.core.virtual_dates import (
+    VirtualDatePolicy,
+    date_window,
+    sample_release_relative_datetime,
+)
 
 from .renderer import SURFACE_PROFILES, render_report
 from .source import InternalTestCase, load_cases
 
 
-GENERATOR_VERSION = "2026.07.25.internal-dev-test.2"
-PROMPT_VERSION = "deterministic-internal-test-renderer-v2+galaxy-model-context"
+GENERATOR_VERSION = "2026.07.26.internal-dev-test.3"
+PROMPT_VERSION = (
+    "deterministic-internal-test-renderer-v2+galaxy-model-context-v2+"
+    "release-relative-dates-v1"
+)
 GENERATION_ALLOWED_FIELDS = {
     "surface_profile_weights",
     "local_llm",
     "model_catalog_file",
+    "virtual_date_policy",
 }
 OPTION_ALLOWED_FIELDS = {
     "allow_multiple_findings",
@@ -76,6 +85,7 @@ def validate_profile(profile: DatasetProfile) -> None:
     )
     if not isinstance(model_catalog_file, str) or not model_catalog_file:
         raise ValueError("model_catalog_file은 비어 있지 않은 문자열이어야 합니다.")
+    VirtualDatePolicy.from_dict(profile.generation.get("virtual_date_policy"))
     allow_multiple = profile.dataset_options.get("allow_multiple_findings", True)
     if not isinstance(allow_multiple, bool):
         raise ValueError("allow_multiple_findings는 boolean이어야 합니다.")
@@ -144,6 +154,9 @@ def prepare(profile: DatasetProfile, approved_plan: dict | None = None) -> Gener
         load_model_catalog(model_catalog_path(profile)),
         require_project_code=True,
     )
+    virtual_date_policy = VirtualDatePolicy.from_dict(
+        profile.generation.get("virtual_date_policy")
+    )
     plan = {
         "resolved_mode": "deterministic",
         "remote_api_calls": 0,
@@ -154,18 +167,29 @@ def prepare(profile: DatasetProfile, approved_plan: dict | None = None) -> Gener
             "data/reference/galaxy_smartphone_models_2024h2_2026.csv",
         ),
         "model_selection": "representative_with_project_code",
+        "virtual_date_policy": virtual_date_policy.as_dict(),
     }
     if approved_plan is not None and approved_plan != plan:
         raise ValueError("승인된 생성 plan이 현재 내부 테스트 profile과 다릅니다.")
     return GenerationContext(profile, cases, ordered, profile_bag, models, plan)
 
 
-def _tested_at(profile: DatasetProfile, sequence_no: int) -> datetime:
+def _tested_at(
+    profile: DatasetProfile,
+    sequence_no: int,
+    selected_model: GalaxyModel,
+) -> datetime:
     start = datetime.fromisoformat(profile.date_start or "")
-    end = datetime.fromisoformat(profile.date_end or "")
-    span_seconds = int((end - start).total_seconds())
-    rng = random.Random(stable_seed(profile.seed, sequence_no, "tested-at"))
-    return start + timedelta(seconds=rng.randrange(span_seconds + 1))
+    policy = VirtualDatePolicy.from_dict(
+        profile.generation.get("virtual_date_policy")
+    )
+    return sample_release_relative_datetime(
+        release_date=selected_model.release_date,
+        phase="PRE_RELEASE_DEVELOPMENT",
+        timezone=start.tzinfo,
+        seed=stable_seed(profile.seed, sequence_no, "tested-at"),
+        policy=policy,
+    )
 
 
 def generate(context: GenerationContext, sequence_no: int) -> GeneratedArtifact:
@@ -188,7 +212,15 @@ def generate(context: GenerationContext, sequence_no: int) -> GeneratedArtifact:
     profile_id = context.profile_bag[
         (occurrence + case_index) % len(context.profile_bag)
     ]
-    tested_at = _tested_at(profile, sequence_no)
+    tested_at = _tested_at(profile, sequence_no, selected_model)
+    virtual_date_policy = VirtualDatePolicy.from_dict(
+        profile.generation.get("virtual_date_policy")
+    )
+    virtual_date_start, virtual_date_end = date_window(
+        selected_model.release_date,
+        "PRE_RELEASE_DEVELOPMENT",
+        virtual_date_policy.window_years,
+    )
     record_hash = hashlib.sha256(
         f"{profile.profile_name}:{profile.seed}:{sequence_no}".encode()
     ).hexdigest()[:20].upper()
@@ -268,6 +300,12 @@ def generate(context: GenerationContext, sequence_no: int) -> GeneratedArtifact:
             ],
             "source_occurrence": occurrence,
             "device_model_context": device_model_context,
+            "virtual_date_context": {
+                "phase": "PRE_RELEASE_DEVELOPMENT",
+                "window_start": virtual_date_start.isoformat(),
+                "window_end": virtual_date_end.isoformat(),
+                "policy": virtual_date_policy.as_dict(),
+            },
         },
     }
     return GeneratedArtifact(

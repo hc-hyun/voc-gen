@@ -6,6 +6,7 @@ import json
 import re
 from collections import Counter
 from dataclasses import dataclass
+from datetime import date
 from pathlib import Path
 from typing import Iterable
 from typing import TextIO
@@ -17,6 +18,10 @@ from dataset_factory.core.model_catalog import (
     GalaxyModel,
     load_model_catalog,
     voc_models_for_family,
+)
+from dataset_factory.core.virtual_dates import (
+    date_window,
+    relative_position,
 )
 from .source import Scenario
 from .text_renderer import PROTECTED_TERMS
@@ -140,10 +145,6 @@ def record_errors(
             if scenario is not None
             else []
         )
-        source_month = document.get("source_date", "")[:7]
-        candidates = [
-            model for model in candidates if model.release_period <= source_month
-        ]
         if candidates:
             matching = [
                 model
@@ -154,6 +155,16 @@ def record_errors(
             if len(matching) != 1:
                 errors.append(f"model:{issue.get('issue_id')} 카탈로그 매핑 불일치")
             else:
+                source_date = date.fromisoformat(document["source_date"])
+                window_start, window_end = date_window(
+                    matching[0].release_date,
+                    "POST_RELEASE_MARKET",
+                    1,
+                )
+                if not window_start <= source_date <= window_end:
+                    errors.append(
+                        f"date:{issue.get('issue_id')} 출시 후 1년 범위 위반"
+                    )
                 quote = (issue.get("evidence_spans") or [{}])[0].get("quote", "")
                 if not any(
                     name in quote
@@ -188,6 +199,29 @@ def record_errors(
             for issue in modeled_issues
         ):
             errors.append("model:issue와 generation model_context 불일치")
+        else:
+            catalog_model = next(
+                (
+                    model
+                    for model in (catalog_models or [])
+                    if model.model_family == model_context.get("model_family")
+                ),
+                None,
+            )
+            if (
+                catalog_model is None
+                or model_context.get("release_date")
+                != catalog_model.release_date.isoformat()
+            ):
+                errors.append("model:generation 출시 기준일 불일치")
+    else:
+        expected_date_label = (
+            f"Received {document.get('source_date')} — "
+            if document.get("language") == "EN"
+            else f"{document.get('source_date')} 접수 — "
+        )
+        if not raw_text.startswith(expected_date_label):
+            errors.append("date:모델 미적용 VoC 원문 접수일 표기 불일치")
     if generation.get("generation_profile_id") not in GENERATION_PROFILES:
         errors.append("profile:알 수 없는 표현 프로필")
     choice_indices = generation.get("local_llm", {}).get("choice_indices")
@@ -265,6 +299,7 @@ def inspect_records(
         "local_llm_status": Counter(),
         "model_name_style": Counter(),
         "model_family": Counter(),
+        "virtual_date_quarter": Counter(),
     }
     total = 0
 
@@ -355,6 +390,18 @@ def inspect_records(
         if model_context:
             counts["model_name_style"][model_context["name_style"]] += 1
             counts["model_family"][model_context["model_family"]] += 1
+            catalog_model = next(
+                model
+                for model in catalog_models
+                if model.model_family == model_context["model_family"]
+            )
+            position = relative_position(
+                observed_date=date.fromisoformat(document["source_date"]),
+                release_date=catalog_model.release_date,
+                phase="POST_RELEASE_MARKET",
+            )
+            quarter = min(int(position * 4) + 1, 4)
+            counts["virtual_date_quarter"][f"Q{quarter}"] += 1
 
     if not total:
         raise ValueError("검수할 레코드가 없습니다.")
@@ -363,6 +410,12 @@ def inspect_records(
     max_profile_deviation = max(
         abs(counts["generation_profile_id"][name] / total - expected_profile_rate)
         for name in GENERATION_PROFILES
+    )
+    modeled_count = sum(counts["virtual_date_quarter"].values())
+    early_date_bias_passed = (
+        modeled_count < 100
+        or counts["virtual_date_quarter"]["Q1"]
+        > counts["virtual_date_quarter"]["Q4"]
     )
     checks = [
         Check("schema_lineage_evidence", error_count == 0, error_count, "오류 문서 0건"),
@@ -415,6 +468,16 @@ def inspect_records(
             max_profile_deviation <= 0.02,
             round(max_profile_deviation, 4),
             "각 25% 목표 대비 최대 편차 2%p 이하",
+        ),
+        Check(
+            "market_voc_early_date_bias",
+            early_date_bias_passed,
+            {
+                "modeled_records": modeled_count,
+                "first_quarter": counts["virtual_date_quarter"]["Q1"],
+                "last_quarter": counts["virtual_date_quarter"]["Q4"],
+            },
+            "모델 VoC 100건 이상이면 출시 후 첫 1/4 구간이 마지막 구간보다 많음",
         ),
     ]
     return {

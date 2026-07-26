@@ -37,10 +37,12 @@ class InternalDevTestAdapter:
             digest.update(b"\0")
             digest.update((root / name).read_bytes())
             digest.update(b"\0")
-        shared = root.parents[1] / "core" / "model_catalog.py"
-        digest.update(b"core/model_catalog.py\0")
-        digest.update(shared.read_bytes())
-        digest.update(b"\0")
+        shared_root = root.parents[1] / "core"
+        for name in ("model_catalog.py", "virtual_dates.py"):
+            digest.update(f"core/{name}".encode("utf-8"))
+            digest.update(b"\0")
+            digest.update((shared_root / name).read_bytes())
+            digest.update(b"\0")
         return digest.hexdigest()
 
     def prepare(self, profile: DatasetProfile, approved_plan: dict | None = None):
@@ -72,6 +74,7 @@ class InternalDevTestAdapter:
             "대책 종류·상태·검증 방법이 서로 모순되지 않는가",
             "source 사실 계획에 없는 원인·부품·릴리스가 추가되지 않았는가",
             "문제점 증상에 대표 모델·SM 모델 패밀리·프로젝트 코드가 모두 표시되는가",
+            "tested_at이 모델 출시 전 1년 안이며 개발 초기 쪽 분포가 더 높은가",
         ]
 
 

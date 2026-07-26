@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import re
 from collections import Counter
+from datetime import datetime
 from typing import Iterable, TextIO
 
 from jsonschema import Draft202012Validator, FormatChecker
@@ -10,6 +11,11 @@ from jsonschema import Draft202012Validator, FormatChecker
 from dataset_factory.core.contracts import GeneratedArtifact
 from dataset_factory.core.model_catalog import load_model_catalog
 from dataset_factory.core.profiles import DatasetProfile
+from dataset_factory.core.virtual_dates import (
+    VirtualDatePolicy,
+    date_window,
+    relative_position,
+)
 
 from .generator import model_catalog_path
 from .renderer import SURFACE_PROFILES
@@ -43,6 +49,7 @@ def record_errors(
     scenario_by_id: dict[str, InternalTestCase],
     model_by_family: dict[str, object],
     validator: Draft202012Validator,
+    profile: DatasetProfile,
 ) -> list[str]:
     document = artifact.document
     generation = artifact.generation
@@ -82,6 +89,18 @@ def record_errors(
         errors.append("model_context:카탈로그 속성과 불일치")
     if not model_context.get("project_code"):
         errors.append("model_context:프로젝트 코드 누락")
+    if catalog_model is not None:
+        tested_date = datetime.fromisoformat(document["tested_at"]).date()
+        policy = VirtualDatePolicy.from_dict(
+            profile.generation.get("virtual_date_policy")
+        )
+        window_start, window_end = date_window(
+            catalog_model.release_date,
+            "PRE_RELEASE_DEVELOPMENT",
+            policy.window_years,
+        )
+        if not window_start <= tested_date <= window_end:
+            errors.append("date:출시 전 개발 1년 범위 위반")
 
     if len(artifact.lineage_ids) != 1:
         errors.append("lineage:v0.1은 문서당 parent case 하나만 지원")
@@ -213,6 +232,7 @@ def inspect(
         "measure_type": Counter(),
         "model_family": Counter(),
         "model_context_role": Counter(),
+        "virtual_date_quarter": Counter(),
     }
     total = 0
     for artifact in artifacts:
@@ -222,6 +242,7 @@ def inspect(
             scenario_by_id,
             model_by_family,
             validator,
+            profile,
         )
         status = "FAIL" if errors else "PASS"
         if result_handle is not None:
@@ -268,6 +289,19 @@ def inspect(
         context = artifact.document["device_model_context"]
         counts["model_family"][context["model_family"]] += 1
         counts["model_context_role"][context["context_role"]] += 1
+        catalog_model = model_by_family[context["model_family"]]
+        position = relative_position(
+            observed_date=datetime.fromisoformat(
+                artifact.document["tested_at"]
+            ).date(),
+            release_date=catalog_model.release_date,
+            phase="PRE_RELEASE_DEVELOPMENT",
+            window_years=VirtualDatePolicy.from_dict(
+                profile.generation.get("virtual_date_policy")
+            ).window_years,
+        )
+        quarter = min(int(position * 4) + 1, 4)
+        counts["virtual_date_quarter"][f"Q{quarter}"] += 1
         for finding in artifact.document["findings"]:
             counts["cause_status"][finding["cause_analysis"]["status"]] += 1
             counts["resolution_status"][finding["resolution_status"]] += 1
@@ -282,6 +316,11 @@ def inspect(
     unresolved_passed = (
         expected_unresolved is None
         or abs(actual_unresolved - float(expected_unresolved)) <= 0.1
+    )
+    early_date_bias_passed = (
+        total < 100
+        or counts["virtual_date_quarter"]["Q1"]
+        > counts["virtual_date_quarter"]["Q4"]
     )
     checks = [
         {
@@ -316,6 +355,18 @@ def inspect(
                 "not configured"
                 if expected_unresolved is None
                 else f"{float(expected_unresolved):.2%} ±10%p"
+            ),
+        },
+        {
+            "name": "development_early_date_bias",
+            "passed": early_date_bias_passed,
+            "actual": {
+                "records": total,
+                "first_quarter": counts["virtual_date_quarter"]["Q1"],
+                "last_quarter": counts["virtual_date_quarter"]["Q4"],
+            },
+            "expected": (
+                "100건 이상이면 개발 기간 첫 1/4 구간이 마지막 구간보다 많음"
             ),
         },
     ]

@@ -2,11 +2,15 @@ from __future__ import annotations
 
 import csv
 from dataclasses import dataclass
+from datetime import date
 from pathlib import Path
+
+from .virtual_dates import parse_release_date
 
 
 CATALOG_FIELDS = {
     "release_period",
+    "release_date",
     "series",
     "marketing_name",
     "marketing_name_ko",
@@ -33,6 +37,7 @@ VOC_FAMILY_SERIES = {
 @dataclass(frozen=True)
 class GalaxyModel:
     release_period: str
+    release_date: date
     series: str
     marketing_name: str
     marketing_name_ko: str
@@ -53,6 +58,7 @@ class GalaxyModel:
 
     def as_context(self, role: str) -> dict[str, str | None]:
         return {
+            "release_date": self.release_date.isoformat(),
             "model_family": self.model_family,
             "representative_model_name": self.marketing_name,
             "representative_model_name_ko": self.marketing_name_ko,
@@ -80,6 +86,7 @@ def load_model_catalog(path: Path) -> list[GalaxyModel]:
     for line_no, row in enumerate(rows, start=2):
         required = (
             "release_period",
+            "release_date",
             "series",
             "marketing_name",
             "marketing_name_ko",
@@ -97,9 +104,11 @@ def load_model_catalog(path: Path) -> list[GalaxyModel]:
             raise ValueError(f"모델 카탈로그 {line_no}행 representative가 올바르지 않습니다.")
         if not row["model_family"].startswith("SM-"):
             raise ValueError(f"모델 카탈로그 {line_no}행 SM 모델 패밀리가 올바르지 않습니다.")
+        release_date = parse_release_date(row["release_date"])
         models.append(
             GalaxyModel(
                 release_period=row["release_period"],
+                release_date=release_date,
                 series=row["series"],
                 marketing_name=row["marketing_name"],
                 marketing_name_ko=row["marketing_name_ko"],

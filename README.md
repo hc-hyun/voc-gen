@@ -18,6 +18,10 @@ pilot도 제공한다. 확장 경계는
 [EXTENSIBLE_DATASET_ARCHITECTURE.md](docs/EXTENSIBLE_DATASET_ARCHITECTURE.md),
 내부 테스트 필드 계약은
 [INTERNAL_DEV_TEST_DATA_SPEC.md](docs/INTERNAL_DEV_TEST_DATA_SPEC.md)를 따른다.
+모델 출시 전후 가상 날짜 범위와 초기 집중 분포는
+[VIRTUAL_DATE_POLICY.md](docs/VIRTUAL_DATE_POLICY.md)에 정리돼 있다.
+집계 및 MCP 제공용 2테이블 데이터베이스는
+[PRODUCT_QUALITY_DB.md](docs/PRODUCT_QUALITY_DB.md)를 참고한다.
 
 ## 준비
 

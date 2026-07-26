@@ -23,6 +23,11 @@ from dataset_factory.core.model_catalog import (
     load_model_catalog,
     voc_models_for_family,
 )
+from dataset_factory.core.virtual_dates import (
+    VirtualDatePolicy,
+    date_window,
+    sample_release_relative_datetime,
+)
 
 from .source import Scenario, load_scenarios
 from .text_renderer import load_phrase_bank, render_clause, wrap_document
@@ -31,13 +36,17 @@ if TYPE_CHECKING:
     from dataset_factory.core.profiles import DatasetProfile
 
 
-GENERATOR_VERSION = "2026.07.25.13"
-PROMPT_VERSION = "deepseek-phrase-bank-v1+ollama-ranking-v1+galaxy-model-context-v1"
+GENERATOR_VERSION = "2026.07.26.15"
+PROMPT_VERSION = (
+    "deepseek-phrase-bank-v1+ollama-ranking-v1+"
+    "galaxy-model-context-v2+release-relative-dates-v1"
+)
 GENERATION_PROFILES = ("B0_BASE", "P1_PARAPHRASE", "A1_ABBREVIATED", "N1_NOISY")
 GENERATION_FIELDS = {
     "phrase_bank_file",
     "model_catalog_file",
     "model_name_style_weights",
+    "virtual_date_policy",
     "local_llm",
     "generation_profile_weights",
 }
@@ -59,6 +68,9 @@ class GenerationProfile:
     )
     model_name_style_weights: dict[str, int] = field(
         default_factory=lambda: {"KO": 1, "EN": 1}
+    )
+    virtual_date_policy: VirtualDatePolicy = field(
+        default_factory=VirtualDatePolicy
     )
     include_splits: tuple[str, ...] = ("TRAIN", "VALID", "TEST")
     scenario_limit_per_theme: int | None = None
@@ -116,6 +128,9 @@ class GenerationProfile:
             for weight in model_style_weights.values()
         ):
             raise ValueError("모델명 표기 가중치는 양의 정수여야 합니다.")
+        virtual_date_policy = VirtualDatePolicy.from_dict(
+            value.get("virtual_date_policy")
+        )
 
         include_splits = tuple(value.get("include_splits", ["TRAIN", "VALID", "TEST"]))
         if not include_splits or set(include_splits) - {"TRAIN", "VALID", "TEST"}:
@@ -144,6 +159,7 @@ class GenerationProfile:
                 "data/reference/galaxy_smartphone_models_2024h2_2026.csv",
             ),
             model_name_style_weights=dict(model_style_weights),
+            virtual_date_policy=virtual_date_policy,
             include_splits=include_splits,
             scenario_limit_per_theme=scenario_limit,
             multi_issue_rate=float(multi_issue_rate),
@@ -210,6 +226,7 @@ class GenerationProfile:
             "phrase_bank_file": self.phrase_bank_file,
             "model_catalog_file": self.model_catalog_file,
             "model_name_style_weights": self.model_name_style_weights,
+            "virtual_date_policy": self.virtual_date_policy.as_dict(),
             "include_splits": list(self.include_splits),
             "scenario_limit_per_theme": self.scenario_limit_per_theme,
             "multi_issue_rate": self.multi_issue_rate,
@@ -242,10 +259,12 @@ def generator_sha256() -> str:
         digest.update(b"\0")
         digest.update((package_dir / name).read_bytes())
         digest.update(b"\0")
-    shared = package_dir.parent / "dataset_factory" / "core" / "model_catalog.py"
-    digest.update(b"dataset_factory/core/model_catalog.py\0")
-    digest.update(shared.read_bytes())
-    digest.update(b"\0")
+    shared_dir = package_dir.parent / "dataset_factory" / "core"
+    for name in ("model_catalog.py", "virtual_dates.py"):
+        digest.update(f"dataset_factory/core/{name}".encode("utf-8"))
+        digest.update(b"\0")
+        digest.update((shared_dir / name).read_bytes())
+        digest.update(b"\0")
     return digest.hexdigest()
 
 
@@ -341,9 +360,21 @@ def _issue_from_scenario(
     }
 
 
-def _received_at(profile: GenerationProfile, sequence_no: int) -> datetime:
+def _received_at(
+    profile: GenerationProfile,
+    sequence_no: int,
+    selected_model: GalaxyModel | None,
+) -> datetime:
     start = datetime.fromisoformat(profile.date_start)
     end = datetime.fromisoformat(profile.date_end)
+    if selected_model is not None:
+        return sample_release_relative_datetime(
+            release_date=selected_model.release_date,
+            phase="POST_RELEASE_MARKET",
+            timezone=start.tzinfo,
+            seed=_stable_seed(profile.seed, sequence_no, "received-at"),
+            policy=profile.virtual_date_policy,
+        )
     span_seconds = int((end - start).total_seconds())
     rng = random.Random(_stable_seed(profile.seed, sequence_no, "received-at"))
     return start + timedelta(seconds=rng.randrange(span_seconds + 1))
@@ -509,7 +540,6 @@ def generate_record(
     scenario_index = (sequence_no - 1) % len(ordered)
     occurrence = (sequence_no - 1) // len(ordered)
     primary = ordered[scenario_index]
-    received_at = _received_at(profile, sequence_no)
     bag = _profile_bag(tuple(profile.generation_profile_weights.items()))
     profile_id = bag[(occurrence + scenario_index) % len(bag)]
 
@@ -525,12 +555,6 @@ def generate_record(
         models,
         primary["product_family_rule"],
     )
-    source_month = received_at.strftime("%Y-%m")
-    model_candidates = [
-        model
-        for model in model_candidates
-        if model.release_period <= source_month
-    ]
     selected_model = (
         model_candidates[
             _stable_seed(profile.seed, sequence_no, "voc-model")
@@ -539,6 +563,7 @@ def generate_record(
         if model_candidates
         else None
     )
+    received_at = _received_at(profile, sequence_no, selected_model)
     if primary.language == "EN":
         model_name_style = "EN"
     else:
@@ -661,6 +686,14 @@ def generate_record(
         primary["observed_symptom"],
         primary["hard_negative"] == "TRUE",
     )
+    if selected_model is None:
+        date_label = received_at.date().isoformat()
+        prefix = (
+            f"Received {date_label} — "
+            if primary.language == "EN"
+            else f"{date_label} 접수 — "
+        )
+        raw_text = prefix + raw_text
 
     clean_reference = raw_text
     cursor = 0
@@ -746,6 +779,19 @@ def generate_record(
                 "name_style": model_name_style,
                 "project_code": selected_model.project_code,
                 "project_evidence": selected_model.project_evidence,
+                "release_date": selected_model.release_date.isoformat(),
+                "virtual_date_phase": "POST_RELEASE_MARKET",
+                "virtual_date_window_start": date_window(
+                    selected_model.release_date,
+                    "POST_RELEASE_MARKET",
+                    profile.virtual_date_policy.window_years,
+                )[0].isoformat(),
+                "virtual_date_window_end": date_window(
+                    selected_model.release_date,
+                    "POST_RELEASE_MARKET",
+                    profile.virtual_date_policy.window_years,
+                )[1].isoformat(),
+                "virtual_date_policy": profile.virtual_date_policy.as_dict(),
             }
             if selected_model is not None
             else None

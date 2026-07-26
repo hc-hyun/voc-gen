@@ -22,7 +22,7 @@ card에 명시한다.
 
 | 영역 | 필수 의미 |
 |---|---|
-| `device_model_context` | 대표 모델, SM 모델 패밀리, 프로젝트 코드와 시험 역할 |
+| `device_model_context` | 출시 기준일, 대표 모델, SM 모델 패밀리, 프로젝트 코드와 시험 역할 |
 | `test_execution.user_case` | 누가 어떤 목표로 무엇을 했는지 |
 | `problem_symptom` | 발생 문맥, 기대 동작, 실제 동작 |
 | `reproduction_path` | 사전조건과 순서가 있는 재현 단계 |
@@ -38,6 +38,7 @@ card에 명시한다.
 
 | 필드 | 의미 |
 |---|---|
+| `release_date` | 출시 전후 가상 날짜를 계산하는 기준일 |
 | `model_family` | 지역·색상·용량 접미사를 제외한 `SM-S938` 형태의 패밀리 |
 | `representative_model_name` | 영문 기준 대표 모델명 |
 | `representative_model_name_ko` | 한국어 표기 |
@@ -51,6 +52,14 @@ card에 명시한다.
 정체성을 유지하고 카탈로그 모델을 연동 휴대전화로 기록한다. 각
 `PROBLEM_SYMPTOM` 본문에는 대표 모델명, SM 모델 패밀리, 프로젝트 코드가
 모두 나타나야 한다.
+
+## 가상 테스트 날짜
+
+`tested_at`은 실제 파일 생성 시각이 아니라 내부 검증이 수행된 것으로 가정하는
+가상 시각이다. 선택된 모델의 `release_date` 1년 전부터 출시 전날까지만
+허용한다. 개발 초기에 문제 발견이 더 많다는 전제를 반영해 이 기간의 앞쪽에
+더 높은 확률을 둔다. 실제 생성 시각은 매니페스트에 따로 기록한다. 상세
+분포와 검증 규칙은 [VIRTUAL_DATE_POLICY.md](VIRTUAL_DATE_POLICY.md)를 따른다.
 
 ## 문제점 증상과 재현경로
 
@@ -131,6 +140,7 @@ source case가 `UNKNOWN`이면 생성기가 구체 부품이나 결함 메커니
     },
     "reproduction_step_variant_ids": ["STEP-01", "STEP-04", "STEP-07"]
     "device_model_context": {
+      "release_date": "2025-02-07",
       "model_family": "SM-S938",
       "representative_model_name": "Galaxy S25 Ultra",
       "project_code": "PA3",

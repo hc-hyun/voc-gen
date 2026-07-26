@@ -141,6 +141,7 @@
       "type": "object",
       "additionalProperties": false,
       "required": [
+        "release_date",
         "model_family",
         "representative_model_name",
         "representative_model_name_ko",
@@ -150,6 +151,10 @@
         "context_role"
       ],
       "properties": {
+        "release_date": {
+          "type": "string",
+          "format": "date"
+        },
         "model_family": {
           "type": "string",
           "pattern": "^SM-[A-Z][0-9]{3}$"

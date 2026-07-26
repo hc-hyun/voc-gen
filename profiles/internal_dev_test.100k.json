@@ -22,7 +22,13 @@
     "local_llm": {
       "mode": "off"
     },
-    "model_catalog_file": "data/reference/galaxy_smartphone_models_2024h2_2026.csv"
+    "model_catalog_file": "data/reference/galaxy_smartphone_models_2024h2_2026.csv",
+    "virtual_date_policy": {
+      "mode": "release_relative",
+      "window_years": 1,
+      "early_weight_alpha": 1.25,
+      "early_weight_beta": 3.5
+    }
   },
   "dataset_options": {
     "allow_multiple_findings": true,

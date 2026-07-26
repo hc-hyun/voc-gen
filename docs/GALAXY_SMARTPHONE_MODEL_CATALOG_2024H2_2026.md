@@ -1,6 +1,6 @@
 # 갤럭시 스마트폰 모델 카탈로그: 2024년 하반기~2026년 7월
 
-조사 기준일은 2026-07-25이다. 생성 데이터에서 사용할 가능성이 높은 Galaxy S, Z, A, XCover 스마트폰을 대상으로 했다. `최근 2년`은 월 단위로 해석해 2024년 하반기 출시 제품부터 포함했다. 따라서 2024-07-24에 판매를 시작한 Z Fold6·Z Flip6도 포함된다.
+조사 기준일은 2026-07-26이다. 생성 데이터에서 사용할 가능성이 높은 Galaxy S, Z, A, XCover 스마트폰을 대상으로 했다. `최근 2년`은 월 단위로 해석해 2024년 하반기 출시 제품부터 포함했다. 따라서 2024-07-24에 판매를 시작한 Z Fold6·Z Flip6도 포함된다.
 
 ## 정규화 원칙
 
@@ -12,9 +12,14 @@
 - `프로젝트 코드`: 공개 제품명이 아니라 개발·액세서리·펌웨어에서 쓰인 코드다. 공식 출시 자료에서 일관되게 공개되지 않으므로 선택 필드로 둔다.
 
 현재 CSV는 `marketing_name`, `marketing_name_ko`, `model_family`,
-`project_code`, `project_name`, `project_evidence`, `representative`를
+`release_date`, `project_code`, `project_name`, `project_evidence`,
+`representative`를
 분리한다. 지역형과 판매 SKU를 추가할 때도 `regional_model`, `sales_sku`를
 별도 필드로 확장한다.
+
+`release_period`는 조사·분류용 발표 시기이며, `release_date`는 가상 날짜
+계산에 쓰는 대표 시장의 일반 판매 기준일이다. 시장별 출시일이 다르거나
+발표 월과 판매 월이 다른 경우 두 값은 서로 다를 수 있다.
 
 ## 모델 표
 
@@ -96,6 +101,7 @@
 - 2026 A57·A37 발표: [Samsung Global Newsroom](https://news.samsung.com/global/samsung-unveils-galaxy-a57-5g-and-galaxy-a37-5g-packing-pro-level-features-at-awesome-price)
 - A57·A37·A27 SM 코드: [Samsung 공식 약관](https://www.samsung.com/pe/offer/terms-and-conditions/)
 - 2026 Z Fold8 Ultra·Z Fold8·Z Flip8 발표: [Samsung Global Newsroom](https://news.samsung.com/global/galaxy-unpacked-july-2026-a-first-look-at-galaxy-z-fold8-ultra-galaxy-z-fold8-and-galaxy-z-flip8)
+- 2026 Z Fold8 Ultra·Z Fold8·Z Flip8 일반 판매일: [Samsung Newsroom U.S.](https://news.samsung.com/us/samsung-galaxy-z-fold8-perfect-device-favorite-content/)
 - Z Fold8 Ultra·Z Fold8·Z Flip8 SM 코드: [Samsung 공식 프로모션 페이지](https://www.samsung.com/dk/offer/galaxy-flip8-fold8-redeem/)
 
 ## 공개 보도 기반 프로젝트 코드

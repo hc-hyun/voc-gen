@@ -8,7 +8,7 @@
   ],
   "language": "KO",
   "dataset_split": "TRAIN",
-  "tested_at": "2026-07-25T10:30:00+09:00",
+  "tested_at": "2024-08-25T10:30:00+09:00",
   "product": {
     "product_type": "MOBILE",
     "product_family": "GALAXY_PHONE",
@@ -17,6 +17,7 @@
     "software_build": "DEV-2026.07.25.1"
   },
   "device_model_context": {
+    "release_date": "2025-02-07",
     "model_family": "SM-S938",
     "representative_model_name": "Galaxy S25 Ultra",
     "representative_model_name_ko": "갤럭시 S25 울트라",

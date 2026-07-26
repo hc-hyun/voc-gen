@@ -33,7 +33,7 @@ uv run python scripts/show_model_dataset_status.py --watch 5
 
 ```bash
 uv run python -m json.tool \
-  data/generated/internal_dev_test_100k_models_v02.jsonl.gz.progress.json
+  data/generated/internal_dev_test_100k_release_dates_v1_approved.jsonl.gz.progress.json
 ```
 
 주요 상태:
@@ -59,8 +59,14 @@ SELECT COUNT(*)
 FROM dataset_factory_v01.internal_dev_test_finding;
 ```
 
-VoC의 `target_count`는 생성 원본 건수다. `row_count`는 중복 제외 후 실제 DB
-적재 건수이므로 이번 배치는 각각 `100,000`과 `99,997`이 정상이다.
-VoC manifest의 `GENERATED_NOT_VALIDATED`는 원본 10만 건에 정규화 중복 3건이
-남아 있기 때문이다. 제외 감사 파일로 해당 3건을 건너뛴 DB 적재 여부는
-최상위 `state: LOADED`와 DB batch의 `excluded_count: 3`으로 확인한다.
+출시일 기준 재생성 배치는 VoC와 내부개발테스트가 각각 정확히
+`100,000`건이어야 한다. VoC는 모델 미적용 원문에도 접수일을 표시해 정규화
+후 중복 없이 10만 건을 유지한다. 최상위 `state: LOADED`, 각 batch의
+`row_count: 100000`, VoC `excluded_count: 0`을 함께 확인한다.
+
+기존 두 schema의 내용을 비우고 새 배치를 한 트랜잭션으로 교체 적재하는
+명령은 다음과 같다. `.env`에 `DB_PASSWORD`가 있어야 한다.
+
+```bash
+uv run python scripts/replace_release_date_datasets.py
+```

@@ -178,7 +178,9 @@ VoC의 원재료는
 ### 마지막 조립은 VoC generator가 합니다
 
 [generator.py](../src/voc_factory/generator.py)가 시나리오 선택, 모델 선택,
-날짜, 언어, split, 다중 이슈를 한 건으로 조립합니다.
+날짜, 언어, split, 다중 이슈를 한 건으로 조립합니다. 스마트폰 모델이
+선택되면 `source_date`는 그 모델의 출시일부터 1년 뒤 사이에서 정하고,
+출시 직후 불만이 더 많도록 앞쪽에 가중치를 둡니다.
 [text_renderer.py](../src/voc_factory/text_renderer.py)는 상담 채팅, 이메일,
 커뮤니티 글 같은 채널별 말투를 만듭니다.
 
@@ -202,6 +204,9 @@ VoC의 원재료는
 계약을 지키는지 읽고 검사합니다.
 [generator.py](../src/dataset_factory/types/internal_dev_test/generator.py)는
 테스트 시각, 표현 프로필, 대표 모델을 결정하고 구조화된 결과를 조립합니다.
+테스트 시각은 모델 출시 전 1년 안에서 정하며, 개발 초기에 문제가 더 많이
+발견되는 형태로 기간 앞쪽에 가중치를 둡니다. 파일을 실제로 만든 시각은
+이 가상 업무 날짜와 섞지 않고 매니페스트에 따로 남깁니다.
 [renderer.py](../src/dataset_factory/types/internal_dev_test/renderer.py)는 이를
 사람이 읽는 보고서로 바꿉니다.
 

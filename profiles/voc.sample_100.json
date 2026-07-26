@@ -20,6 +20,12 @@
       "KO": 1,
       "EN": 1
     },
+    "virtual_date_policy": {
+      "mode": "release_relative",
+      "window_years": 1,
+      "early_weight_alpha": 1.25,
+      "early_weight_beta": 3.5
+    },
     "local_llm": {
       "mode": "off"
     },

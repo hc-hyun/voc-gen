@@ -4,6 +4,7 @@ import tempfile
 import unittest
 from collections import Counter
 from dataclasses import replace
+from datetime import date
 from pathlib import Path
 from unittest.mock import patch
 
@@ -25,6 +26,7 @@ from voc_factory.workflow import (
     promote_candidate,
     validate_dataset,
 )
+from dataset_factory.core.virtual_dates import date_window, relative_position
 
 
 PROJECT_DIR = Path(__file__).resolve().parents[1]
@@ -101,6 +103,31 @@ class GeneratorTests(unittest.TestCase):
             for issue in document["issues"]:
                 self.assertEqual(issue["model_name"], context["marketing_name"])
                 self.assertEqual(issue["model_code"], context["model_family"])
+
+    def test_modeled_voc_dates_follow_release_window_and_early_bias(self):
+        quarters = Counter()
+        modeled_count = 0
+        for document, generation in generate_records(self.profile, 2000):
+            context = generation["model_context"]
+            if context is None:
+                continue
+            modeled_count += 1
+            release_date = date.fromisoformat(context["release_date"])
+            source_date = date.fromisoformat(document["source_date"])
+            window_start, window_end = date_window(
+                release_date,
+                "POST_RELEASE_MARKET",
+            )
+            self.assertLessEqual(window_start, source_date)
+            self.assertLessEqual(source_date, window_end)
+            position = relative_position(
+                observed_date=source_date,
+                release_date=release_date,
+                phase="POST_RELEASE_MARKET",
+            )
+            quarters[min(int(position * 4) + 1, 4)] += 1
+        self.assertGreater(modeled_count, 1000)
+        self.assertGreater(quarters[1], quarters[4])
 
     def test_profiles_and_multi_issue_are_balanced(self):
         records = list(generate_records(self.profile, 500))

@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import contextlib
 import gzip
 import hashlib
 import json
@@ -59,6 +60,8 @@ def load_dataset(
     manifest_path: Path,
     approval_path: Path,
     exclusions_path: Path | None = None,
+    *,
+    connection=None,
 ) -> dict:
     manifest, data_path, generation_path = verify_manifest(
         manifest_path,
@@ -80,7 +83,12 @@ def load_dataset(
         COPY voc_import (sequence_no, document, generation)
         FROM STDIN
     """
-    with _connect() as conn:
+    connection_context = (
+        contextlib.nullcontext(connection)
+        if connection is not None
+        else _connect()
+    )
+    with connection_context as conn:
         conn.execute(create_temp_sql)
         source_count = 0
         imported_count = 0
